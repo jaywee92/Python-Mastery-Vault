@@ -1,6 +1,6 @@
 # 🐍 Python Mastery Vault
 
-> Complete Python & DSA learning vault for Obsidian — From Basics to Advanced, Algorithms, Data Structures, PCEP Exam Prep & Practice Exercises
+> Complete Python & DSA learning vault for Obsidian — from basics to advanced, algorithms, data structures, PCEP prep, and practice exercises.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![Obsidian](https://img.shields.io/badge/Obsidian-Ready-purple.svg)](https://obsidian.md/)
@@ -42,7 +42,7 @@
 1. Clone this repository
 2. Open Obsidian → "Open folder as vault"
 3. Select the cloned folder
-4. Start with any `00_Index.md` file
+4. Start with `01_Python_Basics/00_Getting_Started.md`
 
 ### For Regular Markdown
 All files are standard Markdown — readable on GitHub or any Markdown viewer.
@@ -93,6 +93,7 @@ python-mastery-vault/
 | [DSA Linear](04_DSA_Linear/00_Cheatsheet.md) | Arrays, Sorting, Stacks |
 | [DSA Non-Linear](05_DSA_NonLinear/00_Cheatsheet.md) | Trees, Graphs, Hash |
 | [Exercises](06_Exercises/00_Index.md) | Practice problems |
+| [Getting Started](01_Python_Basics/00_Getting_Started.md) | Quick setup + first steps |
 
 ---
 
@@ -153,6 +154,8 @@ Contributions are welcome! Feel free to:
 - Add more practice questions
 - Improve explanations
 - Add new topics
+
+Note: Obsidian config files are ignored by default (`.obsidian/` in `.gitignore`).
 
 ---
 
