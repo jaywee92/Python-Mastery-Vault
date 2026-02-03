@@ -105,6 +105,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [4, 2, 2, 8, 3, 3, 1]
-draw_sort(nums, title="Before Sorting")
+values = [4, 2, 2, 8, 3, 3, 1]
+# Start state for counting sort
+draw_sort(values, title="Counting Sort (start)")
+
 ```

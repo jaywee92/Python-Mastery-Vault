@@ -440,11 +440,12 @@ if not added:
 
 from DSA_Utils.utils import draw_graph
 
-cycle_graph = {
+graph = {
     "A": ["B"],
     "B": ["C"],
     "C": ["A"],
 }
 
-draw_graph(cycle_graph, title="Cycle Graph")
+draw_graph(graph, title="Graph With Cycle")
+
 ```

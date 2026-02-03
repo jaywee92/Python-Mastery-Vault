@@ -469,9 +469,10 @@ from DSA_Utils.utils import draw_graph
 graph = {
     "A": ["B", "C"],
     "B": ["A", "D"],
-    "C": ["A"],
-    "D": ["B"],
+    "C": ["A", "D"],
+    "D": ["B", "C"],
 }
 
-draw_graph(graph)
+draw_graph(graph, title="Undirected Graph")
+
 ```

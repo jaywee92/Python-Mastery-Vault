@@ -286,11 +286,14 @@ if not added:
 from DSA_Utils.utils import draw_graph
 
 graph = {
-    "A": ["B", "C"],
-    "B": ["D"],
-    "C": ["D"],
-    "D": [],
+    "S": ["A", "B"],
+    "A": ["C"],
+    "B": ["C", "D"],
+    "C": ["T"],
+    "D": ["T"],
+    "T": [],
 }
 
-draw_graph(graph, title="Path Graph")
+draw_graph(graph, title="Shortest Path Example")
+
 ```

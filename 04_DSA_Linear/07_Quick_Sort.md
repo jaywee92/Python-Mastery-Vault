@@ -481,6 +481,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [8, 3, 1, 7, 0, 10, 2]
-draw_sort(nums, title="Before Sorting")
+values = [10, 7, 8, 9, 1, 5]
+# Start state for quick sort
+draw_sort(values, title="Quick Sort (start)")
+
 ```

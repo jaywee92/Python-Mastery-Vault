@@ -1404,12 +1404,6 @@ import sys
 import site
 from pathlib import Path
 
-class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
 # Ensure user site-packages are visible (Obsidian runner)
 user_site = site.getusersitepackages()
 if user_site and user_site not in sys.path:
@@ -1431,10 +1425,21 @@ if not added:
 
 from DSA_Utils.utils import draw_tree
 
-# build a small balanced tree manually
-root = TreeNode(2)
-root.left = TreeNode(1)
-root.right = TreeNode(3)
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+# Balanced (AVL-like) tree
+root = TreeNode(30)
+root.left = TreeNode(20)
+root.right = TreeNode(40)
+root.left.left = TreeNode(10)
+root.left.right = TreeNode(25)
+root.right.left = TreeNode(35)
+root.right.right = TreeNode(50)
 
 draw_tree(root)
+
 ```

@@ -482,7 +482,8 @@ if not added:
 
 from DSA_Utils.utils import draw_array
 
-# simple view of buckets (values as lengths)
-buckets = [2, 0, 1, 3, 0]
-draw_array(buckets, title="Hash Table Buckets")
+# Bucket counts for a simple hash table
+buckets = [0, 1, 0, 2, 1, 0, 0, 1]
+draw_array(buckets, title="Hash Table Buckets (counts)")
+
 ```

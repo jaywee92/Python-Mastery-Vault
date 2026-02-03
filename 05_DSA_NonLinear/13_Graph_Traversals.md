@@ -500,10 +500,13 @@ from DSA_Utils.utils import draw_graph
 
 graph = {
     "A": ["B", "C"],
-    "B": ["D"],
-    "C": [],
+    "B": ["D", "E"],
+    "C": ["F"],
     "D": [],
+    "E": [],
+    "F": [],
 }
 
-draw_graph(graph)
+draw_graph(graph, title="Graph for BFS/DFS")
+
 ```

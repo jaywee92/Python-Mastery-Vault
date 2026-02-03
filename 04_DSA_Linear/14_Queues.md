@@ -459,6 +459,7 @@ if not added:
 
 from DSA_Utils.utils import draw_queue
 
-queue = ["A", "B", "C"]
-draw_queue(queue)
+queue = ["A", "B", "C", "D"]
+draw_queue(queue, title="Queue (front on left)")
+
 ```

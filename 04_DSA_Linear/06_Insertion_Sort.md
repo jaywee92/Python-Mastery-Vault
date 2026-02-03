@@ -494,6 +494,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [5, 2, 8, 1]
-draw_sort(nums, title="Before Sorting")
+values = [9, 5, 1, 4, 3]
+# Start state for insertion sort
+draw_sort(values, title="Insertion Sort (start)")
+
 ```

@@ -346,6 +346,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [5, 2, 8, 1]
-draw_sort(nums, title="Before Sorting")
+values = [64, 25, 12, 22, 11]
+# Start state for selection sort
+draw_sort(values, title="Selection Sort (start)")
+
 ```

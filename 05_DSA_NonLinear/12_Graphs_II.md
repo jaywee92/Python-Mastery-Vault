@@ -441,8 +441,10 @@ from DSA_Utils.utils import draw_graph
 graph = {
     "A": ["B"],
     "B": ["C"],
-    "C": ["A"],
+    "C": ["D"],
+    "D": [],
 }
 
-draw_graph(graph)
+draw_graph(graph, title="Directed Graph (visual)")
+
 ```

@@ -126,6 +126,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [170, 45, 75, 90, 802, 24, 2, 66]
-draw_sort(nums, title="Before Sorting")
+values = [170, 45, 75, 90, 802, 24, 2, 66]
+# Start state for radix sort
+draw_sort(values, title="Radix Sort (start)")
+
 ```

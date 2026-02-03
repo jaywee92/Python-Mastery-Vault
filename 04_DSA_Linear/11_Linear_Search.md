@@ -492,7 +492,8 @@ if not added:
 
 from DSA_Utils.utils import draw_search
 
-nums = [5, 8, 12, 3]
-# highlight index 2 (value 12)
-draw_search(nums, index=2)
+values = [4, 7, 1, 9, 3, 6]
+# Found target 9 at index 3
+draw_search(values, index=3, title="Linear Search (target=9)")
+
 ```

@@ -565,6 +565,8 @@ if not added:
 
 from DSA_Utils.utils import draw_array
 
-nums = [10, 20, 30, 40]
-draw_array(nums)
+values = [2, 5, 1, 8, 3, 7]
+# Highlight index 3 (value 8)
+draw_array(values, highlight_index=3, title="Array (index 3 highlighted)")
+
 ```

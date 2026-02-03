@@ -532,6 +532,8 @@ if not added:
 
 from DSA_Utils.utils import draw_array
 
-keys = [1, 2, 3, 4]
-draw_array(keys, title="Map Keys")
+# Values from a simple map (e.g., scores)
+values = [18, 42, 7, 13]
+draw_array(values, title="Hash Map Values")
+
 ```

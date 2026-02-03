@@ -1102,12 +1102,6 @@ import sys
 import site
 from pathlib import Path
 
-class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
 # Ensure user site-packages are visible (Obsidian runner)
 user_site = site.getusersitepackages()
 if user_site and user_site not in sys.path:
@@ -1129,10 +1123,23 @@ if not added:
 
 from DSA_Utils.utils import draw_tree
 
-# example BST
-root = TreeNode(10)
-root.left = TreeNode(5)
-root.right = TreeNode(15)
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+# BST example
+root = TreeNode(8)
+root.left = TreeNode(3)
+root.right = TreeNode(10)
+root.left.left = TreeNode(1)
+root.left.right = TreeNode(6)
+root.left.right.left = TreeNode(4)
+root.left.right.right = TreeNode(7)
+root.right.right = TreeNode(14)
+root.right.right.left = TreeNode(13)
 
 draw_tree(root)
+
 ```

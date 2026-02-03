@@ -402,5 +402,6 @@ graph = {
     "D": [],
 }
 
-draw_graph(graph, title="Weighted Graph (visual only)")
+draw_graph(graph, title="Dijkstra Graph (visual)")
+
 ```

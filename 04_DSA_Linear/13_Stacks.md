@@ -390,6 +390,7 @@ if not added:
 
 from DSA_Utils.utils import draw_stack
 
-stack = ["A", "B", "C"]
-draw_stack(stack)
+stack = ["A", "B", "C", "D"]
+draw_stack(stack, title="Stack (top on right)")
+
 ```

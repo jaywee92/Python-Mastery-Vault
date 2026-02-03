@@ -788,12 +788,6 @@ import sys
 import site
 from pathlib import Path
 
-class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
 # Ensure user site-packages are visible (Obsidian runner)
 user_site = site.getusersitepackages()
 if user_site and user_site not in sys.path:
@@ -815,10 +809,19 @@ if not added:
 
 from DSA_Utils.utils import draw_tree
 
-# use your TreeNode class
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
 root = TreeNode(1)
 root.left = TreeNode(2)
 root.right = TreeNode(3)
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(5)
+root.right.right = TreeNode(6)
 
 draw_tree(root)
+
 ```

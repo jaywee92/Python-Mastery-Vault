@@ -40,6 +40,7 @@ def main() -> int:
     if str(ROOT) not in sys.path:
         sys.path.insert(0, str(ROOT))
 
+    os.environ.setdefault("DSA_FORCE_GUI", "0")
     # Use a writable Matplotlib config dir to avoid cache issues.
     os.environ.setdefault("MPLCONFIGDIR", str(Path("/tmp") / "mplconfig"))
     os.environ.setdefault("MPLBACKEND", "Agg")

@@ -1,4 +1,32 @@
+import os
+import warnings
+import matplotlib
+
+# Force a GUI backend so plots open in a new window.
+# Obsidian may still block GUI windows, but this is the correct setup for GUI output.
+# Set DSA_FORCE_GUI=0 to disable in test environments.
+def _configure_gui_backend():
+    if os.environ.get("DSA_FORCE_GUI") == "0":
+        return
+    # Prefer macOS native backend, then Tk, then Qt.
+    for backend in ("MacOSX", "TkAgg", "QtAgg"):
+        try:
+            os.environ["MPLBACKEND"] = backend
+            matplotlib.use(backend, force=True)
+            return
+        except Exception:
+            continue
+
+_configure_gui_backend()
+
+# Suppress non-interactive backend warning when no GUI is available.
+warnings.filterwarnings("ignore", message="FigureCanvasAgg is non-interactive")
+
 import matplotlib.pyplot as plt
+
+# If we still ended up on a non-interactive backend, warn clearly.
+if "agg" in matplotlib.get_backend().lower():
+    print("[plot warning] No GUI backend available; no new window can be opened.")
 def _show_or_save(fig, title="plot"):
     # In Obsidian execute-code, plots are embedded when plt.show() is called.
     # We avoid saving files here to honor "show-only" behavior.

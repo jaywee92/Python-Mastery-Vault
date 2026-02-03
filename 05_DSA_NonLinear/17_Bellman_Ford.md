@@ -355,8 +355,9 @@ graph = {
     "A": ["B"],
     "B": ["C"],
     "C": ["D"],
-    "D": [],
+    "D": ["B"],
 }
 
-draw_graph(graph, title="Path Graph")
+draw_graph(graph, title="Bellman-Ford Graph (visual)")
+
 ```

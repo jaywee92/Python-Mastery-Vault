@@ -464,6 +464,8 @@ if not added:
 
 from DSA_Utils.utils import draw_array
 
-values = [1, 2, 3, 5]
-draw_array(values, title="Set Values")
+# A set stores unique values
+values = [3, 5, 7, 9, 11]
+draw_array(values, title="Hash Set (unique values)")
+
 ```

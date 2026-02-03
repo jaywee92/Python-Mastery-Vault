@@ -426,6 +426,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [5, 2, 8, 1]
-draw_sort(nums, title="Before Sorting")
+values = [5, 1, 4, 2, 8]
+# Start state for bubble sort
+draw_sort(values, title="Bubble Sort (start)")
+
 ```

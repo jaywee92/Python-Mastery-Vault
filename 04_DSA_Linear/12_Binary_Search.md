@@ -534,7 +534,8 @@ if not added:
 
 from DSA_Utils.utils import draw_search
 
-nums = [1, 3, 5, 7, 9]
-# highlight index 3 (value 7)
-draw_search(nums, index=3)
+values = [1, 3, 5, 7, 9, 11, 13]
+# Found target 9 at index 4
+draw_search(values, index=4, title="Binary Search (target=9)")
+
 ```

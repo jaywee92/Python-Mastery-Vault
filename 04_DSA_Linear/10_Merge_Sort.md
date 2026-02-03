@@ -502,6 +502,8 @@ if not added:
 
 from DSA_Utils.utils import draw_sort
 
-nums = [5, 2, 4, 6, 1, 3]
-draw_sort(nums, title="Before Sorting")
+values = [38, 27, 43, 3, 9, 82, 10]
+# Start state for merge sort
+draw_sort(values, title="Merge Sort (start)")
+
 ```
