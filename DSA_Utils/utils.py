@@ -1,4 +1,12 @@
 import matplotlib.pyplot as plt
+def _show_or_save(fig, title="plot"):
+    # In Obsidian execute-code, plots are embedded when plt.show() is called.
+    # We avoid saving files here to honor "show-only" behavior.
+    plt.show()
+    try:
+        plt.close(fig)
+    except Exception:
+        pass
 
 def draw_array(values, highlight_index=None, title="Array"):
     xs = list(range(len(values)))
@@ -10,7 +18,7 @@ def draw_array(values, highlight_index=None, title="Array"):
     plt.xticks(xs)
     plt.title(title)
     plt.tight_layout()
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def draw_stack(values, title="Stack (top on right)"):
     xs = list(range(len(values)))
@@ -22,7 +30,7 @@ def draw_stack(values, title="Stack (top on right)"):
     plt.yticks([])
     plt.title(title)
     plt.tight_layout()
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def draw_queue(values, title="Queue (front on left)"):
     xs = list(range(len(values)))
@@ -34,7 +42,7 @@ def draw_queue(values, title="Queue (front on left)"):
     plt.yticks([])
     plt.title(title)
     plt.tight_layout()
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def draw_sort(values, title="Sorting Snapshot"):
     xs = list(range(len(values)))
@@ -43,7 +51,7 @@ def draw_sort(values, title="Sorting Snapshot"):
     plt.xticks(xs)
     plt.title(title)
     plt.tight_layout()
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def draw_search(values, index=None, title="Search"):
     xs = list(range(len(values)))
@@ -55,7 +63,7 @@ def draw_search(values, index=None, title="Search"):
     plt.xticks(xs)
     plt.title(title)
     plt.tight_layout()
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def _plot_node(ax, node, x, y, dx, dy):
     if node is None:
@@ -74,7 +82,7 @@ def draw_tree(root, title="Tree"):
     ax.axis("off")
     ax.set_title(title)
     _plot_node(ax, root, 0, 0, 1.5, 1.0)
-    plt.show()
+    _show_or_save(plt.gcf(), title)
 
 def draw_graph(adj, title="Graph"):
     # Simple circular layout for small graphs
@@ -100,4 +108,4 @@ def draw_graph(adj, title="Graph"):
     for node, (x, y) in coords.items():
         ax.text(x, y, str(node), ha='center', va='center',
                 bbox=dict(boxstyle="circle", fc="#f7f7f7", ec="#333333"))
-    plt.show()
+    _show_or_save(plt.gcf(), title)

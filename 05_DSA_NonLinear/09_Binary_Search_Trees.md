@@ -1129,6 +1129,10 @@ if not added:
 
 from DSA_Utils.utils import draw_tree
 
-# after building your BST root
+# example BST
+root = TreeNode(10)
+root.left = TreeNode(5)
+root.right = TreeNode(15)
+
 draw_tree(root)
 ```
