@@ -814,6 +814,12 @@ import sys
 import site
 from pathlib import Path
 
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
 # Ensure user site-packages are visible (Obsidian runner)
 user_site = site.getusersitepackages()
 if user_site and user_site not in sys.path:
