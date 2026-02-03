@@ -451,3 +451,13 @@ print(find_kth_largest(numbers, 2))  # 5 (2nd largest)
 [[00_Index|← Back to Index]] | [[06_Insertion_Sort|← Previous]] | [[08_Counting_Sort|Next: Counting Sort →]]
 
 *Divide, conquer, and sort! ⚡*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [8, 3, 1, 7, 0, 10, 2]
+draw_sort(nums, title="Before Sorting")
+```

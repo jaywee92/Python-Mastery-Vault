@@ -321,3 +321,19 @@ for _ in range(len(vertices) - 1):  # Correct!
 ---
 
 [[16_Dijkstras|← Dijkstra's]] | [[00_Index|Index]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B"],
+    "B": ["C"],
+    "C": ["D"],
+    "D": [],
+}
+
+draw_graph(graph, title="Path Graph")
+```

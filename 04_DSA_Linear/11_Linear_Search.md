@@ -462,3 +462,14 @@ target = 8
 [[00_Index|← Back to Index]] | [[10_Merge_Sort|← Previous]] | [[12_Binary_Search|Next: Binary Search →]]
 
 *Search one by one! 🔍*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_search
+
+nums = [5, 8, 12, 3]
+# highlight index 2 (value 12)
+draw_search(nums, index=2)
+```

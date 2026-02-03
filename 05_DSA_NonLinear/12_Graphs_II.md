@@ -408,3 +408,18 @@ print(is_bipartite(not_bipartite))  # False
 ---
 
 [[11_Graphs_I|← Graphs I]] | [[00_Index|Index]] | [[13_Graph_Traversals|Traversals →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B"],
+    "B": ["C"],
+    "C": ["A"],
+}
+
+draw_graph(graph)
+```

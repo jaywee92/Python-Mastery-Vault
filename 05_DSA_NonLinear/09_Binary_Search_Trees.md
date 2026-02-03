@@ -1093,3 +1093,13 @@ from avl_tree import AVLTree
 7. **Successor/Predecessor**: Essential operations often tested in interviews
 
 8. **Implementation**: Recursive approach is cleaner and more intuitive
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+# after building your BST root
+draw_tree(root)
+```

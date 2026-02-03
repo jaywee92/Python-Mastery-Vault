@@ -410,3 +410,18 @@ def good_cycle_check(graph):
 ---
 
 [[13_Graph_Traversals|← Traversals]] | [[00_Index|Index]] | [[15_Shortest_Path|Shortest Path →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+cycle_graph = {
+    "A": ["B"],
+    "B": ["C"],
+    "C": ["A"],
+}
+
+draw_graph(cycle_graph, title="Cycle Graph")
+```

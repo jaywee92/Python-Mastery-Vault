@@ -464,3 +464,13 @@ def binary_insertion_sort(arr):
 [[00_Index|← Back to Index]] | [[05_Selection_Sort|← Previous]] | [[07_Quick_Sort|Next: Quick Sort →]]
 
 *Insert and sort like a card player! 🃏*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [5, 2, 8, 1]
+draw_sort(nums, title="Before Sorting")
+```

@@ -396,3 +396,13 @@ Now that you understand Bubble Sort:
 [[00_Index|← Back to Index]] | [[03_Arrays|← Previous]] | [[05_Selection_Sort|Next: Selection Sort →]]
 
 *Simple but effective for learning! 🫧*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [5, 2, 8, 1]
+draw_sort(nums, title="Before Sorting")
+```

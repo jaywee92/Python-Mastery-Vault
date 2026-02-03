@@ -255,3 +255,19 @@ def shortest_path(graph, start, end=None, has_negative=False):
 ---
 
 [[14_Cycle_Detection|← Cycle Detection]] | [[00_Index|Index]] | [[16_Dijkstras|Dijkstra's →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["D"],
+    "D": [],
+}
+
+draw_graph(graph, title="Path Graph")
+```

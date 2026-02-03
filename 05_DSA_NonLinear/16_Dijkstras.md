@@ -365,3 +365,19 @@ prev[v] = u  # When updating dist[v]
 ---
 
 [[15_Shortest_Path|← Shortest Path]] | [[00_Index|Index]] | [[17_Bellman_Ford|Bellman-Ford →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["D"],
+    "D": [],
+}
+
+draw_graph(graph, title="Weighted Graph (visual only)")
+```

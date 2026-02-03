@@ -779,3 +779,17 @@ def traverse_correct(node):
 ---
 
 [[00_Index|← Index]] | [[05_Binary_Trees|Binary Trees →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+# use your TreeNode class
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+
+draw_tree(root)
+```

@@ -96,3 +96,13 @@ print(numbers)  # [2, 24, 45, 66, 75, 90, 170, 802]
 - **Poor for** variable-length data
 
 [[00_Index|← Back]] | [[08_Counting_Sort|← Previous]] | [[10_Merge_Sort|Next →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [170, 45, 75, 90, 802, 24, 2, 66]
+draw_sort(nums, title="Before Sorting")
+```

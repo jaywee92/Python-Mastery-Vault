@@ -512,3 +512,16 @@ def preorder_iter(root):
 **Last Updated:** 2025-01-30
 **Difficulty:** Medium
 **Time to Master:** 1-2 hours
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+
+draw_tree(root)
+```

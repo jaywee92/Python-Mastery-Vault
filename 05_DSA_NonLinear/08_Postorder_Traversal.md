@@ -805,3 +805,16 @@ def postorder_iter_one_stack(root):
 **Key Insight:** Postorder processes children before parents
 **Best Use Case:** Tree deletion and cleanup operations
 **Time to Master:** 1-2 hours
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+
+draw_tree(root)
+```

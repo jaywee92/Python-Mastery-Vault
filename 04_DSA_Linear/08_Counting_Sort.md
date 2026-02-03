@@ -75,3 +75,13 @@ print(sorted_arr)  # [1, 2, 2, 3, 3, 4, 8]
 - **Poor for large ranges** (wastes space)
 
 [[00_Index|← Back]] | [[07_Quick_Sort|← Previous]] | [[09_Radix_Sort|Next →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [4, 2, 2, 8, 3, 3, 1]
+draw_sort(nums, title="Before Sorting")
+```

@@ -1081,3 +1081,16 @@ def good_search(root, target):
 ---
 
 [[04_Trees|← Trees]] | [[00_Index|Back to Index]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+root = TreeNode(10)
+root.left = TreeNode(5)
+root.right = TreeNode(15)
+
+draw_tree(root)
+```

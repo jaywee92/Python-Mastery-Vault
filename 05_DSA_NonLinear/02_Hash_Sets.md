@@ -434,3 +434,13 @@ for item in list(s):
 ---
 
 [[01_Hash_Tables|← Hash Tables]] | [[00_Index|Index]] | [[03_Hash_Maps|Hash Maps →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_array
+
+values = [1, 2, 3, 5]
+draw_array(values, title="Set Values")
+```

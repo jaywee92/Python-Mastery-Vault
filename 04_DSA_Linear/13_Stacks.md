@@ -360,3 +360,13 @@ print(stack.get_min())  # 1 - in O(1)!
 [[00_Index|← Back to Index]] | [[12_Binary_Search|← Previous]] | [[14_Queues|Next: Queues →]]
 
 *Stack it up! 📚*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_stack
+
+stack = ["A", "B", "C"]
+draw_stack(stack)
+```

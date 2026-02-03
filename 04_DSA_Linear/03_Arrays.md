@@ -535,3 +535,13 @@ Master arrays before sorting:
 [[00_Index|← Back to Index]] | [[02_Big_O_Notation|← Previous]] | [[04_Bubble_Sort|Next: Bubble Sort →]]
 
 *Arrays are everywhere! Master them! 📦*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_array
+
+nums = [10, 20, 30, 40]
+draw_array(nums)
+```

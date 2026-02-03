@@ -452,3 +452,14 @@ for key in list(data.keys()):
 ---
 
 [[00_Index|← Index]] | [[02_Hash_Sets|Hash Sets →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_array
+
+# simple view of buckets (values as lengths)
+buckets = [2, 0, 1, 3, 0]
+draw_array(buckets, title="Hash Table Buckets")
+```

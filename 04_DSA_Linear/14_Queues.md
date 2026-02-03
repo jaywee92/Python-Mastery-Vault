@@ -429,3 +429,13 @@ Congratulations! You now understand:
 [[00_Index|← Back to Index]] | [[13_Stacks|← Previous]]
 
 *Queue it up! 🎫*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_queue
+
+queue = ["A", "B", "C"]
+draw_queue(queue)
+```

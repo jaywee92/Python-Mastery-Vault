@@ -504,3 +504,14 @@ print(search_rotated(arr, 0))  # 4
 [[00_Index|← Back to Index]] | [[11_Linear_Search|← Previous]] | [[13_Stacks|Next: Stacks →]]
 
 *Divide and search! 🔍*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_search
+
+nums = [1, 3, 5, 7, 9]
+# highlight index 3 (value 7)
+draw_search(nums, index=3)
+```

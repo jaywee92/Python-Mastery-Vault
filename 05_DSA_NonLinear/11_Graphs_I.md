@@ -436,3 +436,19 @@ def add_edge(graph, v1, v2):
 ---
 
 [[10_AVL_Trees|← AVL Trees]] | [[00_Index|Index]] | [[12_Graphs_II|Graphs II →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["A", "D"],
+    "C": ["A"],
+    "D": ["B"],
+}
+
+draw_graph(graph)
+```

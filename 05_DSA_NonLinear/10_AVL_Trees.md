@@ -1395,3 +1395,17 @@ def insert(self, value):
 - **Red-Black Trees**: Alternative with relaxed balance constraints
 - **B-Trees**: For external storage/databases
 - **Splay Trees**: Self-adjusting without height constraint
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+# build a small balanced tree manually
+root = TreeNode(2)
+root.left = TreeNode(1)
+root.right = TreeNode(3)
+
+draw_tree(root)
+```

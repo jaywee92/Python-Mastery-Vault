@@ -468,3 +468,19 @@ def good_dfs(graph, start, visited=None):
 ---
 
 [[12_Graphs_II|← Graphs II]] | [[00_Index|Index]] | [[14_Cycle_Detection|Cycle Detection →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_graph
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": [],
+    "D": [],
+}
+
+draw_graph(graph)
+```

@@ -502,3 +502,13 @@ for key in list(d.keys()):
 ---
 
 [[02_Hash_Sets|← Hash Sets]] | [[00_Index|Index]] | [[04_Trees|Trees →]]
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_array
+
+keys = [1, 2, 3, 4]
+draw_array(keys, title="Map Keys")
+```

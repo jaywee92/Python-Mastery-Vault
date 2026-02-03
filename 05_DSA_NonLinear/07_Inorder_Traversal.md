@@ -679,3 +679,16 @@ def inorder_morris(root):
 **Difficulty:** Medium
 **Key Insight:** Inorder of BST = Sorted Order
 **Time to Master:** 1-2 hours
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_tree
+
+root = TreeNode(2)
+root.left = TreeNode(1)
+root.right = TreeNode(3)
+
+draw_tree(root)
+```

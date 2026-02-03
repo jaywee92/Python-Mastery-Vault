@@ -316,3 +316,13 @@ for name, score in students:
 [[00_Index|← Back to Index]] | [[04_Bubble_Sort|← Previous]] | [[06_Insertion_Sort|Next: Insertion Sort →]]
 
 *Select the smallest, build the sorted! 🎯*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [5, 2, 8, 1]
+draw_sort(nums, title="Before Sorting")
+```

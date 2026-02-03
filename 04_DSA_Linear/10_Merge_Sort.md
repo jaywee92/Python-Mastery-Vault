@@ -472,3 +472,13 @@ def merge_optimized(left, right):
 [[00_Index|← Back to Index]] | [[09_Radix_Sort|← Previous]] | [[11_Linear_Search|Next: Linear Search →]]
 
 *Divide, sort, merge! 🔀*
+---
+
+## 🎨 Visualization (Optional)
+
+```python
+from DSA_Utils.utils import draw_sort
+
+nums = [5, 2, 4, 6, 1, 3]
+draw_sort(nums, title="Before Sorting")
+```
