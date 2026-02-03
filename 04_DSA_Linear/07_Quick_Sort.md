@@ -457,7 +457,13 @@ print(find_kth_largest(numbers, 2))  # 5 (2nd largest)
 
 ```python
 import sys
+import site
 from pathlib import Path
+
+# Ensure user site-packages are visible (Obsidian runner)
+user_site = site.getusersitepackages()
+if user_site and user_site not in sys.path:
+    sys.path.append(user_site)
 
 # Add vault root to sys.path (Obsidian runner)
 # Tries current dir, parent dirs, then a known vault path fallback.
