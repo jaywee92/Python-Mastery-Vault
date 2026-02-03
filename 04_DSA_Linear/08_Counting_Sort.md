@@ -80,6 +80,14 @@ print(sorted_arr)  # [1, 2, 2, 3, 3, 4, 8]
 ## 🎨 Visualization (Optional)
 
 ```python
+import sys
+from pathlib import Path
+
+# Add vault root to sys.path (Obsidian runner)
+vault_root = Path.cwd()
+if str(vault_root) not in sys.path:
+    sys.path.append(str(vault_root))
+
 from DSA_Utils.utils import draw_sort
 
 nums = [4, 2, 2, 8, 3, 3, 1]

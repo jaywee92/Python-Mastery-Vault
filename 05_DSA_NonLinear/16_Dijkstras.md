@@ -370,6 +370,14 @@ prev[v] = u  # When updating dist[v]
 ## 🎨 Visualization (Optional)
 
 ```python
+import sys
+from pathlib import Path
+
+# Add vault root to sys.path (Obsidian runner)
+vault_root = Path.cwd()
+if str(vault_root) not in sys.path:
+    sys.path.append(str(vault_root))
+
 from DSA_Utils.utils import draw_graph
 
 graph = {
