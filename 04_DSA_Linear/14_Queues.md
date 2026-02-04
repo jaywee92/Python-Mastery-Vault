@@ -429,37 +429,3 @@ Congratulations! You now understand:
 [[00_Index|← Back to Index]] | [[13_Stacks|← Previous]]
 
 *Queue it up! 🎫*
----
-
-## 🎨 Visualization (Optional)
-
-```python
-import sys
-import site
-from pathlib import Path
-
-# Ensure user site-packages are visible (Obsidian runner)
-user_site = site.getusersitepackages()
-if user_site and user_site not in sys.path:
-    sys.path.append(user_site)
-
-# Add vault root to sys.path (Obsidian runner)
-# Tries current dir, parent dirs, then a known vault path fallback.
-added = False
-for p in [Path.cwd(), *Path.cwd().parents]:
-    if (p / "DSA_Utils").exists():
-        sys.path.append(str(p))
-        added = True
-        break
-
-if not added:
-    fallback = Path("/Users/jochenwahl/Library/CloudStorage/OneDrive-Persönlich/z99_Obsidian_Vault/Codex_Coding")
-    if fallback.exists():
-        sys.path.append(str(fallback))
-
-from DSA_Utils.utils import draw_queue
-
-queue = ["A", "B", "C", "D"]
-draw_queue(queue, title="Queue (front on left)")
-
-```

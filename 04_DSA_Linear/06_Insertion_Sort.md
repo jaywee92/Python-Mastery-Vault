@@ -464,38 +464,3 @@ def binary_insertion_sort(arr):
 [[00_Index|← Back to Index]] | [[05_Selection_Sort|← Previous]] | [[07_Quick_Sort|Next: Quick Sort →]]
 
 *Insert and sort like a card player! 🃏*
----
-
-## 🎨 Visualization (Optional)
-
-```python
-import sys
-import site
-from pathlib import Path
-
-# Ensure user site-packages are visible (Obsidian runner)
-user_site = site.getusersitepackages()
-if user_site and user_site not in sys.path:
-    sys.path.append(user_site)
-
-# Add vault root to sys.path (Obsidian runner)
-# Tries current dir, parent dirs, then a known vault path fallback.
-added = False
-for p in [Path.cwd(), *Path.cwd().parents]:
-    if (p / "DSA_Utils").exists():
-        sys.path.append(str(p))
-        added = True
-        break
-
-if not added:
-    fallback = Path("/Users/jochenwahl/Library/CloudStorage/OneDrive-Persönlich/z99_Obsidian_Vault/Codex_Coding")
-    if fallback.exists():
-        sys.path.append(str(fallback))
-
-from DSA_Utils.utils import draw_sort
-
-values = [9, 5, 1, 4, 3]
-# Start state for insertion sort
-draw_sort(values, title="Insertion Sort (start)")
-
-```

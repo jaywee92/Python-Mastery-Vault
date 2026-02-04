@@ -316,38 +316,3 @@ for name, score in students:
 [[00_Index|← Back to Index]] | [[04_Bubble_Sort|← Previous]] | [[06_Insertion_Sort|Next: Insertion Sort →]]
 
 *Select the smallest, build the sorted! 🎯*
----
-
-## 🎨 Visualization (Optional)
-
-```python
-import sys
-import site
-from pathlib import Path
-
-# Ensure user site-packages are visible (Obsidian runner)
-user_site = site.getusersitepackages()
-if user_site and user_site not in sys.path:
-    sys.path.append(user_site)
-
-# Add vault root to sys.path (Obsidian runner)
-# Tries current dir, parent dirs, then a known vault path fallback.
-added = False
-for p in [Path.cwd(), *Path.cwd().parents]:
-    if (p / "DSA_Utils").exists():
-        sys.path.append(str(p))
-        added = True
-        break
-
-if not added:
-    fallback = Path("/Users/jochenwahl/Library/CloudStorage/OneDrive-Persönlich/z99_Obsidian_Vault/Codex_Coding")
-    if fallback.exists():
-        sys.path.append(str(fallback))
-
-from DSA_Utils.utils import draw_sort
-
-values = [64, 25, 12, 22, 11]
-# Start state for selection sort
-draw_sort(values, title="Selection Sort (start)")
-
-```
