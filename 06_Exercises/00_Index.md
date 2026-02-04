@@ -7,7 +7,7 @@ type: index
 
 # 🏋️ Python Exercises
 
-> **Total Exercises:** 376
+> **Total Exercises:** 414
 > **Structure:** Core Levels → Topic Packs → Challenges
 > **Goal:** Clear progression + focused practice by topic and difficulty
 
@@ -17,16 +17,16 @@ type: index
 
 | Level | Topic | Exercises | Difficulty |
 |-------|-------|-----------|------------|
-| [[01_Core_Levels/01_Level_Variables_Print\|Level 1]] | Variables & Print | 16 | ⭐ |
-| [[01_Core_Levels/02_Level_Strings\|Level 2]] | Strings | 16 | ⭐ |
-| [[01_Core_Levels/03_Level_Lists\|Level 3]] | Lists | 16 | ⭐⭐ |
-| [[01_Core_Levels/04_Level_Conditionals\|Level 4]] | Conditionals | 16 | ⭐⭐ |
-| [[01_Core_Levels/05_Level_Loops\|Level 5]] | Loops | 16 | ⭐⭐ |
-| [[01_Core_Levels/06_Level_Functions\|Level 6]] | Functions | 16 | ⭐⭐⭐ |
-| [[01_Core_Levels/07_Level_Tuples_Sets\|Level 7]] | Tuples & Sets | 16 | ⭐⭐⭐ |
-| [[01_Core_Levels/08_Level_Dictionaries\|Level 8]] | Dictionaries | 16 | ⭐⭐⭐ |
-| [[01_Core_Levels/09_Level_Comprehensions\|Level 9]] | Comprehensions & Lambda | 16 | ⭐⭐⭐⭐ |
-| [[01_Core_Levels/10_Level_OOP_Exceptions\|Level 10]] | OOP & Exceptions | 17 | ⭐⭐⭐⭐ |
+| [[01_Core_Levels/01_Level_Variables_Print\|Level 1]] | Variables & Print | 15 | ⭐ |
+| [[01_Core_Levels/02_Level_Strings\|Level 2]] | Strings | 15 | ⭐ |
+| [[01_Core_Levels/03_Level_Lists\|Level 3]] | Lists | 15 | ⭐⭐ |
+| [[01_Core_Levels/04_Level_Conditionals\|Level 4]] | Conditionals | 15 | ⭐⭐ |
+| [[01_Core_Levels/05_Level_Loops\|Level 5]] | Loops | 15 | ⭐⭐ |
+| [[01_Core_Levels/06_Level_Functions\|Level 6]] | Functions | 15 | ⭐⭐⭐ |
+| [[01_Core_Levels/07_Level_Tuples_Sets\|Level 7]] | Tuples & Sets | 15 | ⭐⭐⭐ |
+| [[01_Core_Levels/08_Level_Dictionaries\|Level 8]] | Dictionaries | 15 | ⭐⭐⭐ |
+| [[01_Core_Levels/09_Level_Comprehensions\|Level 9]] | Comprehensions & Lambda | 15 | ⭐⭐⭐⭐ |
+| [[01_Core_Levels/10_Level_OOP_Exceptions\|Level 10]] | OOP & Exceptions | 15 | ⭐⭐⭐⭐ |
 
 ---
 
@@ -42,8 +42,8 @@ type: index
 | [[02_Topic_Packs/06_Dicts_Sets_Pack\|Dicts & Sets Pack]] | Counting & membership | 14 |
 | [[02_Topic_Packs/07_Files_Exceptions_Pack\|Files & Exceptions Pack]] | I/O & errors | 10 |
 | [[02_Topic_Packs/08_OOP_Pack\|OOP Pack]] | Classes & objects | 10 |
-| [[02_Topic_Packs/09_DSA_Linear_Pack\|DSA Linear Pack]] | Arrays, stacks, queues | 20 |
-| [[02_Topic_Packs/10_DSA_Nonlinear_Pack\|DSA Non-Linear Pack]] | Hash, trees, graphs | 20 |
+| [[02_Topic_Packs/09_DSA_Linear_Pack\|DSA Linear Pack]] | Arrays, stacks, queues | 15 |
+| [[02_Topic_Packs/10_DSA_Nonlinear_Pack\|DSA Non-Linear Pack]] | Hash, trees, graphs | 10 |
 | [[02_Topic_Packs/11_Trees_Graphs_Easy_Pack\|Trees & Graphs Easy Pack]] | Tree/graph basics | 6 |
 
 ---
@@ -52,11 +52,14 @@ type: index
 
 | Challenge | Topic | Problems | Difficulty |
 |-----------|-------|----------|------------|
-| [[03_Challenges/11_Challenge_Arrays\|Arrays]] | Two Pointers, Sliding Window | 11 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
-| [[03_Challenges/12_Challenge_Strings\|Strings]] | Pattern Matching, Parsing | 11 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
-| [[03_Challenges/13_Challenge_Math\|Math & Logic]] | Bit Manipulation, Number Theory | 11 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
-| [[03_Challenges/14_Challenge_DataStructures\|Data Structures]] | Stacks, Trees, LinkedLists | 11 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
-| [[03_Challenges/15_Challenge_Algorithms\|Algorithms]] | DP, Backtracking, Greedy | 12 | ⭐⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/11_Challenge_Arrays\|Arrays]] | Two Pointers, Sliding Window | 10 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/12_Challenge_Strings\|Strings]] | Pattern Matching, Parsing | 10 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/13_Challenge_Math\|Math & Logic]] | Bit Manipulation, Number Theory | 10 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/14_Challenge_DataStructures\|Data Structures]] | Stacks, Trees, LinkedLists | 10 | ⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/15_Challenge_Algorithms\|Algorithms]] | DP, Backtracking, Greedy | 10 | ⭐⭐⭐⭐-⭐⭐⭐⭐⭐ |
+| [[03_Challenges/16_Challenge_Blind75\|Blind 75 Essentials]] | Core interview patterns | 25 | ⭐⭐⭐-⭐⭐⭐⭐ |
+| [[03_Challenges/17_Challenge_Patterns\|Algorithm Patterns Master]] | Patterns practice | 20 | ⭐⭐⭐-⭐⭐⭐⭐ |
+| [[03_Challenges/18_Challenge_NeetCode\|NeetCode 150 Essentials]] | Advanced patterns | 25 | ⭐⭐⭐⭐-⭐⭐⭐⭐⭐ |
 | [[03_Challenges/22_Interview_Classics_Easy\|Interview Classics (Easy)]] | Classic interview set | 5 | ⭐⭐-⭐⭐⭐ |
 
 ---
@@ -148,8 +151,11 @@ Each exercise includes **3 levels of hints**:
 - [ ] Math & Logic (10 problems)
 - [ ] Data Structures (10 problems)
 - [ ] Algorithms (10 problems)
+- [ ] Blind 75 Essentials (25 problems)
+- [ ] Algorithm Patterns Master (20 problems)
+- [ ] NeetCode 150 Essentials (25 problems)
 
-**Total Progress:** ___/376 exercises completed
+**Total Progress:** ___/414 exercises completed
 
 ---
 
