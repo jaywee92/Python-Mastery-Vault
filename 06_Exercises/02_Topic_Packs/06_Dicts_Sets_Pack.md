@@ -158,8 +158,8 @@ b = {"y": 9, "z": 3}
 
 ---
 
-## D1: Count Words
-**Task:** Solve the task below.
+## D6: Count Words
+**Task:** Count word frequency in the string `text`.
 
 ```python
 text='a a b'
@@ -188,8 +188,8 @@ text='a a b'
 
 ---
 
-## D3: Get with Default
-**Task:** Solve the task below.
+## D7: Get with Default
+**Task:** Get key `'b'` from the dict, returning 0 if missing.
 
 ```python
 d={'a':1}
@@ -215,8 +215,8 @@ d={'a':1}
 
 ---
 
-## D4: Merge Dicts
-**Task:** Solve the task below.
+## D8: Merge Dicts
+**Task:** Merge `a` and `b` (values from `b` override).
 
 ```python
 a={'x':1}
@@ -244,8 +244,8 @@ b={'x':2,'y':3}
 
 ---
 
-## D5: Keys List
-**Task:** Solve the task below.
+## D9: Keys List
+**Task:** Return a list of the dictionary keys.
 
 ```python
 d={'a':1,'b':2}
@@ -271,8 +271,8 @@ d={'a':1,'b':2}
 
 ---
 
-## D6: Values List
-**Task:** Solve the task below.
+## D10: Values List
+**Task:** Return a list of the dictionary values.
 
 ```python
 d={'a':1,'b':2}
@@ -298,8 +298,8 @@ d={'a':1,'b':2}
 
 ---
 
-## D7: Invert Dict
-**Task:** Solve the task below.
+## D11: Invert Dict
+**Task:** Swap keys and values in the dictionary.
 
 ```python
 d={'a':1,'b':2}
@@ -326,8 +326,8 @@ d={'a':1,'b':2}
 
 ---
 
-## D8: Set Intersection
-**Task:** Solve the task below.
+## D12: Set Intersection
+**Task:** Return the intersection of sets `a` and `b`.
 
 ```python
 a={1,2,3}
@@ -355,8 +355,8 @@ b={2,3,4}
 
 ---
 
-## D9: Set Union
-**Task:** Solve the task below.
+## D13: Set Union
+**Task:** Return the union of sets `a` and `b`.
 
 ```python
 a={1,2}
@@ -384,8 +384,8 @@ b={2,3}
 
 ---
 
-## D10: Membership
-**Task:** Solve the task below.
+## D14: Membership
+**Task:** Check if the key exists in the dict and print True/False.
 
 ```python
 d={'x':1}

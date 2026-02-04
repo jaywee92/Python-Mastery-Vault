@@ -152,8 +152,8 @@ text = "racecar"
 
 ---
 
-## S1: Reverse String
-**Task:** Solve the task below.
+## S6: Reverse String
+**Task:** Reverse the string `text`.
 
 ```python
 text = "hello"
@@ -179,8 +179,8 @@ text = "hello"
 
 ---
 
-## S2: First 3 Chars
-**Task:** Solve the task below.
+## S7: First 3 Chars
+**Task:** Return the first 3 characters of `text`.
 
 ```python
 text = "python"
@@ -206,8 +206,8 @@ text = "python"
 
 ---
 
-## S3: Last 3 Chars
-**Task:** Solve the task below.
+## S8: Last 3 Chars
+**Task:** Return the last 3 characters of `text`.
 
 ```python
 text = "python"
@@ -233,8 +233,8 @@ text = "python"
 
 ---
 
-## S4: Uppercase
-**Task:** Solve the task below.
+## S9: Uppercase
+**Task:** Convert `text` to uppercase.
 
 ```python
 text = "hi"
@@ -260,8 +260,8 @@ text = "hi"
 
 ---
 
-## S5: Replace Space
-**Task:** Solve the task below.
+## S10: Replace Space
+**Task:** Replace spaces with hyphens in `text`.
 
 ```python
 text = "a b"
@@ -287,8 +287,8 @@ text = "a b"
 
 ---
 
-## S6: Count a
-**Task:** Solve the task below.
+## S11: Count a
+**Task:** Count how many times `'a'` appears in `text`.
 
 ```python
 text = "banana"
@@ -314,8 +314,8 @@ text = "banana"
 
 ---
 
-## S7: Starts With
-**Task:** Solve the task below.
+## S12: Starts With
+**Task:** Check if `text` starts with `'py'`.
 
 ```python
 text = "python"
@@ -341,8 +341,8 @@ text = "python"
 
 ---
 
-## S8: Ends With
-**Task:** Solve the task below.
+## S13: Ends With
+**Task:** Check if `text` ends with `'on'`.
 
 ```python
 text = "python"
@@ -368,8 +368,8 @@ text = "python"
 
 ---
 
-## S9: Split Words
-**Task:** Solve the task below.
+## S14: Split Words
+**Task:** Split `text` into a list of words.
 
 ```python
 text = "hi there"
@@ -395,8 +395,8 @@ text = "hi there"
 
 ---
 
-## S10: Join Words
-**Task:** Solve the task below.
+## S15: Join Words
+**Task:** Join `words` into a single string separated by spaces.
 
 ```python
 words = ['hi','there']

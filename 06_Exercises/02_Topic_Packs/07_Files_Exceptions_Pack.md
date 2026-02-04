@@ -8,7 +8,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE1: Write File
-**Task:** Solve the task below.
+**Task:** Write the text `'hello'` to `file.txt`.
 
 ```python
 # write 'hello' to file.txt
@@ -34,7 +34,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE2: Read File
-**Task:** Solve the task below.
+**Task:** Read `file.txt` and print its contents.
 
 ```python
 # read file.txt
@@ -60,7 +60,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE3: Append File
-**Task:** Solve the task below.
+**Task:** Append `'world'` to `file.txt`.
 
 ```python
 # append 'world'
@@ -86,7 +86,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE4: Read Lines
-**Task:** Solve the task below.
+**Task:** Read all lines from `file.txt` and print them.
 
 ```python
 # print lines
@@ -113,7 +113,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE5: Try/Except
-**Task:** Solve the task below.
+**Task:** Handle division by zero using try/except.
 
 ```python
 # handle division by zero
@@ -141,7 +141,7 @@ Notebook: [[07_Files_Exceptions_Pack.ipynb]]
 ---
 
 ## FE6: Convert with try
-**Task:** Solve the task below.
+**Task:** Convert `s` to int and handle `ValueError`.
 
 ```python
 s='x'
@@ -171,7 +171,7 @@ s='x'
 ---
 
 ## FE7: Finally
-**Task:** Solve the task below.
+**Task:** Use try/finally so it always prints `Done`.
 
 ```python
 # always print Done
@@ -199,7 +199,7 @@ s='x'
 ---
 
 ## FE8: Raise Error
-**Task:** Solve the task below.
+**Task:** Raise a `ValueError` when input is invalid.
 
 ```python
 # raise ValueError
@@ -224,7 +224,7 @@ s='x'
 ---
 
 ## FE9: Check File Exists
-**Task:** Solve the task below.
+**Task:** Check if a file exists and print True/False.
 
 ```python
 # print True if file exists
@@ -250,7 +250,7 @@ s='x'
 ---
 
 ## FE10: Read JSON
-**Task:** Solve the task below.
+**Task:** Read `data.json` and print the data.
 
 ```python
 # read data.json

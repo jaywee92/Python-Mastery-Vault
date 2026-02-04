@@ -488,50 +488,45 @@ def is_symmetric(root: TreeNode) -> bool:
 
 ---
 
-## C10: Validate Binary Search Tree ⭐⭐⭐
-**Task:** Check if a binary tree is a valid BST.
+## C10: Balanced Parentheses ⭐⭐
+**Task:** Return `True` if the brackets are balanced and properly nested.
 
 ```python
-def is_valid_bst(root: TreeNode) -> bool:
+def is_balanced(s: str) -> bool:
     pass
 
-# Example:
-#     2
-#    / \
-#   1   3
-# Output: True
-#
-#     5
-#    / \
-#   1   4
-#      / \
-#     3   6
-# Output: False (4 > 5 is wrong)
+# Examples:
+# is_balanced("()[]{}") -> True
+# is_balanced("(]") -> False
+# is_balanced("([{}])") -> True
 ```
 
 > [!hint]- 💡 Hint 1 (Low)
-> Each node must be within a valid range.
+> Use a stack to store opening brackets.
 
 > [!hint]- 💡 Hint 2 (Mid)
-> Pass min and max bounds down the tree.
+> When you see a closing bracket, check the top of the stack.
 
 > [!hint]- 💡 Hint 3 (High)
-> Left child: update max bound. Right child: update min bound.
+> Use a dict for matching pairs: `{')':'(', ']':'[', '}':'{'}`.
 
 > [!success]- Solution
 > ```python
-> def is_valid_bst(root: TreeNode) -> bool:
->     def validate(node, min_val, max_val):
->         if not node:
->             return True
->         if node.val <= min_val or node.val >= max_val:
->             return False
->         return (validate(node.left, min_val, node.val) and
->                 validate(node.right, node.val, max_val))
->
->     return validate(root, float('-inf'), float('inf'))
+> def is_balanced(s: str) -> bool:
+>     stack = []
+>     pairs = {')': '(', ']': '[', '}': '{'}
+>     for ch in s:
+>         if ch in "([{":
+>             stack.append(ch)
+>         elif ch in pairs:
+>             if not stack or stack[-1] != pairs[ch]:
+>                 return False
+>             stack.pop()
+>     return len(stack) == 0
+> 
+> print(is_balanced("()[]{}"))  # True
+> print(is_balanced("(]"))      # False
 > ```
-> **Complexity:** O(n) time, O(h) space
 
 ---
 

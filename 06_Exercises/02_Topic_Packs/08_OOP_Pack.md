@@ -8,7 +8,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O1: Create Class
-**Task:** Solve the task below.
+**Task:** Create a class `Dog` with a `name` attribute and create one instance.
 
 ```python
 # create class Dog with name
@@ -38,7 +38,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O2: Method
-**Task:** Solve the task below.
+**Task:** Add a `greet()` method that returns a message using the name.
 
 ```python
 # class with greet method
@@ -70,7 +70,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O3: Update Attribute
-**Task:** Solve the task below.
+**Task:** Change an object's attribute (e.g., age) and print the new value.
 
 ```python
 # change age
@@ -101,7 +101,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O4: Class Counter
-**Task:** Solve the task below.
+**Task:** Use a class variable to count how many objects were created.
 
 ```python
 # count instances
@@ -133,7 +133,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O5: Inheritance
-**Task:** Solve the task below.
+**Task:** Create `Dog` that inherits from `Animal` and uses a method from it.
 
 ```python
 # Dog inherits Animal
@@ -163,7 +163,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O6: String Representation
-**Task:** Solve the task below.
+**Task:** Implement `__str__` to return a friendly description.
 
 ```python
 # __str__
@@ -194,7 +194,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O7: Default Value
-**Task:** Solve the task below.
+**Task:** Use a default value in `__init__` when no argument is provided.
 
 ```python
 # default parameter
@@ -222,7 +222,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O8: Static Method
-**Task:** Solve the task below.
+**Task:** Create a static method `is_even(n)` that returns True/False.
 
 ```python
 # is_even
@@ -251,7 +251,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O9: Property
-**Task:** Solve the task below.
+**Task:** Create a `full_name` property from `first` and `last`.
 
 ```python
 # full_name
@@ -284,7 +284,7 @@ Notebook: [[08_OOP_Pack.ipynb]]
 ---
 
 ## O10: Simple Dataclass
-**Task:** Solve the task below.
+**Task:** Use `@dataclass` to define a `Point` with `x` and `y`.
 
 ```python
 # Point

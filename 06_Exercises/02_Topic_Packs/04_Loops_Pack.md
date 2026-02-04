@@ -8,7 +8,7 @@ Notebook: [[04_Loops_Pack.ipynb]]
 ---
 
 ## Lo1: Print 1 to 5
-**Task:** Solve the task below.
+**Task:** Print the numbers 1 to 5 (inclusive).
 
 ```python
 # expected: 1 2 3 4 5
@@ -34,7 +34,7 @@ Notebook: [[04_Loops_Pack.ipynb]]
 ---
 
 ## Lo2: Sum 1 to 5
-**Task:** Solve the task below.
+**Task:** Compute the sum of numbers 1 to 5 and print it.
 
 ```python
 # expected: 15
@@ -62,7 +62,7 @@ Notebook: [[04_Loops_Pack.ipynb]]
 ---
 
 ## Lo3: Count Evens
-**Task:** Solve the task below.
+**Task:** Count how many even numbers are in the list and print the count.
 
 ```python
 nums = [1,2,3,4]
@@ -93,7 +93,7 @@ nums = [1,2,3,4]
 ---
 
 ## Lo4: Find First > 10
-**Task:** Solve the task below.
+**Task:** Find and print the first number greater than 10.
 
 ```python
 nums = [3, 8, 12, 5]
@@ -123,7 +123,7 @@ nums = [3, 8, 12, 5]
 ---
 
 ## Lo5: While Countdown
-**Task:** Solve the task below.
+**Task:** Use a while loop to print `3 2 1`.
 
 ```python
 # expected: 3 2 1
@@ -151,7 +151,7 @@ nums = [3, 8, 12, 5]
 ---
 
 ## Lo6: Loop over String
-**Task:** Solve the task below.
+**Task:** Print each character of `text` on the same line separated by spaces.
 
 ```python
 text = "abc"
@@ -179,7 +179,7 @@ text = "abc"
 ---
 
 ## Lo7: Skip Negatives
-**Task:** Solve the task below.
+**Task:** Print only the non-negative numbers in the list.
 
 ```python
 nums = [1,-2,3]
@@ -209,7 +209,7 @@ nums = [1,-2,3]
 ---
 
 ## Lo8: Nested Loop
-**Task:** Solve the task below.
+**Task:** Print all pairs (i, j) for i in [1,2] and j in [1,2].
 
 ```python
 # expected: pairs (1,1),(1,2),(2,1),(2,2)
@@ -236,7 +236,7 @@ nums = [1,-2,3]
 ---
 
 ## Lo9: Build Squares
-**Task:** Solve the task below.
+**Task:** Build a list of squares for 1..3 and print it.
 
 ```python
 # expected: [1,4,9]
@@ -264,7 +264,7 @@ nums = [1,-2,3]
 ---
 
 ## Lo10: Stop at 7
-**Task:** Solve the task below.
+**Task:** Print numbers until you reach 7, then stop.
 
 ```python
 nums = [3,5,7,9]

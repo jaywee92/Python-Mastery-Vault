@@ -166,8 +166,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F1: Add Function
-**Task:** Solve the task below.
+## F6: Add Function
+**Task:** Write `add(a, b)` that returns the sum.
 
 ```python
 # expected: add(2,3) -> 5
@@ -193,8 +193,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F2: Is Even
-**Task:** Solve the task below.
+## F7: Is Even
+**Task:** Write `is_even(n)` that returns True if `n` is even.
 
 ```python
 # expected: True for 4
@@ -220,8 +220,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F3: Square
-**Task:** Solve the task below.
+## F8: Square
+**Task:** Write `square(n)` that returns `n * n`.
 
 ```python
 # expected: 9 for 3
@@ -247,8 +247,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F4: Max of Two
-**Task:** Solve the task below.
+## F9: Max of Two
+**Task:** Write `max_of_two(a, b)` that returns the larger value.
 
 ```python
 # expected: 7
@@ -274,8 +274,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F5: Greet
-**Task:** Solve the task below.
+## F10: Greet
+**Task:** Write `greet(name)` that returns `"Hi, <name>"`.
 
 ```python
 # expected: Hi, Ana
@@ -301,8 +301,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F6: Default Param
-**Task:** Solve the task below.
+## F11: Default Param
+**Task:** Write `greet(name='friend')` and return a greeting.
 
 ```python
 # expected: Hi, friend
@@ -328,8 +328,8 @@ calc(6, 2, "*")  # 12
 
 ---
 
-## F7: Sum List
-**Task:** Solve the task below.
+## F12: Sum List
+**Task:** Write a function that returns the sum of a list.
 
 ```python
 nums=[1,2,3]
@@ -359,35 +359,41 @@ nums=[1,2,3]
 
 ---
 
-## F8: Count Letter
-**Task:** Solve the task below.
+## F13: Count Digits
+**Task:** Count how many digits are in a string.
 
 ```python
-# expected: 2
+text = "a1b2c3"
+# expected: 3
 ```
 
 > [!hint]- 💡 Hint 1 (Low)
-> Write a simple function with return.
+> Check each character in the string.
 
 > [!hint]- 💡 Hint 2 (Mid)
-> Use parameters and call the function.
+> Use `ch.isdigit()` to test digits.
 
 > [!hint]- 💡 Hint 3 (High)
-> Keep it short and readable.
+> Increment a counter for each digit.
 
 > [!success]- ✅ Solution
 > ```python
-> def count_letter(text, ch):
->     return text.count(ch)
-> print(count_letter('hello','l'))
+> def count_digits(text):
+>     count = 0
+>     for ch in text:
+>         if ch.isdigit():
+>             count += 1
+>     return count
+> 
+> print(count_digits("a1b2c3"))  # 3
 > ```
 
 ---
 
 ---
 
-## F9: Palindrome
-**Task:** Solve the task below.
+## F14: Palindrome
+**Task:** Return True if the string reads the same backward.
 
 ```python
 # expected: True
@@ -413,8 +419,8 @@ nums=[1,2,3]
 
 ---
 
-## F10: Absolute
-**Task:** Solve the task below.
+## F15: Absolute
+**Task:** Return the absolute value of a number.
 
 ```python
 # expected: 3

@@ -165,8 +165,8 @@ words = ["hi", "tree", "sun", "cloud"]
 
 ---
 
-## B1: Add Two Numbers
-**Task:** Solve the task below.
+## R6: Add Two Numbers
+**Task:** Add `a` and `b` and print the result.
 
 ```python
 a = 3
@@ -194,8 +194,8 @@ b = 4
 
 ---
 
-## B2: Minutes to Seconds
-**Task:** Solve the task below.
+## R7: Minutes to Seconds
+**Task:** Convert `minutes` to seconds and print the result.
 
 ```python
 minutes = 5
@@ -221,8 +221,8 @@ minutes = 5
 
 ---
 
-## B3: Square a Number
-**Task:** Solve the task below.
+## R8: Square a Number
+**Task:** Square `n` and print the result.
 
 ```python
 n = 7
@@ -248,8 +248,8 @@ n = 7
 
 ---
 
-## B4: Average of Three
-**Task:** Solve the task below.
+## R9: Average of Three
+**Task:** Compute the average of `a`, `b`, and `c` and print it.
 
 ```python
 a, b, c = 3, 6, 9
@@ -275,8 +275,8 @@ a, b, c = 3, 6, 9
 
 ---
 
-## B5: Celsius to Fahrenheit
-**Task:** Solve the task below.
+## R10: Celsius to Fahrenheit
+**Task:** Convert `c` Celsius to Fahrenheit and print the result.
 
 ```python
 c = 0
@@ -302,8 +302,8 @@ c = 0
 
 ---
 
-## B6: Swap Variables
-**Task:** Solve the task below.
+## R11: Swap Variables
+**Task:** Swap `x` and `y` and print them.
 
 ```python
 x = 1
@@ -332,8 +332,8 @@ y = 2
 
 ---
 
-## B7: Area of Rectangle
-**Task:** Solve the task below.
+## R12: Area of Rectangle
+**Task:** Compute the area using `w` and `h` and print it.
 
 ```python
 w = 4
@@ -361,8 +361,8 @@ h = 5
 
 ---
 
-## B8: Remainder
-**Task:** Solve the task below.
+## R13: Remainder
+**Task:** Compute `a % b` and print the remainder.
 
 ```python
 a = 17
@@ -390,8 +390,8 @@ b = 5
 
 ---
 
-## B9: Simple Interest
-**Task:** Solve the task below.
+## R14: Simple Interest
+**Task:** Compute simple interest using `p * r * t` and print it.
 
 ```python
 p = 1000
@@ -421,8 +421,8 @@ t = 2
 
 ---
 
-## B10: Convert to Int
-**Task:** Solve the task below.
+## R15: Convert to Int
+**Task:** Convert string `s` to an integer and print it.
 
 ```python
 s = "42"

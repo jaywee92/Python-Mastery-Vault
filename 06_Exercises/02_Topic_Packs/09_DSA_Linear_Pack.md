@@ -36,6 +36,7 @@ nums = [1, 2, 3, 4, 5, 6]
 
 ---
 
+
 ## L2: Stack Reverse
 **Task:** Use a stack (list) to reverse a string.
 
@@ -70,6 +71,7 @@ text = "python"
 ---
 
 ---
+
 
 ## L3: Queue Processing
 **Task:** Process names in a queue in the correct order.
@@ -107,6 +109,7 @@ queue = deque(["Ana", "Ben", "Cara"])
 
 ---
 
+
 ## L4: Linear Search
 **Task:** Return the index of `target` or `-1` if not found.
 
@@ -138,6 +141,7 @@ nums = [10, 20, 30, 40]
 ---
 
 ---
+
 
 ## L5: Binary Search (Sorted List)
 **Task:** Return the index of `target` in a sorted list or `-1`.
@@ -175,6 +179,7 @@ nums = [1, 3, 5, 7, 9]
 
 ---
 
+
 ## L6: Remove Duplicates (Sorted)
 **Task:** Given a **sorted** list, return a new list with duplicates removed.
 
@@ -209,6 +214,7 @@ nums = [1, 1, 2, 2, 3, 3, 3]
 ---
 
 ---
+
 
 ## L7: Valid Parentheses (Stack)
 **Task:** Check if a string has valid parentheses `()`.
@@ -248,6 +254,7 @@ s = "(()"     # False
 
 ---
 
+
 ## L8: Queue From Two Stacks
 **Task:** Implement a queue using two stacks.
 
@@ -286,6 +293,7 @@ s = "(()"     # False
 ---
 
 ---
+
 
 ## L9: Merge Two Sorted Lists
 **Task:** Merge two sorted lists into one sorted list.
@@ -328,6 +336,7 @@ b = [2, 4, 6]
 
 ---
 
+
 ## L10: Find the Missing Number
 **Task:** Given numbers from `0..n` with one missing, return the missing number.
 
@@ -357,78 +366,9 @@ nums = [3, 0, 1]
 
 ---
 
-## DL1: Linear Search
-**Task:** Solve the task below.
 
-```python
-nums=[3,5,7]
-# find 5 -> 1
-```
-
-> [!hint]- 💡 Hint 1 (Low)
-> Use basic linear data structures.
-
-> [!hint]- 💡 Hint 2 (Mid)
-> Keep it O(n) where possible.
-
-> [!hint]- 💡 Hint 3 (High)
-> Use simple loops or helpers.
-
-> [!success]- ✅ Solution
-> ```python
-> nums=[3,5,7]
-> idx = -1
-> for i,v in enumerate(nums):
->     if v==5:
->         idx=i
->         break
-> print(idx)
-> ```
-
----
-
----
-
-## DL2: Binary Search
-**Task:** Solve the task below.
-
-```python
-nums=[1,3,5,7,9]
-# find 7 -> 3
-```
-
-> [!hint]- 💡 Hint 1 (Low)
-> Use basic linear data structures.
-
-> [!hint]- 💡 Hint 2 (Mid)
-> Keep it O(n) where possible.
-
-> [!hint]- 💡 Hint 3 (High)
-> Use simple loops or helpers.
-
-> [!success]- ✅ Solution
-> ```python
-> nums=[1,3,5,7,9]
-> left,right=0,len(nums)-1
-> idx=-1
-> while left<=right:
->     mid=(left+right)//2
->     if nums[mid]==7:
->         idx=mid
->         break
->     if nums[mid]<7:
->         left=mid+1
->     else:
->         right=mid-1
-> print(idx)
-> ```
-
----
-
----
-
-## DL3: Stack Push/Pop
-**Task:** Solve the task below.
+## L11: Stack Push/Pop
+**Task:** Push values to a stack, then pop one value.
 
 ```python
 # stack with 1,2 then pop
@@ -455,8 +395,10 @@ nums=[1,3,5,7,9]
 
 ---
 
-## DL4: Queue Dequeue
-**Task:** Solve the task below.
+
+
+## L12: Queue Dequeue
+**Task:** Dequeue the first item and print it.
 
 ```python
 # dequeue first
@@ -482,103 +424,10 @@ nums=[1,3,5,7,9]
 
 ---
 
-## DL5: Reverse List
-**Task:** Solve the task below.
 
-```python
-nums=[1,2,3]
-# expected: [3,2,1]
-```
 
-> [!hint]- 💡 Hint 1 (Low)
-> Use basic linear data structures.
-
-> [!hint]- 💡 Hint 2 (Mid)
-> Keep it O(n) where possible.
-
-> [!hint]- 💡 Hint 3 (High)
-> Use simple loops or helpers.
-
-> [!success]- ✅ Solution
-> ```python
-> nums=[1,2,3]
-> print(list(reversed(nums)))
-> ```
-
----
-
----
-
-## DL6: Remove Duplicates
-**Task:** Solve the task below.
-
-```python
-nums=[1,1,2]
-# expected: [1,2]
-```
-
-> [!hint]- 💡 Hint 1 (Low)
-> Use basic linear data structures.
-
-> [!hint]- 💡 Hint 2 (Mid)
-> Keep it O(n) where possible.
-
-> [!hint]- 💡 Hint 3 (High)
-> Use simple loops or helpers.
-
-> [!success]- ✅ Solution
-> ```python
-> nums=[1,1,2]
-> res=[]
-> for n in nums:
->     if n not in res:
->         res.append(n)
-> print(res)
-> ```
-
----
-
----
-
-## DL7: Merge Sorted
-**Task:** Solve the task below.
-
-```python
-a=[1,3]
-b=[2,4]
-# expected: [1,2,3,4]
-```
-
-> [!hint]- 💡 Hint 1 (Low)
-> Use basic linear data structures.
-
-> [!hint]- 💡 Hint 2 (Mid)
-> Keep it O(n) where possible.
-
-> [!hint]- 💡 Hint 3 (High)
-> Use simple loops or helpers.
-
-> [!success]- ✅ Solution
-> ```python
-> a=[1,3]
-> b=[2,4]
-> res=[]
-> i=j=0
-> while i<len(a) and j<len(b):
->     if a[i]<=b[j]:
->         res.append(a[i]); i+=1
->     else:
->         res.append(b[j]); j+=1
-> res.extend(a[i:]); res.extend(b[j:])
-> print(res)
-> ```
-
----
-
----
-
-## DL8: Max Subarray Sum
-**Task:** Solve the task below.
+## L13: Max Subarray Sum
+**Task:** Find the maximum subarray sum (Kadane).
 
 ```python
 nums=[-2,1,-3,4]
@@ -608,8 +457,10 @@ nums=[-2,1,-3,4]
 
 ---
 
-## DL9: Move Zeros
-**Task:** Solve the task below.
+
+
+## L14: Move Zeros
+**Task:** Move all zeros to the end while keeping order.
 
 ```python
 nums=[0,1,0,3,12]
@@ -637,8 +488,10 @@ nums=[0,1,0,3,12]
 
 ---
 
-## DL10: Two Sum
-**Task:** Solve the task below.
+
+
+## L15: Two Sum
+**Task:** Return indices of two numbers that add to target.
 
 ```python
 nums=[2,7,11,15]

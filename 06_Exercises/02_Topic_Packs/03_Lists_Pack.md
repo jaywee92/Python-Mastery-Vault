@@ -162,8 +162,8 @@ nums = [3, -1, 4, -2, 5]
 
 ---
 
-## L1: Append Item
-**Task:** Solve the task below.
+## L6: Append Item
+**Task:** Append `3` to `items` and print the list.
 
 ```python
 items = [1, 2]
@@ -190,8 +190,8 @@ items = [1, 2]
 
 ---
 
-## L2: Insert Item
-**Task:** Solve the task below.
+## L7: Insert Item
+**Task:** Insert `2` at index 1 in `items` and print the list.
 
 ```python
 items = [1, 3]
@@ -218,8 +218,8 @@ items = [1, 3]
 
 ---
 
-## L3: Remove Item
-**Task:** Solve the task below.
+## L8: Remove Item
+**Task:** Remove the value `2` from `items` and print the list.
 
 ```python
 items = [1, 2, 3]
@@ -246,8 +246,8 @@ items = [1, 2, 3]
 
 ---
 
-## L4: Pop Last
-**Task:** Solve the task below.
+## L9: Pop Last
+**Task:** Pop the last item and print the popped value.
 
 ```python
 items = [1, 2, 3]
@@ -273,8 +273,8 @@ items = [1, 2, 3]
 
 ---
 
-## L5: Slice Middle
-**Task:** Solve the task below.
+## L10: Slice Middle
+**Task:** Slice out the middle items to get `[2, 3]`.
 
 ```python
 items = [1, 2, 3, 4]
@@ -300,8 +300,8 @@ items = [1, 2, 3, 4]
 
 ---
 
-## L6: Length
-**Task:** Solve the task below.
+## L11: Length
+**Task:** Get the length of `items` and print it.
 
 ```python
 items = [1, 2, 3]
@@ -327,8 +327,8 @@ items = [1, 2, 3]
 
 ---
 
-## L7: Sum
-**Task:** Solve the task below.
+## L12: Sum
+**Task:** Sum all numbers in `items` and print the result.
 
 ```python
 items = [1, 2, 3]
@@ -354,8 +354,8 @@ items = [1, 2, 3]
 
 ---
 
-## L8: Max
-**Task:** Solve the task below.
+## L13: Max
+**Task:** Find the maximum value in `items` and print it.
 
 ```python
 items = [5, 2, 9]
@@ -381,8 +381,8 @@ items = [5, 2, 9]
 
 ---
 
-## L9: Min
-**Task:** Solve the task below.
+## L14: Min
+**Task:** Find the minimum value in `items` and print it.
 
 ```python
 items = [5, 2, 9]
@@ -408,8 +408,8 @@ items = [5, 2, 9]
 
 ---
 
-## L10: Sort
-**Task:** Solve the task below.
+## L15: Sort
+**Task:** Sort `items` in ascending order and print the list.
 
 ```python
 items = [3, 1, 2]
