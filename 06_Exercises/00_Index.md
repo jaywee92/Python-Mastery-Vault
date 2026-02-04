@@ -84,6 +84,12 @@ type: index
 ├─────────────────────────────────────────────────────────┤
 │ Arrays → Strings → Math → Data Structures → Algorithms │
 └─────────────────────────────────────────────────────────┘
+                          ↓
+┌─────────────────────────────────────────────────────────┐
+│              ADVANCED CHALLENGE PACKS                   │
+├─────────────────────────────────────────────────────────┤
+│ Blind 75 → Patterns → NeetCode 150                      │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -172,6 +178,13 @@ Week 3: Levels 9-10 (Advanced)
 ```
 Week 4: Arrays + Strings + Math
 Week 5: Data Structures + Algorithms
+```
+
+### Week 6-8: Advanced Challenge Packs
+```
+Week 6: Blind 75 Essentials
+Week 7: Algorithm Patterns Master
+Week 8: NeetCode 150 Essentials
 ```
 
 ---
