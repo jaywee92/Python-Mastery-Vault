@@ -10,6 +10,48 @@ tags: ["BST", "Search Trees", "Self-Balancing Trees", "Binary Trees"]
 
 # Binary Search Trees (BST)
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║     🔍 BINARY SEARCH TREE - ORDERED BINARY TREE                ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   BST PROPERTY: Left < Node < Right (recursively!)             ║
+║                                                                 ║
+║                        [10]                                     ║
+║                       /    \                                    ║
+║                      /      \                                   ║
+║                    [5]      [15]                                ║
+║                   /  \      /   \                               ║
+║                 [3]  [7]  [12] [20]                             ║
+║                                                                 ║
+║   VALIDATION:                                                  ║
+║   Left subtree:  3, 5, 7  ─ all < 10  ✓                        ║
+║   Right subtree: 12, 15, 20 ─ all > 10 ✓                       ║
+║                                                                 ║
+║   SEARCH PROCESS (looking for 7):                              ║
+║   Start [10]: 7 < 10, go LEFT                                  ║
+║   Visit [5]:  7 > 5,  go RIGHT                                 ║
+║   Visit [7]:  FOUND! ← Direct path (no searching all nodes)    ║
+║                                                                 ║
+║   INORDER TRAVERSAL: 3 → 5 → 7 → 10 → 12 → 15 → 20 (SORTED!)  ║
+║                                                                 ║
+║   OPERATIONS:                                                  ║
+║   • SEARCH: O(log n) average, O(n) worst (unbalanced)          ║
+║   • INSERT: Compare and place recursively                      ║
+║   • DELETE: Replace with successor/predecessor                 ║
+║   • MIN/MAX: Go LEFT/RIGHT until leaf                          ║
+║                                                                 ║
+║   💡 KEY: Order enables fast searching via elimination!        ║
+║   💡 UNBALANCED: Can degrade to linked list → O(n) search     ║
+║   💡 FIX: Use AVL Trees or Red-Black Trees for balance         ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Table of Contents
 1. [Fundamentals](#fundamentals)
 2. [BST Property](#bst-property)

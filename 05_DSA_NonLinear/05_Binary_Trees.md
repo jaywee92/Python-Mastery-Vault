@@ -15,6 +15,44 @@ space_complexity: O(n)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║      🌲 BINARY TREE - AT MOST 2 CHILDREN PER NODE              ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║                        [10]        ← ROOT                       ║
+║                       /    \                                    ║
+║                    LEFT    RIGHT                                ║
+║                     /        \                                  ║
+║                   [5]        [15]  ← Each node: 2 pointers      ║
+║                  /   \      /   \                               ║
+║                [3]   [7]  [12] [20] ← Leaves (no children)      ║
+║                                                                 ║
+║   NODE STRUCTURE:                                              ║
+║   ┌─────────────────┐                                          ║
+║   │   value: 10     │                                          ║
+║   │   left  ─────→ [5]                                         ║
+║   │   right ─────→ [15]                                        ║
+║   └─────────────────┘                                          ║
+║                                                                 ║
+║   TYPES OF BINARY TREES:                                       ║
+║   • FULL: Each node has 0 or 2 children                        ║
+║   • COMPLETE: All levels filled, last level left-aligned       ║
+║   • PERFECT: All levels completely filled                      ║
+║   • BALANCED: Left & right subtrees similar height             ║
+║   • DEGENERATE: Like a linked list (all left or all right)     ║
+║                                                                 ║
+║   💡 KEY: Each node has AT MOST 2 children                     ║
+║   💡 STRUCTURE: Left child < Node < Right child (for BST)      ║
+║   💡 TRAVERSALS: Inorder, Preorder, Postorder, Level-order     ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Concept
 
 ```

@@ -14,6 +14,40 @@ type: topic
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║      📋 LISTEN-KOMPREHENSION - KOMPAKTE LISTEN ERSTELLUNG     ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   TRADITIONELLE METHODE:                                      ║
+║   ┌──────────────────────────┐                               ║
+║   │ nums = []                │                               ║
+║   │ for i in range(5):       │   4 Zeilen Code              ║
+║   │     nums.append(i * 2)   │   3 Indentations             ║
+║   │ # [0, 2, 4, 6, 8]        │                               ║
+║   └──────────────────────────┘                               ║
+║                                                               ║
+║   KOMPREHENSION (Pythonisch):                                 ║
+║   ┌──────────────────────────────────────┐                   ║
+║   │ nums = [i * 2 for i in range(5)]     │  1 Zeile!         ║
+║   │ # [0, 2, 4, 6, 8]                    │                   ║
+║   └──────────────────────────────────────┘                   ║
+║                                                               ║
+║   Struktur: [AUSDRUCK  for  VARIABLE  in  ITERABLE]          ║
+║             │TRANSFORM│    │ELEMENT│      │QUELLE│           ║
+║                                                               ║
+║   Erweiterte Komprehension mit Filter:                        ║
+║   [i for i in range(10) if i % 2 == 0]                       ║
+║   # [0, 2, 4, 6, 8]  ← Nur gerade Nummern                   ║
+║                                                               ║
+║   💡 Schneller, lesbarer und Pythonischer als Schleifen      ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📋 List Comprehension
 
 ### Basic Syntax

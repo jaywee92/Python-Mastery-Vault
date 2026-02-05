@@ -22,6 +22,39 @@ complexity: O(n log n)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║         ⚡ QUICK SORT - DIVIDE & CONQUER LIGHTNING            ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  [8, 3, 1, 7, 0, 10, 2]                                      ║
+║         Wähle Pivot (z.B. last = 2)                          ║
+║                                                               ║
+║   Partition Phase:                                           ║
+║   Kleine auf links → Pivot → Große auf rechts                ║
+║                                                               ║
+║   [1, 0]  < 2  [2]  > 2  [8, 3, 10, 7]                       ║
+║    unsorted  ✓ (correct place)  unsorted                      ║
+║                                                               ║
+║   Rekursiv links sortieren:                                 ║
+║   [1, 0] → Pivot=0 → [0] [1]                                ║
+║                                                               ║
+║   Rekursiv rechts sortieren:                                ║
+║   [8,3,10,7] → Pivot=7 → [3] [7] [8,10]                    ║
+║                                                               ║
+║   Zusammensetzen:                                           ║
+║   [0, 1, 2, 3, 7, 8, 10] ✓ SORTIERT!                        ║
+║                                                               ║
+║  💡 Teile mit Pivot, rekursiv beide Seiten                   ║
+║  💡 O(n log n) im Durchschnitt ⚡ sehr schnell               ║
+║  💡 In der Praxis oft der schnellste Sortierer             ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📊 Complexity
 
 | Case | Time | Space | Why |

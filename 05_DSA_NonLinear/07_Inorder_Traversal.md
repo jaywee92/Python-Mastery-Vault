@@ -9,6 +9,49 @@ last_updated: "2025-01-30"
 
 # Inorder Traversal: Left → Root → Right
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║       🟢 INORDER TRAVERSAL: LEFT → ROOT → RIGHT                ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   PROCESS ORDER: 1. LEFT subtree   2. ROOT   3. RIGHT subtree   ║
+║                                                                 ║
+║                        [5]                                      ║
+║                       /   \                                     ║
+║                      /     \                                    ║
+║                    [3]     [7]                                  ║
+║                   /  \    /  \                                  ║
+║                  /    \  /    \                                 ║
+║                [1]    [4][6]  [8]                               ║
+║                                                                 ║
+║   STEP-BY-STEP TRACE:                                          ║
+║   Step 1: Go LEFT to [3]         → Go LEFT to [1]              ║
+║   Step 2: Visit [1]              → Output: [1]                 ║
+║   Step 3: Backtrack to [3]                                     ║
+║   Step 4: Visit [3]              → Output: [1, 3]              ║
+║   Step 5: Go RIGHT to [4]                                      ║
+║   Step 6: Visit [4]              → Output: [1, 3, 4]           ║
+║   Step 7: Backtrack to [5]                                     ║
+║   Step 8: Visit [5]              → Output: [1, 3, 4, 5]        ║
+║   Step 9: Go RIGHT to [7]        → Go LEFT to [6]              ║
+║   Step 10: Visit [6]             → Output: [1, 3, 4, 5, 6]     ║
+║   Step 11: Visit [7]             → Output: [1, 3, 4, 5, 6, 7]  ║
+║   Step 12: Visit [8]             → Output: [1, 3, 4, 5, 6, 7, 8]║
+║                                                                 ║
+║   FINAL SEQUENCE: [1] [3] [4] [5] [6] [7] [8] ← SORTED!        ║
+║                                                                 ║
+║   💡 MNEMONIC: Visit LEFT side, then MIDDLE, then RIGHT        ║
+║   💡 BST MAGIC: Produces SORTED output (ascending order!)      ║
+║   💡 USE: Find min/max, sort BST, validate BST                 ║
+║   💡 PATTERN: Left Child → Node → Right Child                  ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Overview
 
 **Inorder traversal** visits nodes in the sequence: **Left subtree first**, then **Root**, then **Right subtree**. It's the second of three fundamental depth-first search (DFS) strategies for binary trees.

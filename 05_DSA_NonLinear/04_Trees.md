@@ -15,6 +15,42 @@ space_complexity: O(n)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║           🌳 TREE - HIERARCHICAL ORGANIZATION                  ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║                        [ROOT]  ← Top node                       ║
+║                       /   |   \                                 ║
+║                      /    |    \                                ║
+║                    [A]    [B]   [C] ← Children (next level)     ║
+║                   / \      |      / \                           ║
+║                  /   \     |     /   \                          ║
+║               [D]   [E]   [F]  [G]   [H] ← More children       ║
+║                                                                 ║
+║   TERMINOLOGY:                                                 ║
+║   • ROOT: Node with no parent (top)                            ║
+║   • PARENT: Node with children                                 ║
+║   • CHILD: Node with a parent                                  ║
+║   • SIBLING: Nodes with same parent ([A], [B], [C] siblings)  ║
+║   • LEAF: Node with no children ([D], [E], [F], [G], [H])     ║
+║   • HEIGHT: Distance from node to lowest leaf                  ║
+║   • DEPTH: Distance from root to node                          ║
+║                                                                 ║
+║   KEY PROPERTY: Each node has exactly ONE parent               ║
+║   (except ROOT which has no parent)                            ║
+║                                                                 ║
+║   💡 NO CYCLES: You can't return to same node by               ║
+║                 following parent links                         ║
+║   💡 CONNECTED: Every node reachable from ROOT                 ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Concept
 
 ```

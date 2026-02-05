@@ -9,6 +9,45 @@ last_updated: "2025-01-30"
 
 # Preorder Traversal: Root → Left → Right
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║      🔴 PREORDER TRAVERSAL: ROOT → LEFT → RIGHT                ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   PROCESS ORDER: 1. ROOT   2. LEFT subtree   3. RIGHT subtree   ║
+║                                                                 ║
+║                        [1] ← Visit 1st                          ║
+║                       /   \                                     ║
+║                      /     \                                    ║
+║                    [2]     [3]                                  ║
+║                   /  \                                          ║
+║                  /    \                                         ║
+║                [4]    [5]                                       ║
+║                                                                 ║
+║   STEP-BY-STEP TRACE:                                          ║
+║   Step 1: Visit ROOT [1]         → Output: [1]                 ║
+║   Step 2: Go LEFT to [2]         → Output: [1, 2]              ║
+║   Step 3: Go LEFT to [4]         → Output: [1, 2, 4]           ║
+║   Step 4: [4] has no children    → Backtrack                   ║
+║   Step 5: Go RIGHT to [5]        → Output: [1, 2, 4, 5]        ║
+║   Step 6: [5] has no children    → Backtrack to [2]            ║
+║   Step 7: [2] done, backtrack to [1]                           ║
+║   Step 8: Go RIGHT to [3]        → Output: [1, 2, 4, 5, 3]     ║
+║                                                                 ║
+║   FINAL SEQUENCE: [1] [2] [4] [5] [3]                          ║
+║                                                                 ║
+║   💡 MNEMONIC: Process ROOT first, then explore LEFT,          ║
+║                then explore RIGHT (like reading NLR)           ║
+║   💡 USE: Copying trees, prefix notation, clone structures     ║
+║   💡 PATTERN: Node → Left Child → Right Child                  ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Overview
 
 **Preorder traversal** visits nodes in the sequence: **Root first**, then **Left subtree**, then **Right subtree**. It's one of the three fundamental depth-first search (DFS) strategies for binary trees.

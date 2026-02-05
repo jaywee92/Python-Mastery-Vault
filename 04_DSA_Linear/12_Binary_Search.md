@@ -18,8 +18,44 @@ complexity: O(log n)
 
 **Binary Search** finds an element in a **sorted array** by repeatedly dividing the search space in half.
 
-**Requirement:** Array MUST be sorted!  
+**Requirement:** Array MUST be sorted!
 **Speed:** O(log n) - incredibly fast!
+
+---
+
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║         🎯 BINARY SEARCH - HALBE & HERRSCHE                  ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  Suche 7 in: [1, 3, 5, 7, 9, 11, 13, 15, 17]                ║
+║             (Muss sortiert sein!)                            ║
+║                                                               ║
+║  Step 1: Check Mitte (Index 4)                              ║
+║  [1, 3, 5, 7, 9, 11, 13, 15, 17]                            ║
+║                 ↑ = 9                                        ║
+║              9 > 7 → Suche LINKS                             ║
+║                                                               ║
+║  Step 2: Check Mitte von links (Index 1)                    ║
+║  [1, 3, 5, 7]                                               ║
+║     ↑ = 3                                                   ║
+║     3 < 7 → Suche RECHTS                                     ║
+║                                                               ║
+║  Step 3: Check Mitte (Index 2-3)                            ║
+║  [5, 7]                                                     ║
+║        ↑ = 7                                                ║
+║        7 == 7 → ✓ GEFUNDEN!                                 ║
+║                                                               ║
+║  Nur 3 Schritte statt 9!                                     ║
+║                                                               ║
+║  💡 Teile in zwei Hälften                                     ║
+║  💡 Geh in die Hälfte wo Ziel ist                            ║
+║  💡 O(log n) = exponentiell schneller!                       ║
+║  💡 WICHTIG: Nur auf sortierte Arrays!                       ║
+╚═══════════════════════════════════════════════════════════════╝
+```
 
 ---
 

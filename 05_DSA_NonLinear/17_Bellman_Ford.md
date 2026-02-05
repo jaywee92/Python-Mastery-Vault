@@ -15,6 +15,65 @@ space_complexity: O(V)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║    🔔 BELLMAN-FORD - HANDLES NEGATIVE WEIGHTS & CYCLES        ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   STRATEGY: Relax EVERY edge V-1 times                          ║
+║            (progressively finds longer but cheaper paths)       ║
+║                                                                 ║
+║   EDGE RELAXATION: For edge A→B (weight w):                    ║
+║   If dist[A] + w < dist[B]:                                    ║
+║     dist[B] = dist[A] + w  ← Found better path!                ║
+║                                                                 ║
+║   EXAMPLE (with negative weights):                             ║
+║      [A]──1──[B]                                               ║
+║       │       │                                                ║
+║       │4      │-3  ← Negative edge!                            ║
+║       │       │                                                ║
+║      [C]                                                       ║
+║                                                                 ║
+║   ITERATION 1:                                                 ║
+║   dist[A]=0, dist[B]=1, dist[C]=4                             ║
+║                                                                 ║
+║   ITERATION 2:                                                 ║
+║   dist[A]=0                                                    ║
+║   dist[B] = min(1, 0+1) = 1  (via A)                          ║
+║   dist[C] = min(4, 1-3) = -2 ← Found better via negative!     ║
+║                                                                 ║
+║   NEGATIVE CYCLE DETECTION:                                    ║
+║   If after V-1 iterations, an edge can still be relaxed:      ║
+║   → NEGATIVE CYCLE FOUND!                                      ║
+║                                                                 ║
+║   CYCLE EXAMPLE:                                               ║
+║      [A]──1─→[B]                                               ║
+║      ↑        │                                                ║
+║      │        │-3                                              ║
+║      └────────[C]                                              ║
+║                                                                 ║
+║   Path A→B→C→A = 1 - 3 - 1 = -3 (loses value! CYCLE!)        ║
+║   Can infinitely reduce by looping: BAD!                       ║
+║                                                                 ║
+║   COMPARISON WITH DIJKSTRA'S:                                  ║
+║                                                                 ║
+║   Bellman-Ford:                Dijkstra's:                     ║
+║   ✓ Negative weights           ✗ No negative weights          ║
+║   ✓ Detects negative cycles    ✗ Can't detect cycles          ║
+║   ✗ Slower: O(VE)              ✓ Faster: O((V+E)log V)        ║
+║   ✓ Works with any weights     ✓ Needs non-negative            ║
+║                                                                 ║
+║   💡 USE: Arbitrage detection, currency exchange               ║
+║   💡 TRICK: Run Bellman-Ford to find if negative cycle exists ║
+║   💡 TIME: O(V*E) - slower but more flexible                  ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Algorithm
 
 ```

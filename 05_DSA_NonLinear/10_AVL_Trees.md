@@ -10,6 +10,52 @@ tags: ["AVL Trees", "Self-Balancing", "Rotations", "Height-Balanced Trees"]
 
 # AVL Trees (Self-Balancing Binary Search Trees)
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║     ⚖️ AVL TREE - SELF-BALANCING BINARY SEARCH TREE            ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   BALANCE FACTOR = height(LEFT) - height(RIGHT)                ║
+║   Valid range: -1, 0, +1 (if not → REBALANCE!)                 ║
+║                                                                 ║
+║   UNBALANCED BST (Bad!):  BALANCED AVL TREE (Good!):           ║
+║        [5]                       [10]                          ║
+║         / \                      /   \                          ║
+║       [3] [20]                [5]   [15]    ← Balanced          ║
+║            / \                / \   / \                         ║
+║          [15][25]           [3][7][12][20]  ← All BF: -1,0,1   ║
+║          Height: O(n)           Height: O(log n)               ║
+║                                                                 ║
+║   BALANCE FACTORS:                                             ║
+║          [10]  BF = 1 (1 - 0)                                  ║
+║         /    \                                                 ║
+║       [5]    [15]  BF = 0    BF = 0                            ║
+║      / \     / \                                               ║
+║    [3][7]  [12][20]  All leaf BF = 0                           ║
+║                                                                 ║
+║   ROTATIONS (Automatic Rebalancing):                           ║
+║   • Right Rotation: Fix left-heavy imbalance                   ║
+║   • Left Rotation: Fix right-heavy imbalance                   ║
+║   • Left-Right Rotation: Two steps for complex cases           ║
+║   • Right-Left Rotation: Two steps for complex cases           ║
+║                                                                 ║
+║   INSERTION EXAMPLE:                                           ║
+║   Insert 25 into balanced tree                                 ║
+║   → Imbalance detected                                         ║
+║   → Automatic rotation applied                                 ║
+║   → Tree rebalanced                                            ║
+║                                                                 ║
+║   💡 GUARANTEE: O(log n) ALL operations (search, insert, del)  ║
+║   💡 COST: Extra work during insert/delete for rebalancing     ║
+║   💡 STRICTER: More balanced than Red-Black Trees              ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Table of Contents
 1. [Fundamentals](#fundamentals)
 2. [Balance Factor Concept](#balance-factor-concept)

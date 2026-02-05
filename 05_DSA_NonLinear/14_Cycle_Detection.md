@@ -14,6 +14,56 @@ time_complexity: O(V + E)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║        🔄 CYCLE DETECTION - DETECTING LOOPS IN GRAPHS          ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   CYCLE: Path that returns to starting vertex                  ║
+║                                                                 ║
+║   UNDIRECTED GRAPH WITH CYCLE:                                 ║
+║       [A]────[B]                                               ║
+║        │      │                                                ║
+║        │      │  ← Can go A→B→D→C→A (CYCLE!)                 ║
+║       [C]────[D]                                               ║
+║                                                                 ║
+║   UNDIRECTED GRAPH - NO CYCLE (Tree):                          ║
+║       [A]────[B]                                               ║
+║        │                                                       ║
+║        │      ← Only one path: A→C or A→B (Tree)             ║
+║       [C]    [D] (disconnected)                                ║
+║                                                                 ║
+║   DIRECTED GRAPH WITH CYCLE:                                   ║
+║       [A]──→[B]                                                ║
+║        ↑     │                                                 ║
+║        │     ↓  ← Can go A→B→C→A (CYCLE!)                    ║
+║       [D]←──[C]                                                ║
+║                                                                 ║
+║   DETECTION STRATEGY:                                          ║
+║   1. Visit each vertex with DFS                                ║
+║   2. Track visited vertices (3 states):                        ║
+║      • WHITE (unvisited)                                       ║
+║      • GRAY (currently visiting)                               ║
+║      • BLACK (finished visiting)                               ║
+║   3. If find edge to GRAY vertex → CYCLE DETECTED!            ║
+║                                                                 ║
+║   REAL-WORLD USE:                                              ║
+║   • Deadlock detection in OS                                   ║
+║   • Dependency cycles in projects                              ║
+║   • Validate acyclic graphs (DAGs)                             ║
+║   • Topological sorting needs acyclic graph                    ║
+║                                                                 ║
+║   💡 DFS based detection works for both directed/undirected   ║
+║   💡 Union-Find (Disjoint Set) also detects cycles            ║
+║   💡 COMPLEXITY: O(V + E)                                      ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 What is a Cycle?
 
 ```

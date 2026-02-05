@@ -9,6 +9,49 @@ last_updated: "2025-01-30"
 
 # Postorder Traversal: Left → Right → Root
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║      🔵 POSTORDER TRAVERSAL: LEFT → RIGHT → ROOT               ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   PROCESS ORDER: 1. LEFT subtree   2. RIGHT subtree   3. ROOT   ║
+║                                                                 ║
+║                        [1] ← Visit LAST                         ║
+║                       /   \                                     ║
+║                      /     \                                    ║
+║                    [2]     [3]                                  ║
+║                   /  \                                          ║
+║                  /    \                                         ║
+║                [4]    [5]                                       ║
+║                                                                 ║
+║   STEP-BY-STEP TRACE:                                          ║
+║   Step 1: Go LEFT to [2]         → Go LEFT to [4]              ║
+║   Step 2: Visit [4] (leaf)       → Output: [4]                 ║
+║   Step 3: Backtrack to [2]                                     ║
+║   Step 4: Go RIGHT to [5]                                      ║
+║   Step 5: Visit [5] (leaf)       → Output: [4, 5]              ║
+║   Step 6: Now visit [2]          → Output: [4, 5, 2]           ║
+║   Step 7: Backtrack to [1]                                     ║
+║   Step 8: Go RIGHT to [3]                                      ║
+║   Step 9: Visit [3] (leaf)       → Output: [4, 5, 2, 3]        ║
+║   Step 10: Finally visit [1]     → Output: [4, 5, 2, 3, 1]     ║
+║                                                                 ║
+║   FINAL SEQUENCE: [4] [5] [2] [3] [1]                          ║
+║                 (Children visited before parent!)              ║
+║                                                                 ║
+║   💡 MNEMONIC: Process children FIRST, parent LAST             ║
+║   💡 USE: Delete trees, free memory, postfix notation          ║
+║   💡 PATTERN: Left Child → Right Child → Node                  ║
+║   💡 WHY: Must clean up children before parent                 ║
+║            (deletion needs this order)                         ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## Overview
 
 **Postorder traversal** visits nodes in the sequence: **Left subtree first**, then **Right subtree**, then **Root last**. It's the third of three fundamental depth-first search (DFS) strategies for binary trees.

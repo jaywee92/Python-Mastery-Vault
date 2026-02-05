@@ -14,6 +14,53 @@ difficulty: beginner-intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║     📦 IMPORTS - EXTERNE MODULE & FUNKTIONEN LADEN             ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   Visualisierung des Imports:                                 ║
+║                                                               ║
+║   ┌────────────────────────────┐                              ║
+║   │ Pythons Standardbibliothek │                              ║
+║   │ (os, sys, json, random,..) │                              ║
+║   └────────────────┬───────────┘                              ║
+║                    │                                           ║
+║                    │ import os                                 ║
+║                    ↓                                           ║
+║   ┌─────────────────────────────┐                             ║
+║   │ Dein Python-Programm        │                             ║
+║   │ • os.getcwd()               │  ← Jetzt verfügbar!        ║
+║   │ • os.listdir()              │                             ║
+║   └─────────────────────────────┘                             ║
+║                                                               ║
+║   Verschiedene Import-Stile:                                   ║
+║                                                               ║
+║   import os                   ← Ganzes Modul laden            ║
+║   os.getcwd()                   (Zugriff: os.function)        ║
+║                                                               ║
+║   from os import getcwd       ← Nur spezifische Funktion      ║
+║   getcwd()                      (Direkter Zugriff!)           ║
+║                                                               ║
+║   import os as operating_sys  ← Mit Alias                     ║
+║   operating_sys.getcwd()        (Kurznamen verwenden)         ║
+║                                                               ║
+║   Praktische Module:                                           ║
+║   • os    → Dateisystem & Umgebung                            ║
+║   • sys   → Python-Interpreter & System                       ║
+║   • json  → JSON Daten                                        ║
+║   • time  → Zeit & Timing                                     ║
+║   • random → Zufallszahlen                                    ║
+║   • math  → Mathematische Funktionen                          ║
+║                                                               ║
+║   💡 Imports = Werkzeugkasten erweitern für mehr Funktion      ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📦 Essential Standard Library Imports
 
 ### 1. `os` - Operating System Interaction

@@ -26,6 +26,37 @@ Start from first person, check each one until you find your friend!
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║      🔍 LINEAR SEARCH - GEHE EINFACH ALLE DURCH              ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  Suche 7 in: [3, 1, 4, 1, 5, 9, 7, 6]                        ║
+║                                                               ║
+║  Index 0: 3 ≠ 7 ✗                                            ║
+║  Index 1: 1 ≠ 7 ✗                                            ║
+║  Index 2: 4 ≠ 7 ✗                                            ║
+║  Index 3: 1 ≠ 7 ✗                                            ║
+║  Index 4: 5 ≠ 7 ✗                                            ║
+║  Index 5: 9 ≠ 7 ✗                                            ║
+║  Index 6: 7 = 7 ✓ GEFUNDEN!                                 ║
+║                                                               ║
+║  Wie Kartenspieler die Hand durchsuchen:                     ║
+║  [3][1][4][1][5][9][7][6]                                   ║
+║   ↓  ↓  ↓  ↓  ↓  ↓  ✓                                       ║
+║   Nacheinander prüfen bis Match                              ║
+║                                                               ║
+║  💡 Linear = nacheinander checken                             ║
+║  💡 O(n) - könnte bis zum Ende gehen                         ║
+║  💡 Works on unsorted arrays!                                ║
+║  💡 Einfach aber langsam für große Arrays                    ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📊 Complexity
 
 | Case | Time | Space | Why |

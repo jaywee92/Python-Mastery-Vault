@@ -25,6 +25,39 @@ A **queue** is a linear data structure that follows **FIFO** (First-In-First-Out
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║             👥 QUEUES - FIFO WARTESCHLANGE                    ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  Wie eine Warteschlange im Geschäft:                         ║
+║                                                               ║
+║  enqueue(1)  enqueue(2)  enqueue(3)  dequeue()  dequeue()    ║
+║      │           │            │          │          │         ║
+║   Front       Front         Front      Front      Front        ║
+║   [1] Back    [1,2] Back    [1,2,3]   [2,3]→1   [3]→2        ║
+║               Back          Back      Back       Back          ║
+║                                                               ║
+║  Person 1 erst rein → Person 1 erst raus                      ║
+║  FIFO = First-In-First-Out                                    ║
+║                                                               ║
+║  Warteschlange Analogy:                                       ║
+║  [Alice]-[Bob]-[Charlie]  (Warten auf Service)                ║
+║    ↑                ↑                                         ║
+║  Front           Back (Neue Leute hier)                       ║
+║   (Nächster)                                                  ║
+║                                                               ║
+║  💡 enqueue = zur hinten anstellen                            ║
+║  💡 dequeue = vorne bedienen und rausgehen                    ║
+║  💡 Alle Ops sind O(1)                                        ║
+║  💡 Real-world: Druckerwarteschlange, Task Scheduling       ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📊 Operations & Complexity
 
 | Operation | Time | Description |

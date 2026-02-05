@@ -13,6 +13,47 @@ difficulty: intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║           🕸️ GRAPH - VERTICES & EDGES NETWORK                 ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   GRAPH COMPONENTS:                                            ║
+║   • VERTICES (V): Nodes - circles in diagram                   ║
+║   • EDGES (E): Connections - lines between nodes               ║
+║                                                                 ║
+║   EXAMPLE GRAPH:                                               ║
+║                  [A]                                           ║
+║                 / | \                                          ║
+║                /  |  \  ← Edges connecting vertices            ║
+║              [B] [C] [D]                                       ║
+║              |         |                                       ║
+║              └────[E]──┘                                       ║
+║                                                                 ║
+║   TYPES OF GRAPHS:                                             ║
+║                                                                 ║
+║   UNDIRECTED:  A─B   (edge goes both ways)                    ║
+║   DIRECTED:    A→B   (edge has direction)                     ║
+║   WEIGHTED:    A─5→B (edge has a value/cost)                  ║
+║   CYCLIC:      A→B→C→A (contains cycles/loops)               ║
+║   ACYCLIC:     A→B→C (no cycles - tree-like)                 ║
+║                                                                 ║
+║   REPRESENTATIONS:                                             ║
+║   • ADJACENCY LIST (efficient for sparse graphs)               ║
+║   • ADJACENCY MATRIX (efficient for dense graphs)              ║
+║                                                                 ║
+║   💡 REAL-WORLD: Social networks, maps, web pages,            ║
+║                  flight routes, molecules, circuits            ║
+║   💡 KEY: Flexible structure, can model complex relationships  ║
+║   💡 TRAVERSAL: DFS, BFS, Dijkstra's, A*                      ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 What is a Graph?
 
 ```

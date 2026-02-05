@@ -28,6 +28,37 @@ Imagine sorting playing cards in your hand:
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║        🃏 INSERTION SORT - BUILD SORTED HAND                 ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  Wie beim Kartenspielen:                                      ║
+║                                                               ║
+║  Start: [5, 2, 4, 6, 1, 3]                                  ║
+║                                                               ║
+║  Step 1: Erste Karte = sortiert                             ║
+║  [5] | [2, 4, 6, 1, 3]                                      ║
+║                                                               ║
+║  Step 2: Nimm 2, finde Position, verschiebe                 ║
+║  [2, 5] | [4, 6, 1, 3]  ← 2 < 5, insert before             ║
+║      ↑                                                       ║
+║  Step 3: Nimm 4, finde Position                             ║
+║  [2, 4, 5] | [6, 1, 3]  ← between 2 and 5                  ║
+║        ↑                                                     ║
+║  Step 4: Nimm 1, verschiebe alles rechts                    ║
+║  [1, 2, 4, 5, 6] | [3]  ← before all!                      ║
+║  ↑                                                           ║
+║  💡 Nimm aus unsortiert, insert in sortiert                 ║
+║  💡 Verschiebe größere Elemente rechts                      ║
+║  💡 O(n) wenn schon sortiert, O(n²) worst case             ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 📊 Complexity
 
 | Case | Time | Space | Why |

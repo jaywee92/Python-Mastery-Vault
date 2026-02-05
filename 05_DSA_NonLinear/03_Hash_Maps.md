@@ -15,6 +15,43 @@ space_complexity: O(n)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║           🗺️ HASH MAP - KEY ↔ VALUE ASSOCIATIONS              ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   INPUT:  "color" ──→ hash() ──→ index 4 ──→ "blue"            ║
+║                                                                 ║
+║   HASH MAP STRUCTURE:                                           ║
+║   ┌──────────────────────────────────────────────────────┐     ║
+║   │ Index │  KEY        │  VALUE                         │     ║
+║   ├───────┼─────────────┼────────────────────────────────┤     ║
+║   │   0   │  empty      │                                │     ║
+║   │   1   │  "age"      │  25                            │     ║
+║   │   2   │  "city"     │  "Berlin"                      │     ║
+║   │   3   │  "scores"   │  [95, 87, 92]                  │     ║
+║   │   4   │  "color"    │  "blue"  ← Found via hash!     │     ║
+║   │   5   │  "name"     │  "Alice"                       │     ║
+║   └──────────────────────────────────────────────────────┘     ║
+║                                                                 ║
+║   KEY RELATIONSHIPS:                                            ║
+║   hash("name") ────┐                                           ║
+║                   →[Alice] ← VALUE                             ║
+║   hash("age") ─────┐                                           ║
+║                   →[25]    ← VALUE                             ║
+║                                                                 ║
+║   💡 EACH KEY maps to exactly ONE value                        ║
+║   💡 NO DUPLICATE KEYS allowed                                 ║
+║   💡 VALUES can be duplicated                                  ║
+║   💡 O(1) lookup by key - INSTANT access!                      ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Concept
 
 ```

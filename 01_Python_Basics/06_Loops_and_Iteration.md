@@ -14,6 +14,40 @@ type: topic
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║       🔄 SCHLEIFEN - WIEDERHOLUNG VON CODE BLÖCKEN            ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   FOR LOOP (Bekannte Anzahl von Wiederholungen):             ║
+║   ┌─────────────────────────────┐                            ║
+║   │  for i in [0,1,2,3,4]:      │                            ║
+║   │      print(i)   ← Läuft 5x  │   i: 0 → 1 → 2 → 3 → 4   ║
+║   └─────────────────────────────┘                            ║
+║                                                               ║
+║   WHILE LOOP (Unbekannte Anzahl):                            ║
+║   ┌────────────────────────────┐                             ║
+║   │  while x < 5:              │   x=0: Läuft?        JA ◎   ║
+║   │      print(x)  ← Läuft bis │   x=1: Läuft?        JA ◎   ║
+║   │      x += 1    Bedingung    │   x=2: Läuft?        JA ◎   ║
+║   │                 falsch      │   x=5: Läuft?        NEIN ◌ ║
+║   └────────────────────────────┘                             ║
+║                                                               ║
+║   BREAK (Sofort beenden):          CONTINUE (überspringen):  ║
+║   for i in range(5):                for i in range(5):       ║
+║       if i == 3:                        if i == 2:           ║
+║           break  ← Schleifen-Ende       continue ← Nächst.   ║
+║       print(i)                         print(i)              ║
+║   # Output: 0, 1, 2               # Output: 0, 1, 3, 4      ║
+║                                                               ║
+║   💡 for = zählbare Elemente, while = Bedingung              ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🔄 While Loop
 
 ```python

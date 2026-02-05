@@ -14,6 +14,51 @@ difficulty: beginner-intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║     ⚠️ AUSNAHMEN - FEHLER ABFANGEN & BEHANDELN                ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   OHNE FEHLERBEHANDLUNG (Programm stürzt ab):                 ║
+║   ┌────────────────────────────────────┐                      ║
+║   │ print(10 / 0)                      │  ← Fehler!          ║
+║   │ ZeroDivisionError: ...             │  ← Programm CRASH!  ║
+║   │ Restlicher Code läuft nie          │                     ║
+║   └────────────────────────────────────┘                      ║
+║                                                               ║
+║   MIT FEHLERBEHANDLUNG (try/except):                           ║
+║   ┌─────────────────────────────────────────┐                 ║
+║   │ try:                                    │                 ║
+║   │     result = 10 / 0  ← Fehler!          │  JETZT          ║
+║   │ except ZeroDivisionError:               │  ABGEFANGEN!    ║
+║   │     print("Kann nicht durch 0 teilen!") │                 ║
+║   │     result = 0                          │                 ║
+║   │ print(result)  ← Programm läuft weiter! │                 ║
+║   └─────────────────────────────────────────┘                 ║
+║                                                               ║
+║   Fehler-Struktur:                                             ║
+║   try:              ← Versuch Code                             ║
+║       risiko_code()                                            ║
+║   except TypeError: ← Spezifischer Fehler                     ║
+║       handle_type_error()                                      ║
+║   except ValueError:                                           ║
+║       handle_value_error()                                     ║
+║   except Exception:  ← Alle anderen Fehler                    ║
+║       handle_any_error()                                       ║
+║   else:             ← Wenn KEIN Fehler                        ║
+║       success()                                                ║
+║   finally:          ← IMMER ausführen                         ║
+║       cleanup()                                                ║
+║                                                               ║
+║   💡 Fehler abfangen = Robuste Programme schreiben            ║
+║   💡 Finally = Sichere Ressourcen freigeben                   ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 What are Exceptions?
 
 **Exceptions** are errors that occur during program execution. Python "raises" an Exception when something goes wrong.

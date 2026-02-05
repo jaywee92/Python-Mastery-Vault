@@ -14,6 +14,46 @@ difficulty: beginner-intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║       📂 DATEI-EIN-AUSGABE - DATEIEN LESEN/SCHREIBEN          ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   Richtige Methode: WITH-Anweisung (Empfohlen)               ║
+║   ┌──────────────────────────────────────────┐               ║
+║   │ with open('file.txt', 'r') as f:         │               ║
+║   │     content = f.read()                   │               ║
+║   │ # Datei wird automatisch geschlossen!    │               ║
+║   └──────────────────────────────────────────┘               ║
+║                                                               ║
+║   Modi:  'r' (Lesen) | 'w' (Schreiben) | 'a' (Anhängen)      ║
+║                                                               ║
+║   Visualisierung von Dateizugriff:                            ║
+║                                                               ║
+║   DATEI ────────┐                                             ║
+║   "text.txt"    │  open()                                     ║
+║                 └──→ [Dateiobjekt] ←─ Python                 ║
+║                      ↓                                        ║
+║                   read()   write()   append()                 ║
+║                      ↓         ↓         ↓                    ║
+║                   Inhalt   Ändern    Hinzufügen              ║
+║                                                               ║
+║   close() ODER with automatisch ← SICHERHEIT!                ║
+║                                                               ║
+║   Datei-Modi im Detail:                                       ║
+║   'r'  ← Nur lesen (Fehler wenn nicht vorhanden)             ║
+║   'w'  ← Schreiben (ALLES LÖSCHEN!)                          ║
+║   'a'  ← Anhängen (am Ende hinzufügen)                       ║
+║   'x'  ← Nur schaffen (wenn nicht vorhanden)                 ║
+║                                                               ║
+║   💡 Immer with verwenden! Sicherer & Automatisches close    ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 Most Important: The `with` Statement
 
 **Always** use `with`! It guarantees that files are closed properly.

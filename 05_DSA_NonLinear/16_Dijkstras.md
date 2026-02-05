@@ -15,6 +15,55 @@ space_complexity: O(V)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║    ✅ DIJKSTRA'S - GREEDY SHORTEST PATH ALGORITHM              ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   STRATEGY: Always explore the CLOSEST unvisited node          ║
+║            (Greedy choice leads to optimal solution!)          ║
+║                                                                 ║
+║   EXAMPLE GRAPH:                                               ║
+║      [A]  dist[A]=0  ← Start here                              ║
+║      / \  dist[B]=∞                                            ║
+║    1/   \5 dist[C]=∞                                           ║
+║    /     \                                                     ║
+║  [B]─3─[C]                                                     ║
+║                                                                 ║
+║   ALGORITHM STEPS:                                             ║
+║   1. dist[A]=0, dist[B]=∞, dist[C]=∞                          ║
+║   2. Visit A (closest: 0)                                      ║
+║   3. Update neighbors:                                         ║
+║      dist[B] = min(∞, 0+1) = 1                                ║
+║      dist[C] = min(∞, 0+5) = 5                                ║
+║   4. Visit B (closest unvisited: 1)                            ║
+║   5. Update B's neighbor C:                                    ║
+║      dist[C] = min(5, 1+3) = 4 ← UPDATED!                     ║
+║   6. Visit C (closest unvisited: 4)                            ║
+║   7. Done!                                                     ║
+║                                                                 ║
+║   FINAL DISTANCES FROM A:                                      ║
+║   A→A: 0                                                       ║
+║   A→B: 1                                                       ║
+║   A→C: 4 (via B, not direct)                                   ║
+║                                                                 ║
+║   KEY PROPERTIES:                                              ║
+║   • Greedy: Always picks minimum distance next                 ║
+║   • Optimal: Guarantees shortest paths (proven!)               ║
+║   • Single-source: From one starting vertex                    ║
+║   • Non-negative weights only (negative weights break it)      ║
+║                                                                 ║
+║   💡 TIME: O((V+E)log V) with min-heap                         ║
+║   💡 USE: GPS routing, network protocols, game pathfinding     ║
+║   💡 LIMITATION: Can't handle negative weights (use B-F)       ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Algorithm
 
 ```

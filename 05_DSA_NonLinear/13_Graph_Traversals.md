@@ -15,6 +15,49 @@ space_complexity: O(V)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║     🔍 BFS vs DFS - TWO WAYS TO EXPLORE A GRAPH                ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   BFS (BREADTH-FIRST)      DFS (DEPTH-FIRST)                   ║
+║   Wide exploration         Deep exploration                     ║
+║   Uses QUEUE               Uses STACK/Recursion                 ║
+║   Level by level           Go as deep as possible               ║
+║                                                                 ║
+║   Same Graph:                                                   ║
+║            [A]                      [A]                         ║
+║           / | \                    / | \                        ║
+║         [B][C][D]                [B][C][D]                      ║
+║         |   | \|                 |   | \|                       ║
+║        [E] [F][G]               [E] [F][G]                      ║
+║                                                                 ║
+║   BFS ORDER (by level):                                        ║
+║   Level 1: [A]                 → Visit: A                       ║
+║   Level 2: [B][C][D]           → Visit: A, B, C, D              ║
+║   Level 3: [E][F][G]           → Visit: A, B, C, D, E, F, G     ║
+║   Result: [A, B, C, D, E, F, G]                                ║
+║                                                                 ║
+║   DFS ORDER (go deep first):                                   ║
+║   Start [A], go LEFT:                                          ║
+║   A → B → E (dead end, backtrack)                              ║
+║   B done, go RIGHT to C                                        ║
+║   C → F (dead end, backtrack)                                  ║
+║   C done, go RIGHT to D                                        ║
+║   D → G (dead end)                                             ║
+║   Result: [A, B, E, C, F, D, G]                                ║
+║                                                                 ║
+║   💡 BFS: Shortest path, level-order, social networks         ║
+║   💡 DFS: Connected components, topological sort, mazes        ║
+║   💡 COMPLEXITY: Both O(V + E) where V=vertices, E=edges       ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 Overview
 
 ```

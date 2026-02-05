@@ -14,6 +14,48 @@ type: topic
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║      ⚡ LAMBDA - ANONYME EINZEILIGE FUNKTIONEN                ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║   TRADITIONELLE FUNKTION:                                     ║
+║   def add(a, b):                                              ║
+║       return a + b                                            ║
+║   ↓                                                           ║
+║   LAMBDA EQUIVALENT (Kompakt):                                ║
+║   add = lambda a, b: a + b                                    ║
+║                                                               ║
+║   Struktur:  lambda PARAMETER: AUSDRUCK                       ║
+║             │       │           │                             ║
+║             │       │           └─ Was zurückgeben            ║
+║             │       └─ Eingaben                               ║
+║             └─ Schlüsselwort                                  ║
+║                                                               ║
+║   Häufige Verwendungen:                                        ║
+║   • map():     Funktion auf jedes Element anwenden            ║
+║     nums = [1,2,3,4]                                          ║
+║     result = map(lambda x: x*2, nums)                         ║
+║     # [2,4,6,8]                                               ║
+║                                                               ║
+║   • filter(): Nur Elemente mit Bedingung                      ║
+║     nums = [1,2,3,4,5]                                        ║
+║     result = filter(lambda x: x > 2, nums)                    ║
+║     # [3,4,5]                                                 ║
+║                                                               ║
+║   • sorted(): Mit Custom-Schlüssel sortieren                 ║
+║     words = ["apple", "pie", "a"]                             ║
+║     result = sorted(words, key=lambda x: len(x))              ║
+║     # ["a", "pie", "apple"]  (nach Länge)                    ║
+║                                                               ║
+║   💡 Lambda = Anonyme, einzeilige, schnelle Funktionen        ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 Lambda Functions
 
 ### Basic Lambda

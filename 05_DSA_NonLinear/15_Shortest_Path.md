@@ -13,6 +13,51 @@ difficulty: intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║      🛤️ SHORTEST PATH - FINDING MINIMUM COST ROUTE             ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   PROBLEM: Find path with MINIMUM total weight/cost             ║
+║                                                                 ║
+║   EXAMPLE GRAPH (edges show weights):                          ║
+║            5                                                    ║
+║       [A]─────[B]                                              ║
+║       │\       │                                               ║
+║      1│ \3  2  │                                               ║
+║       │  \     │                                               ║
+║      [C]──────[D]                                              ║
+║            4                                                    ║
+║                                                                 ║
+║   FINDING SHORTEST PATH FROM A TO D:                           ║
+║   Path 1: A → B → D  = 5 + 2 = 7                              ║
+║   Path 2: A → C → D  = 1 + 4 = 5 ✓ SHORTEST!                  ║
+║   Path 3: A → D      = 3     ✓ DIRECT BEST!                    ║
+║                                                                 ║
+║   SOLUTION METHODS:                                            ║
+║   • DIJKSTRA'S: Greedy approach, always picks closest          ║
+║     Works only with NON-NEGATIVE weights                       ║
+║     Time: O((V+E)log V)                                        ║
+║                                                                 ║
+║   • BELLMAN-FORD: Dynamic programming approach                 ║
+║     Works with NEGATIVE weights (but not negative cycles)      ║
+║     Time: O(VE)                                                ║
+║                                                                 ║
+║   • FLOYD-WARSHALL: All-pairs shortest paths                   ║
+║     Find shortest between every pair of vertices               ║
+║     Time: O(V³)                                                ║
+║                                                                 ║
+║   💡 GPS/Maps use Dijkstra's for fast routes                   ║
+║   💡 Negative weights appear in arbitrage/profit problems      ║
+║   💡 Choose algorithm based on graph properties                ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Problem
 
 ```

@@ -15,6 +15,37 @@ space_complexity: O(n)
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║              🗄️ HASH TABLE - KEY TO VALUE MAPPING              ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   INPUT:  Key "alice"                                           ║
+║      │                                                          ║
+║      └──→ [HASH FUNCTION] ──→ hash("alice") % size = 2         ║
+║                                │                                ║
+║                                └──→ BUCKET INDEX: 2             ║
+║                                     │                           ║
+║   BUCKET ARRAY:                      └──→ ┌──────────────────┐  ║
+║   ┌───┬───┬────────┬───┬───┐             │ Bucket[2]:       │  ║
+║   │ 0 │ 1 │ 2      │ 3 │ 4 │             │ ("alice", 25)    │  ║
+║   └───┴───┼────────┼───┴───┘             └──────────────────┘  ║
+║       │   │        │   │                                        ║
+║       └─→ │  empty │ ──┴──→ ┌──────────┐  ┌──────────┐        ║
+║         └──────────→ ("bob", 30) ──→ ("carol", 28)             ║
+║                                                                 ║
+║   💡 KEY INSIGHT: Hash function distributes keys evenly         ║
+║   💡 COLLISION: Two keys hash to same index (resolved with     ║
+║      chaining or probing)                                      ║
+║   💡 PERFORMANCE: O(1) average lookup - direct array access!   ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎯 The Concept
 
 ```

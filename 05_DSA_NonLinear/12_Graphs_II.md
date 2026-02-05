@@ -13,6 +13,50 @@ difficulty: intermediate
 
 ---
 
+## 🎨 Visual Memory Aid
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║        🎚️ WEIGHTED & DIRECTED GRAPHS - ADVANCED CONCEPTS       ║
+╠═════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║   WEIGHTED GRAPH (edges have costs/distances):                 ║
+║                                                                 ║
+║          5                                                      ║
+║      [A]─────[B]  ← Edge A→B costs 5                           ║
+║      │ \      │                                                ║
+║      │3 \2    │4  ← Each edge has a numeric weight             ║
+║      │   \    │                                                ║
+║     [C]──────[D]                                               ║
+║          6                                                      ║
+║                                                                 ║
+║   DIRECTED GRAPH (edges have direction):                       ║
+║                                                                 ║
+║      [A]──→[B]  ← Can only go A→B, not B→A                    ║
+║      ↓     ↙                                                   ║
+║      [C]──→[D]  ← Arrows show direction                        ║
+║                                                                 ║
+║   PATH: Sequence of vertices connected by edges                ║
+║   A→B→D (path from A to D)                                     ║
+║                                                                 ║
+║   STRONGLY CONNECTED COMPONENT: All vertices reachable         ║
+║   from any other vertex in subgraph                            ║
+║                                                                 ║
+║   CONNECTIVITY TYPES:                                          ║
+║   • Connected: Path exists between every pair of vertices      ║
+║   • Disconnected: Some vertices unreachable from others        ║
+║   • Strongly connected: Directed graph with paths both ways    ║
+║   • Weakly connected: Connected if we ignore edge directions   ║
+║                                                                 ║
+║   💡 WEIGHTED: Essential for shortest path algorithms          ║
+║   💡 DIRECTED: Represents one-way relationships (Twitter)      ║
+║   💡 UNDIRECTED: Represents mutual relationships (Facebook)    ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+```
+
+---
+
 ## ⚖️ Weighted Graphs
 
 ```
