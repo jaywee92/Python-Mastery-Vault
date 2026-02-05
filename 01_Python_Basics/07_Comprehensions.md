@@ -18,31 +18,31 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║      📋 LISTEN-KOMPREHENSION - KOMPAKTE LISTEN ERSTELLUNG     ║
+║      📋 LIST COMPREHENSION - COMPACT LIST CREATION            ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   TRADITIONELLE METHODE:                                      ║
+║   TRADITIONAL METHOD:                                         ║
 ║   ┌──────────────────────────┐                               ║
 ║   │ nums = []                │                               ║
-║   │ for i in range(5):       │   4 Zeilen Code              ║
-║   │     nums.append(i * 2)   │   3 Indentations             ║
+║   │ for i in range(5):       │   4 lines of code            ║
+║   │     nums.append(i * 2)   │   3 indentations             ║
 ║   │ # [0, 2, 4, 6, 8]        │                               ║
 ║   └──────────────────────────┘                               ║
 ║                                                               ║
-║   KOMPREHENSION (Pythonisch):                                 ║
+║   COMPREHENSION (Pythonic):                                   ║
 ║   ┌──────────────────────────────────────┐                   ║
-║   │ nums = [i * 2 for i in range(5)]     │  1 Zeile!         ║
+║   │ nums = [i * 2 for i in range(5)]     │  1 line!          ║
 ║   │ # [0, 2, 4, 6, 8]                    │                   ║
 ║   └──────────────────────────────────────┘                   ║
 ║                                                               ║
-║   Struktur: [AUSDRUCK  for  VARIABLE  in  ITERABLE]          ║
-║             │TRANSFORM│    │ELEMENT│      │QUELLE│           ║
+║   Structure: [EXPRESSION  for  VARIABLE  in  ITERABLE]       ║
+║              │TRANSFORM │    │ELEMENT │      │SOURCE│        ║
 ║                                                               ║
-║   Erweiterte Komprehension mit Filter:                        ║
+║   Extended comprehension with filter:                         ║
 ║   [i for i in range(10) if i % 2 == 0]                       ║
-║   # [0, 2, 4, 6, 8]  ← Nur gerade Nummern                   ║
+║   # [0, 2, 4, 6, 8]  ← Only even numbers                    ║
 ║                                                               ║
-║   💡 Schneller, lesbarer und Pythonischer als Schleifen      ║
+║   💡 Faster, more readable and Pythonic than loops           ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

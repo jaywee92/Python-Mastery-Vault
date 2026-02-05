@@ -32,7 +32,7 @@ type: topic
 ║   🔤 Strings sind unveränderbar (immutable)                   ║
 ║   • "Python"[0] → "P"                                         ║
 ║   • "Python"[:2] → "Py"  (Slicing)                           ║
-║   • "python".upper() → "PYTHON"  (Methoden)                  ║
+║   • "python".upper() → "PYTHON"  (methods)                   ║
 ║                                                               ║
 ║   💡 Variable = Name + Wert (wie eine beschriftete Box!)      ║
 ╚═══════════════════════════════════════════════════════════════╝

@@ -27,33 +27,33 @@ complexity: O(log n)
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║         🎯 BINARY SEARCH - HALBE & HERRSCHE                  ║
+║         🎯 BINARY SEARCH - DIVIDE & CONQUER                  ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║  Suche 7 in: [1, 3, 5, 7, 9, 11, 13, 15, 17]                ║
-║             (Muss sortiert sein!)                            ║
+║  Search for 7 in: [1, 3, 5, 7, 9, 11, 13, 15, 17]           ║
+║             (Must be sorted!)                                ║
 ║                                                               ║
-║  Step 1: Check Mitte (Index 4)                              ║
+║  Step 1: Check middle (Index 4)                             ║
 ║  [1, 3, 5, 7, 9, 11, 13, 15, 17]                            ║
 ║                 ↑ = 9                                        ║
-║              9 > 7 → Suche LINKS                             ║
+║              9 > 7 → Search LEFT                             ║
 ║                                                               ║
-║  Step 2: Check Mitte von links (Index 1)                    ║
+║  Step 2: Check middle of left (Index 1)                     ║
 ║  [1, 3, 5, 7]                                               ║
 ║     ↑ = 3                                                   ║
-║     3 < 7 → Suche RECHTS                                     ║
+║     3 < 7 → Search RIGHT                                     ║
 ║                                                               ║
-║  Step 3: Check Mitte (Index 2-3)                            ║
+║  Step 3: Check middle (Index 2-3)                           ║
 ║  [5, 7]                                                     ║
 ║        ↑ = 7                                                ║
-║        7 == 7 → ✓ GEFUNDEN!                                 ║
+║        7 == 7 → ✓ FOUND!                                    ║
 ║                                                               ║
-║  Nur 3 Schritte statt 9!                                     ║
+║  Only 3 steps instead of 9!                                  ║
 ║                                                               ║
-║  💡 Teile in zwei Hälften                                     ║
-║  💡 Geh in die Hälfte wo Ziel ist                            ║
-║  💡 O(log n) = exponentiell schneller!                       ║
-║  💡 WICHTIG: Nur auf sortierte Arrays!                       ║
+║  💡 Divide into two halves                                   ║
+║  💡 Go into the half where target is                        ║
+║  💡 O(log n) = exponentially faster!                         ║
+║  💡 IMPORTANT: Only on sorted arrays!                        ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

@@ -18,30 +18,30 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║      🔀 BEDINGUNGEN - ENTSCHEIDUNGSBAUM FÜR PYTHON            ║
+║      🔀 CONDITIONALS - DECISION TREE FOR PYTHON               ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║                    Ist x > 0?                                ║
+║                    Is x > 0?                                 ║
 ║                        │                                      ║
 ║            ┌───────────┴───────────┐                          ║
-║           JA                      NEIN                        ║
+║           YES                      NO                         ║
 ║            │                        │                        ║
-║        Code A                Ist x < 0?                       ║
+║        Code A                Is x < 0?                        ║
 ║                                 │                             ║
 ║                     ┌───────────┴───────────┐                ║
-║                    JA                      NEIN              ║
+║                   YES                       NO               ║
 ║                     │                        │               ║
 ║                  Code B                  Code C               ║
 ║                                                               ║
-║   if x > 0:              # Wenn wahr (True)                  ║
-║       print("Positiv")   # Dieser Code läuft                ║
-║   elif x < 0:            # Sonst wenn (elif)                 ║
-║       print("Negativ")   # Dieser Code läuft                ║
-║   else:                  # Ansonsten                          ║
-║       print("Null")      # Dieser Code läuft                ║
+║   if x > 0:              # If true                           ║
+║       print("Positive")  # This code runs                    ║
+║   elif x < 0:            # Else if                           ║
+║       print("Negative")  # This code runs                    ║
+║   else:                  # Otherwise                          ║
+║       print("Zero")      # This code runs                    ║
 ║                                                               ║
-║   💡 Nur ein Code-Block wird ausgeführt!                     ║
-║   💡 Bedingungen werden von oben nach unten geprüft         ║
+║   💡 Only one code block executes!                           ║
+║   💡 Conditions checked from top to bottom                   ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

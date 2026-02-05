@@ -18,44 +18,44 @@ difficulty: beginner-intermediate
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║     📦 IMPORTS - EXTERNE MODULE & FUNKTIONEN LADEN             ║
+║     📦 IMPORTS - LOAD EXTERNAL MODULES & FUNCTIONS            ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   Visualisierung des Imports:                                 ║
+║   Import Visualization:                                        ║
 ║                                                               ║
 ║   ┌────────────────────────────┐                              ║
-║   │ Pythons Standardbibliothek │                              ║
+║   │ Python Standard Library    │                              ║
 ║   │ (os, sys, json, random,..) │                              ║
 ║   └────────────────┬───────────┘                              ║
 ║                    │                                           ║
 ║                    │ import os                                 ║
 ║                    ↓                                           ║
 ║   ┌─────────────────────────────┐                             ║
-║   │ Dein Python-Programm        │                             ║
-║   │ • os.getcwd()               │  ← Jetzt verfügbar!        ║
+║   │ Your Python Program         │                             ║
+║   │ • os.getcwd()               │  ← Now available!           ║
 ║   │ • os.listdir()              │                             ║
 ║   └─────────────────────────────┘                             ║
 ║                                                               ║
-║   Verschiedene Import-Stile:                                   ║
+║   Different Import Styles:                                     ║
 ║                                                               ║
-║   import os                   ← Ganzes Modul laden            ║
-║   os.getcwd()                   (Zugriff: os.function)        ║
+║   import os                   ← Load entire module            ║
+║   os.getcwd()                   (Access: os.function)         ║
 ║                                                               ║
-║   from os import getcwd       ← Nur spezifische Funktion      ║
-║   getcwd()                      (Direkter Zugriff!)           ║
+║   from os import getcwd       ← Only specific function        ║
+║   getcwd()                      (Direct access!)              ║
 ║                                                               ║
-║   import os as operating_sys  ← Mit Alias                     ║
-║   operating_sys.getcwd()        (Kurznamen verwenden)         ║
+║   import os as operating_sys  ← With alias                    ║
+║   operating_sys.getcwd()        (Use short names)             ║
 ║                                                               ║
-║   Praktische Module:                                           ║
-║   • os    → Dateisystem & Umgebung                            ║
-║   • sys   → Python-Interpreter & System                       ║
-║   • json  → JSON Daten                                        ║
-║   • time  → Zeit & Timing                                     ║
-║   • random → Zufallszahlen                                    ║
-║   • math  → Mathematische Funktionen                          ║
+║   Practical Modules:                                           ║
+║   • os    → File system & environment                         ║
+║   • sys   → Python interpreter & system                       ║
+║   • json  → JSON data                                         ║
+║   • time  → Time & timing                                     ║
+║   • random → Random numbers                                   ║
+║   • math  → Mathematical functions                            ║
 ║                                                               ║
-║   💡 Imports = Werkzeugkasten erweitern für mehr Funktion      ║
+║   💡 Imports = Expand your toolbox for more functionality     ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

@@ -18,39 +18,39 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║      ⚡ LAMBDA - ANONYME EINZEILIGE FUNKTIONEN                ║
+║      ⚡ LAMBDA - ANONYMOUS ONE-LINE FUNCTIONS                ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   TRADITIONELLE FUNKTION:                                     ║
+║   TRADITIONAL FUNCTION:                                       ║
 ║   def add(a, b):                                              ║
 ║       return a + b                                            ║
 ║   ↓                                                           ║
-║   LAMBDA EQUIVALENT (Kompakt):                                ║
+║   LAMBDA EQUIVALENT (Compact):                                ║
 ║   add = lambda a, b: a + b                                    ║
 ║                                                               ║
-║   Struktur:  lambda PARAMETER: AUSDRUCK                       ║
+║   Structure:  lambda PARAMETERS: EXPRESSION                   ║
 ║             │       │           │                             ║
-║             │       │           └─ Was zurückgeben            ║
-║             │       └─ Eingaben                               ║
-║             └─ Schlüsselwort                                  ║
+║             │       │           └─ What to return             ║
+║             │       └─ Inputs                                 ║
+║             └─ Keyword                                        ║
 ║                                                               ║
-║   Häufige Verwendungen:                                        ║
-║   • map():     Funktion auf jedes Element anwenden            ║
+║   Common uses:                                                ║
+║   • map():     Apply function to each element                ║
 ║     nums = [1,2,3,4]                                          ║
 ║     result = map(lambda x: x*2, nums)                         ║
 ║     # [2,4,6,8]                                               ║
 ║                                                               ║
-║   • filter(): Nur Elemente mit Bedingung                      ║
+║   • filter(): Only elements matching condition                ║
 ║     nums = [1,2,3,4,5]                                        ║
 ║     result = filter(lambda x: x > 2, nums)                    ║
 ║     # [3,4,5]                                                 ║
 ║                                                               ║
-║   • sorted(): Mit Custom-Schlüssel sortieren                 ║
+║   • sorted(): Sort with custom key                           ║
 ║     words = ["apple", "pie", "a"]                             ║
 ║     result = sorted(words, key=lambda x: len(x))              ║
-║     # ["a", "pie", "apple"]  (nach Länge)                    ║
+║     # ["a", "pie", "apple"]  (by length)                     ║
 ║                                                               ║
-║   💡 Lambda = Anonyme, einzeilige, schnelle Funktionen        ║
+║   💡 Lambda = Anonymous, one-line, quick functions            ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

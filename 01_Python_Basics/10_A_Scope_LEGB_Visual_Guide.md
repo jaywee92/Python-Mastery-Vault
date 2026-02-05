@@ -16,17 +16,17 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║      🔍 LEGB - SUCHORDNUNG FÜR PYTHON-VARIABLEN              ║
+║      🔍 LEGB - SEARCH ORDER FOR PYTHON VARIABLES             ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   LEGB Suchordnung (L zuerst, B zuletzt):                     ║
+║   LEGB Search Order (L first, B last):                        ║
 ║                                                               ║
-║   1️⃣  LOCAL      → Aktuelle Funktion                          ║
-║   2️⃣  ENCLOSING  → Äußere Funktion                            ║
-║   3️⃣  GLOBAL     → Modul-Ebene                                ║
-║   4️⃣  BUILT-IN   → Python's eingebaute Namen                 ║
+║   1️⃣  LOCAL      → Current function                           ║
+║   2️⃣  ENCLOSING  → Outer function                             ║
+║   3️⃣  GLOBAL     → Module level                               ║
+║   4️⃣  BUILT-IN   → Python's built-in names                   ║
 ║                                                               ║
-║   Visualisierung:                                              ║
+║   Visualization:                                               ║
 ║   ═════════════════════════════════════════                   ║
 ║   │ Built-in (print, len, str, ...)         │               ║
 ║   │  ┌─────────────────────────────────┐    │               ║
@@ -35,20 +35,20 @@ type: topic
 ║   │  │  │ Enclosing (y = 20)       │   │    │               ║
 ║   │  │  │ ┌────────────────────┐   │   │    │               ║
 ║   │  │  │ │ Local (z = 30)     │   │   │    │               ║
-║   │  │  │ │                    │ ◄ └─┘ Suchrichtung       ║
+║   │  │  │ │                    │ ◄ └─┘ Search direction   ║
 ║   │  │  │ └────────────────────┘   │   │    │               ║
 ║   │  │  └──────────────────────────┘   │    │               ║
 ║   │  └─────────────────────────────────┘    │               ║
 ║   │                                         │               ║
 ║   ═════════════════════════════════════════                   ║
 ║                                                               ║
-║   Python sucht von INNEN nach AUSSEN:                         ║
-║   1. Ist z lokal?   → JA! Verwende 30                         ║
-║   2. Ist y lokal?   → Nein, Check Enclosing → JA! Verwende 20 ║
-║   3. Ist x lokal?   → Nein, Check Global → JA! Verwende 10    ║
-║   4. Ist print lokal? → Nein, Check Built-in → JA!            ║
+║   Python searches from INSIDE to OUTSIDE:                     ║
+║   1. Is z local?    → YES! Use 30                             ║
+║   2. Is y local?    → No, check Enclosing → YES! Use 20      ║
+║   3. Is x local?    → No, check Global → YES! Use 10         ║
+║   4. Is print local? → No, check Built-in → YES!             ║
 ║                                                               ║
-║   💡 LEGB = Suchordnung: Local → Enclosing → Global → Built-in ║
+║   💡 LEGB = Search order: Local → Enclosing → Global → Built-in║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

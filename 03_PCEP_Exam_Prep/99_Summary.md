@@ -4,315 +4,315 @@ tags: [pcep, exam, python, certification]
 date: 2026-02-05
 ---
 
-# PCEP Exam Prep - Zusammenfassung
+# PCEP Exam Prep - Summary
 
-## 📋 Überblick
+## 📋 Overview
 
-Die **PCEP-30-0x Zertifizierung** (Certified Entry-Level Python Programmer) ist die Einstiegszertifizierung der Python Institute. Die Prüfung besteht aus 30 Fragen, die in 40 Minuten bearbeitet werden müssen. Eine Erfolgsquote von 70% (21/30 Fragen) ist erforderlich, um zu bestehen. Die Fragen bestehen aus Single-Choice, Multiple-Choice, Gap-Fill und Code-Ordering-Aufgaben.
+The **PCEP-30-0x Certification** (Certified Entry-Level Python Programmer) is the entry-level certification from the Python Institute. The exam consists of 30 questions that must be completed in 40 minutes. A passing score of 70% (21/30 questions) is required. Questions include single-choice, multiple-choice, gap-fill, and code-ordering tasks.
 
-### Exam Übersicht
-- **Dauer:** 40 Minuten
-- **Fragen:** 30 Fragen
-- **Bestehensquote:** 70% (21/30)
-- **Format:** Online oder Prüfungszentrum (proctored)
-- **Sprache:** Python 3.x
-
----
-
-## 📊 Exam Topics Übersicht
-
-| Block | Gewichtung | Themen |
-|-------|------------|--------|
-| **Sektion 1: Fundamentals** | ~20% | Programming Basics, Syntax, Literals, Variables, Operators, Data Types, I/O |
-| **Sektion 2: Control Flow** | ~20% | Conditionals (if/elif/else), Loops (for/while), range() |
-| **Sektion 3: Collections** | ~25% | Strings, Lists, Tuples, Dictionaries |
-| **Sektion 4: Functions & Exceptions** | ~35% | Functions (basic/advanced), Built-ins, Exception Handling, Recursion, Generators |
+### Exam Overview
+- **Duration:** 40 minutes
+- **Questions:** 30 questions
+- **Passing Score:** 70% (21/30)
+- **Format:** Online or proctored exam center
+- **Language:** Python 3.x
 
 ---
 
-## 📝 Topic-Zusammenfassungen
+## 📊 Exam Topics Overview
+
+| Section | Weight | Topics |
+|---------|--------|--------|
+| **Section 1: Fundamentals** | ~20% | Programming Basics, Syntax, Literals, Variables, Operators, Data Types, I/O |
+| **Section 2: Control Flow** | ~20% | Conditionals (if/elif/else), Loops (for/while), range() |
+| **Section 3: Collections** | ~25% | Strings, Lists, Tuples, Dictionaries |
+| **Section 4: Functions & Exceptions** | ~35% | Functions (basic/advanced), Built-ins, Exception Handling, Recursion, Generators |
+
+---
+
+## 📝 Topic Summaries
 
 ### 1. Computer Programming Basics (5%)
-Python ist eine interpretierte, dynamisch typisierte, höherstufige Sprache. Im Gegensatz zu kompilierten Sprachen (C, C++), die den gesamten Code auf einmal in Maschinencode übersetzen, wird Python Zeile für Zeile interpretiert. Python 3 unterscheidet sich von Python 2 vor allem bei `print()` (Funktion statt Statement) und Division (5/2 ergibt 2.5 statt 2).
+Python is an interpreted, dynamically typed, high-level language. Unlike compiled languages (C, C++) that translate all code to machine code at once, Python is interpreted line by line. Python 3 differs from Python 2 mainly in `print()` (function vs statement) and division (5/2 yields 2.5 instead of 2).
 
 ### 2. Python Syntax (5%)
-Python verwendet **Einrückung** (4 Leerzeichen empfohlen) zur Blockstrukturierung statt Klammern. Ein Doppelpunkt `:` führt Codeblöcke ein. Kommentare beginnen mit `#`. Identifizierer dürfen mit Buchstaben oder Unterstrich beginnen, nicht mit Ziffern. Python ist case-sensitive.
+Python uses **indentation** (4 spaces recommended) for block structure instead of braces. A colon `:` introduces code blocks. Comments start with `#`. Identifiers must start with a letter or underscore, not digits. Python is case-sensitive.
 
 ### 3. Literals & Variables (8%)
-**Literals** sind feste Werte im Code: Integer (`42`, `0xFF`, `0o17`, `0b1010`), Float (`3.14`, `3e2`), String (`"hello"`, `r"raw"`), Boolean (`True`, `False`), None. **Variablen** sind Referenzen zu Objekten und müssen nicht deklariert werden. Dynamische Typisierung erlaubt Typwechsel: `x = 5; x = "hello"`.
+**Literals** are fixed values in code: Integer (`42`, `0xFF`, `0o17`, `0b1010`), Float (`3.14`, `3e2`), String (`"hello"`, `r"raw"`), Boolean (`True`, `False`), None. **Variables** are references to objects and don't need declaration. Dynamic typing allows type changes: `x = 5; x = "hello"`.
 
-### 4. Operators (12% - STARK GETESTET!)
-**Arithmetik:** `+`, `-`, `*`, `/` (immer Float!), `//` (Bodendivision), `%` (Modulo), `**` (Potenz - rechtsassoziativ!). **Vergleich:** `==`, `!=`, `<`, `>`, `<=`, `>=`, Chaining möglich (`1 < x < 10`). **Logik:** `and`, `or`, `not`. **Bitwise:** `&`, `|`, `^`, `~`, `<<`, `>>`. **Identität:** `is`, `is not`. **Mitgliedschaft:** `in`, `not in`. **Priorität:** `()` > `**` > Unär > `*/%` > `+-` > Shifts > Bitwise > Vergleich > `not` > `and` > `or`.
+### 4. Operators (12% - HEAVILY TESTED!)
+**Arithmetic:** `+`, `-`, `*`, `/` (always Float!), `//` (floor division), `%` (modulo), `**` (power - right-associative!). **Comparison:** `==`, `!=`, `<`, `>`, `<=`, `>=`, chaining possible (`1 < x < 10`). **Logic:** `and`, `or`, `not`. **Bitwise:** `&`, `|`, `^`, `~`, `<<`, `>>`. **Identity:** `is`, `is not`. **Membership:** `in`, `not in`. **Precedence:** `()` > `**` > Unary > `*/%` > `+-` > Shifts > Bitwise > Comparison > `not` > `and` > `or`.
 
 ### 5. Data Types (8%)
-Python hat sechs Haupttypen: `int` (unbegrenzte Größe), `float` (mit Präzisionsproblemen), `str` (unveränderlich), `bool` (True=1, False=0), `list` (veränderlich), `tuple` (unveränderlich), `dict` (Schlüssel-Wert). **Konvertierung:** `int()` schneidet ab, `float()` erstellt Float, `str()` funktioniert auf alles, `bool()` definiert Wahrheit. Falsy: 0, 0.0, "", [], {}, (), None. Alles andere ist truthy.
+Python has six main types: `int` (unlimited size), `float` (with precision issues), `str` (immutable), `bool` (True=1, False=0), `list` (mutable), `tuple` (immutable), `dict` (key-value). **Conversion:** `int()` truncates, `float()` creates float, `str()` works on everything, `bool()` defines truthiness. Falsy: 0, 0.0, "", [], {}, (), None. Everything else is truthy.
 
 ### 6. Input/Output (5%)
-`input()` gibt **immer** einen String zurück: `age = int(input("Age: "))`. `print()` hat Parameter: `sep=""` (Trennzeichen), `end=""` (Zeilenende). F-Strings sind modern: `f"{name} is {age}"`, Formatierung: `f"{num:05d}"`, `f"{pi:.2f}"`.
+`input()` **always** returns a string: `age = int(input("Age: "))`. `print()` has parameters: `sep=""` (separator), `end=""` (line ending). F-Strings are modern: `f"{name} is {age}"`, formatting: `f"{num:05d}"`, `f"{pi:.2f}"`.
 
 ### 7. Conditionals (10%)
-`if condition:`, `elif:`, `else:` sind Anweisungen mit Doppelpunkt und Einrückung. Nur ein Block führt aus. Ternär-Ausdruck: `x if cond else y`. Chained Comparisons: `1 < x < 10`. Truthiness nutzen: `if items:` prüft Nicht-Leerheit.
+`if condition:`, `elif:`, `else:` are statements with colon and indentation. Only one block executes. Ternary expression: `x if cond else y`. Chained comparisons: `1 < x < 10`. Use truthiness: `if items:` checks non-emptiness.
 
-### 8. Loops (12% - STARK GETESTET!)
-`while condition:` läuft bis False. `for item in iterable:` iteriert über Sequenzen. `range(stop)` = 0 bis stop-1, `range(start, stop, step)` mit exclusivem stop. `break` beendet, `continue` springt, `else:` läuft wenn kein break. Nested loops: `break` bricht nur innere Schleife.
+### 8. Loops (12% - HEAVILY TESTED!)
+`while condition:` runs until False. `for item in iterable:` iterates over sequences. `range(stop)` = 0 to stop-1, `range(start, stop, step)` with exclusive stop. `break` exits, `continue` jumps, `else:` runs if no break. Nested loops: `break` breaks only inner loop.
 
-### 9. Strings (10% - SEHR GETESTET!)
-Unveränderliche Sequenzen. **Indexierung:** `s[0]` (first), `s[-1]` (last), `s[6]` IndexError. **Slicing:** `s[start:stop:step]`, stop exklusiv. `s[::-1]` reversiert. **Methoden:** `.upper()`, `.lower()`, `.strip()`, `.split()`, `.join()`, `.replace()`, `.startswith()`, `.endswith()`, `.find()`, `.count()`, etc. `len(s)`, `"x" in s`.
+### 9. Strings (10% - HEAVILY TESTED!)
+Immutable sequences. **Indexing:** `s[0]` (first), `s[-1]` (last), `s[6]` raises IndexError. **Slicing:** `s[start:stop:step]`, stop exclusive. `s[::-1]` reverses. **Methods:** `.upper()`, `.lower()`, `.strip()`, `.split()`, `.join()`, `.replace()`, `.startswith()`, `.endswith()`, `.find()`, `.count()`, etc. `len(s)`, `"x" in s`.
 
-### 10. Lists (>12% - KRITISCH!)
-Mutable, indexierbar, schichtbar wie Strings. **Methoden:** `.append()`, `.insert()`, `.remove()` (erstes Vorkommen), `.pop()`, `.clear()`, `.sort()`, `.reverse()`, `.copy()`. **Slicing:** `list[:]` kopiert. Indizes können negativ sein. List Comprehension: `[x*2 for x in range(5)]`. `in` prüft Mitgliedschaft.
+### 10. Lists (>12% - CRITICAL!)
+Mutable, indexable, sliceable like strings. **Methods:** `.append()`, `.insert()`, `.remove()` (first occurrence), `.pop()`, `.clear()`, `.sort()`, `.reverse()`, `.copy()`. **Slicing:** `list[:]` copies. Indices can be negative. List comprehension: `[x*2 for x in range(5)]`. `in` checks membership.
 
 ### 11. Tuples (8%)
-Unveränderliche Listen. `()` oder `tuple()`. Schneller und speichereffizienter. Unpacking: `a, b = (1, 2)`. Einzelnes Element: `(42,)` nicht `(42)`. Oft als Rückgabewerte oder Schlüssel in dicts.
+Immutable lists. `()` or `tuple()`. Faster and more memory efficient. Unpacking: `a, b = (1, 2)`. Single element: `(42,)` not `(42)`. Often used as return values or dict keys.
 
 ### 12. Dictionaries (10%)
-Ungeordnete Schlüssel-Wert-Paare (in Python 3.7+ insertion-ordered). `d = {"key": value}`. Zugriff: `d["key"]`, `d.get("key", default)`. **Methoden:** `.keys()`, `.values()`, `.items()`, `.pop()`, `.clear()`, `.update()`. Iteration: `for k in d:` (Schlüssel), `for k, v in d.items():` (Paare). Schlüssel müssen hashbar sein.
+Unordered key-value pairs (insertion-ordered in Python 3.7+). `d = {"key": value}`. Access: `d["key"]`, `d.get("key", default)`. **Methods:** `.keys()`, `.values()`, `.items()`, `.pop()`, `.clear()`, `.update()`. Iteration: `for k in d:` (keys), `for k, v in d.items():` (pairs). Keys must be hashable.
 
 ### 13. Functions Basics (8%)
-`def name(param1, param2):` mit Rückgabewert. Parameter sind Variablen. `return` beendet Funktion und gibt Wert. Keine Rückgabe = `None`. **Scope:** Local > Enclosing > Global > Built-in (LEGB). `global` Keyword für globale Variablen. Default Parameter: `def func(x=5):`.
+`def name(param1, param2):` with return value. Parameters are variables. `return` ends function and returns value. No return = `None`. **Scope:** Local > Enclosing > Global > Built-in (LEGB). `global` keyword for global variables. Default parameters: `def func(x=5):`.
 
 ### 14. Functions Advanced (8%)
-`*args` sammelt Positional-Argumente (Tuple), `**kwargs` sammelt Named-Argumente (Dict). `def func(*args, **kwargs):`. `lambda x: x*2` für kleine anonyme Funktionen. Positional-only durch `/`, keyword-only durch `*`.
+`*args` collects positional arguments (tuple), `**kwargs` collects named arguments (dict). `def func(*args, **kwargs):`. `lambda x: x*2` for small anonymous functions. Positional-only via `/`, keyword-only via `*`.
 
 ### 15. Built-in Functions (8%)
 `len()`, `type()`, `isinstance()`, `str()`, `int()`, `float()`, `bool()`, `list()`, `tuple()`, `dict()`, `set()`, `range()`, `sum()`, `min()`, `max()`, `sorted()`, `reversed()`, `enumerate()`, `zip()`, `map()`, `filter()`, `abs()`, `round()`, `pow()`, `divmod()`, `ord()`, `chr()`, `input()`, `print()`.
 
 ### 16. Exception Handling (10%)
-`try:` Block mit möglich fehlerhaftem Code. `except Exception:` behandelt spezifische Fehler. `except:` (generisch, nicht empfohlen). `else:` läuft bei Erfolg. `finally:` läuft immer. `raise` löst Exception aus. Common: `ValueError`, `TypeError`, `IndexError`, `KeyError`, `ZeroDivisionError`, `NameError`, `AttributeError`.
+`try:` block with potentially failing code. `except Exception:` handles specific errors. `except:` (generic, not recommended). `else:` runs on success. `finally:` always runs. `raise` raises exception. Common: `ValueError`, `TypeError`, `IndexError`, `KeyError`, `ZeroDivisionError`, `NameError`, `AttributeError`.
 
 ### 17. Recursion & Generators (7%)
-Recursive Funktionen rufen sich selbst auf mit Basis- und Rekursionsfall. **Generatoren** verwenden `yield` statt `return`, erzeugen Werte lazy. `yield from` für Delegation. Iterator Protocol: `__iter__()` und `__next__()`.
+Recursive functions call themselves with base and recursive cases. **Generators** use `yield` instead of `return`, produce values lazily. `yield from` for delegation. Iterator protocol: `__iter__()` and `__next__()`.
 
 ---
 
-## ✅ Prüfungs-Checkliste
+## ✅ Exam Checklist
 
-- [ ] Ich verstehe Compilation vs. Interpretation
-- [ ] Ich kenne Python-Syntax: Indentation, Doppelpunkt, Comments
-- [ ] Integer-Präfixe: `0x` (hex), `0o` (octal), `0b` (binary)
-- [ ] Division `/` gibt immer Float, `//` ist Bodendivision
-- [ ] Operator-Priorität inkl. `**` (rechtsassoziativ)
-- [ ] `-2 ** 2 = -4` (nicht 4!)
-- [ ] `input()` gibt immer String
-- [ ] Truthiness: 0, "", [], {}, None sind falsy
-- [ ] String-Methoden: `.upper()`, `.lower()`, `.strip()`, `.split()`, `.join()`, `.replace()`
-- [ ] String-Slicing: `s[start:stop:step]` mit exclusivem stop
-- [ ] `range()` ist exklusiv: `range(5)` = 0,1,2,3,4
-- [ ] `for` vs `while`, `break`, `continue`, `else` in Loops
-- [ ] Listen-Methoden: `.append()`, `.insert()`, `.remove()`, `.pop()`, `.sort()`
-- [ ] List Comprehension: `[x*2 for x in range(5)]`
-- [ ] Tuples sind unveränderlich
-- [ ] Dict-Zugriff: `d["key"]`, `.get()`, `.items()`, `.keys()`, `.values()`
-- [ ] Funktions-Parameter: default, *args, **kwargs
+- [ ] I understand compilation vs. interpretation
+- [ ] I know Python syntax: indentation, colon, comments
+- [ ] Integer prefixes: `0x` (hex), `0o` (octal), `0b` (binary)
+- [ ] Division `/` always returns float, `//` is floor division
+- [ ] Operator precedence including `**` (right-associative)
+- [ ] `-2 ** 2 = -4` (not 4!)
+- [ ] `input()` always returns string
+- [ ] Truthiness: 0, "", [], {}, None are falsy
+- [ ] String methods: `.upper()`, `.lower()`, `.strip()`, `.split()`, `.join()`, `.replace()`
+- [ ] String slicing: `s[start:stop:step]` with exclusive stop
+- [ ] `range()` is exclusive: `range(5)` = 0,1,2,3,4
+- [ ] `for` vs `while`, `break`, `continue`, `else` in loops
+- [ ] List methods: `.append()`, `.insert()`, `.remove()`, `.pop()`, `.sort()`
+- [ ] List comprehension: `[x*2 for x in range(5)]`
+- [ ] Tuples are immutable
+- [ ] Dict access: `d["key"]`, `.get()`, `.items()`, `.keys()`, `.values()`
+- [ ] Function parameters: default, *args, **kwargs
 - [ ] Scope: Local > Enclosing > Global > Built-in
-- [ ] Exception Handling: try-except-else-finally
-- [ ] `is` prüft Identität, `==` prüft Gleichheit
-- [ ] `is None` korrekt, nicht `== None`
-- [ ] Bool ist Subklasse von int (True=1, False=0)
+- [ ] Exception handling: try-except-else-finally
+- [ ] `is` checks identity, `==` checks equality
+- [ ] `is None` correct, not `== None`
+- [ ] Bool is subclass of int (True=1, False=0)
 
 ---
 
-## 💡 Prüfungstipps & Strategien
+## 💡 Exam Tips & Strategies
 
-### Vor der Prüfung
-1. **Schnelle Referenz lesen:** Morgens vor der Prüfung Quick Reference durchgehen
-2. **Häufige Fehler vermeiden:** Common Mistakes Datei durchlesen
-3. **Schlaf:** Ausreichend schlafen vor der Prüfung
-4. **Puffer:** 5-10 Minuten Puffer für schwere Fragen
+### Before the Exam
+1. **Read quick reference:** Go through quick reference in the morning before exam
+2. **Avoid common mistakes:** Read the common mistakes file
+3. **Sleep:** Get enough sleep before the exam
+4. **Buffer:** Reserve 5-10 minutes for difficult questions
 
-### Während der Prüfung
-1. **Alle 30 Fragen lesen:** Schwere Fragen können überspringen und später zurückommen
-2. **Code sorgfältig lesen:** Auf Details wie Indentation, Klammern, Kommas achten
-3. **Vorzeichen beachten:** Negative Zahlen, negative Indizes, negative steps
-4. **output vorstellen:** Für Tracing-Fragen den Output mental durchgehen
-5. **`range()` merken:** Stop ist exklusiv!
-6. **String ist immutable:** `s[0] = "x"` funktioniert nicht
-7. **input() ist string:** `x = input()` gibt String, nicht int
-8. **Precedence checken:** Operatoren in richtige Reihenfolge
+### During the Exam
+1. **Read all 30 questions:** Can skip difficult questions and come back later
+2. **Read code carefully:** Pay attention to details like indentation, brackets, commas
+3. **Watch for signs:** Negative numbers, negative indices, negative steps
+4. **Visualize output:** For tracing questions, mentally walk through the output
+5. **Remember `range()`:** Stop is exclusive!
+6. **Strings are immutable:** `s[0] = "x"` doesn't work
+7. **input() returns string:** `x = input()` gives string, not int
+8. **Check precedence:** Operators in correct order
 
-### Häufige Fallen
-- Division gibt Float (10/2 = 5.0, nicht 5)
-- Floor Division mit Negativ: -7//2 = -4 (nicht -3!)
-- Exponentiation rechtsassoziativ: 2**3**2 = 512 (nicht 64)
-- List wird bei Zuweisung verwiesen: `a = [1]; b = a; b.append(2)` → beide geändert
-- Loop Variable existiert nach Schleife
-- `else` nach loop läuft nur wenn kein break
-- `break` bricht nur innerste Schleife
+### Common Traps
+- Division returns float (10/2 = 5.0, not 5)
+- Floor division with negatives: -7//2 = -4 (not -3!)
+- Exponentiation is right-associative: 2**3**2 = 512 (not 64)
+- Lists are referenced on assignment: `a = [1]; b = a; b.append(2)` → both changed
+- Loop variable exists after loop
+- `else` after loop only runs if no break
+- `break` breaks only innermost loop
 
 ---
 
-## 🛤️ Lernplan (2-4 Wochen)
+## 🛤️ Study Plan (2-4 Weeks)
 
-### Woche 1: Grundlagen (Sektion 1 & 2)
+### Week 1: Fundamentals (Section 1 & 2)
 
-**Tag 1-2: Programming Basics & Syntax**
-- Computer Programming Basics durcharbeiten
-- Python 2 vs 3 Unterschiede verstehen
-- Syntax Rules lernen (Indentation, Comments, Keywords)
+**Days 1-2: Programming Basics & Syntax**
+- Work through Computer Programming Basics
+- Understand Python 2 vs 3 differences
+- Learn Syntax Rules (Indentation, Comments, Keywords)
 
-**Tag 3-4: Literals, Variablen, Operatoren**
-- Alle Literal-Typen: Integer, Float, String, Boolean, None
-- Variable Assignment und Referenzen
-- Alle Operatoren: Arithmetik, Vergleich, Logik, Bitwise
-- Operator Priorität intensiv üben
+**Days 3-4: Literals, Variables, Operators**
+- All literal types: Integer, Float, String, Boolean, None
+- Variable assignment and references
+- All operators: Arithmetic, Comparison, Logic, Bitwise
+- Practice operator precedence intensively
 
-**Tag 5-6: Data Types & I/O**
+**Days 5-6: Data Types & I/O**
 - Type Conversion: `int()`, `float()`, `str()`, `bool()`
-- Falsy vs Truthy Werte
-- `print()` mit `sep` und `end`
-- `input()` und String-Konvertierung
+- Falsy vs Truthy values
+- `print()` with `sep` and `end`
+- `input()` and string conversion
 
-**Tag 7: Conditionals & Mini-Review**
-- `if`, `elif`, `else` Struktur
-- Truthiness in Bedingungen
-- Ternär-Ausdrücke
-- Erste Praxis-Fragen
+**Day 7: Conditionals & Mini-Review**
+- `if`, `elif`, `else` structure
+- Truthiness in conditions
+- Ternary expressions
+- First practice questions
 
-### Woche 2: Control Flow & Collections (Sektion 2 & 3)
+### Week 2: Control Flow & Collections (Section 2 & 3)
 
-**Tag 1-2: Loops (KRITISCH!)**
-- `while` und `for` Schleifen
-- `range()` sorgfältig: Start, Stop (exklusiv!), Step
-- `break` und `continue`
-- `else` mit Schleifen
+**Days 1-2: Loops (CRITICAL!)**
+- `while` and `for` loops
+- `range()` carefully: start, stop (exclusive!), step
+- `break` and `continue`
+- `else` with loops
 - Nested loops
 
-**Tag 3-4: Strings (SEHR WICHTIG!)**
-- Indexierung und Negative Indizes
+**Days 3-4: Strings (VERY IMPORTANT!)**
+- Indexing and negative indices
 - Slicing: `[start:stop:step]`
-- Alle String-Methoden
-- String-Operationen: Concatenation, Repetition
+- All string methods
+- String operations: concatenation, repetition
 
-**Tag 5: Lists (KRITISCH!)**
-- List Creation und Indexing
-- List Methods: `.append()`, `.insert()`, `.remove()`, `.pop()`, `.sort()`, `.reverse()`, `.copy()`
-- List Slicing
-- List Comprehension
-- In-Operator für Listen
+**Day 5: Lists (CRITICAL!)**
+- List creation and indexing
+- List methods: `.append()`, `.insert()`, `.remove()`, `.pop()`, `.sort()`, `.reverse()`, `.copy()`
+- List slicing
+- List comprehension
+- Membership operator for lists
 
-**Day 6-7: Tuples & Dicts**
-- Tuple Creation und Unpacking
+**Days 6-7: Tuples & Dicts**
+- Tuple creation and unpacking
 - Tuple immutability
-- Dict Creation und Zugriff
-- Dict Methods: `.keys()`, `.values()`, `.items()`, `.get()`, `.pop()`
-- Dict Iteration
+- Dict creation and access
+- Dict methods: `.keys()`, `.values()`, `.items()`, `.get()`, `.pop()`
+- Dict iteration
 
-### Woche 3: Functions & Exceptions (Sektion 4)
+### Week 3: Functions & Exceptions (Section 4)
 
-**Tag 1-2: Functions Basics**
-- `def` Syntax
-- Parameter und Return
-- Default Parameter
-- Variable Scope (LEGB)
-- Return ohne Wert = None
+**Days 1-2: Functions Basics**
+- `def` syntax
+- Parameters and return
+- Default parameters
+- Variable scope (LEGB)
+- Return without value = None
 
-**Tag 3-4: Functions Advanced & Built-ins**
-- `*args` und `**kwargs`
-- Lambda Functions
-- Built-in Functions durchgehen
+**Days 3-4: Functions Advanced & Built-ins**
+- `*args` and `**kwargs`
+- Lambda functions
+- Review built-in functions
 - `map()`, `filter()`, `enumerate()`, `zip()`
 
-**Tag 5-6: Exception Handling**
-- Try-Except-Else-Finally
-- Exception Types kennen
-- Spezifische Exceptions fangen
-- `raise` Statement
+**Days 5-6: Exception Handling**
+- Try-except-else-finally
+- Know exception types
+- Catch specific exceptions
+- `raise` statement
 
-**Tag 7: Recursion & Generators**
-- Recursive Functions mit Basis- und Rekursionsfall
-- Generators mit `yield`
-- Iterator-Konzepte
+**Day 7: Recursion & Generators**
+- Recursive functions with base and recursive case
+- Generators with `yield`
+- Iterator concepts
 
-### Woche 4: Review & Praxis (oder parallel mit Woche 3)
+### Week 4: Review & Practice (or parallel with Week 3)
 
-**Tag 1-3: Schwache Bereiche wiederholen**
-- Fokus auf Themen, die schwer fielen
-- Spezifische Trap-Konzepte üben
-- Quick Reference mehrmals durchlesen
+**Days 1-3: Repeat weak areas**
+- Focus on topics that were difficult
+- Practice specific trap concepts
+- Read quick reference multiple times
 
-**Tag 4-6: Practice Questions**
-- Practice Questions durcharbeiten
-- Unter Zeitdruck üben (40 Minuten für 30 Fragen)
-- Fehler analysieren
-- Ähnliche Aufgaben nochmal üben
+**Days 4-6: Practice Questions**
+- Work through practice questions
+- Practice under time pressure (40 minutes for 30 questions)
+- Analyze mistakes
+- Practice similar tasks again
 
-**Tag 7: Finale Vorbereitung**
-- Cheatsheet durchgehen
-- Common Mistakes nochmal lesen
-- Ausreichend schlafen
-- Am Prüfungstag ruhig und fokussiert bleiben
-
----
-
-## ⭐ Priorität der Themen
-
-### ABSOLUT KRITISCH (Know perfectly!)
-- String Methods und Slicing
-- List Operations und List Comprehensions
-- Function Parameter (default, *args, **kwargs)
-- Exception Handling Syntax
-- Boolean Logic und Comparisons
-- `range()` (stop ist exklusiv!)
-- Operator Precedence
-- Truthiness (Falsy vs Truthy)
-
-### WICHTIG
-- Dictionary Operations
-- Loop Mechanics (break, continue, else)
-- Type Conversion
-- Scope (Local vs Global)
-- Built-in Functions
-- Tuples und Unpacking
-
-### GUT ZU WISSEN
-- Bitwise Operators
-- Numeral Systems (Binary, Octal, Hex)
-- Recursion Basics
-- Generator Expressions
-- Lambda Functions
+**Day 7: Final Preparation**
+- Go through cheatsheet
+- Read common mistakes again
+- Get enough sleep
+- Stay calm and focused on exam day
 
 ---
 
-## 📚 Empfohlene Ressourcen
+## ⭐ Topic Priorities
 
-- **Offizielle PCEP:** https://pythoninstitute.org/pcep
+### ABSOLUTELY CRITICAL (Know perfectly!)
+- String methods and slicing
+- List operations and list comprehensions
+- Function parameters (default, *args, **kwargs)
+- Exception handling syntax
+- Boolean logic and comparisons
+- `range()` (stop is exclusive!)
+- Operator precedence
+- Truthiness (falsy vs truthy)
+
+### IMPORTANT
+- Dictionary operations
+- Loop mechanics (break, continue, else)
+- Type conversion
+- Scope (local vs global)
+- Built-in functions
+- Tuples and unpacking
+
+### GOOD TO KNOW
+- Bitwise operators
+- Numeral systems (binary, octal, hex)
+- Recursion basics
+- Generator expressions
+- Lambda functions
+
+---
+
+## 📚 Recommended Resources
+
+- **Official PCEP:** https://pythoninstitute.org/pcep
 - **Python Docs:** https://docs.python.org/3/
-- **Dieser Kurs:** Alle Dateien in diesem Ordner durcharbeiten
-- **Practice:** 20_Practice_Questions.md wiederholt üben
+- **This Course:** Work through all files in this folder
+- **Practice:** Repeatedly practice 20_Practice_Questions.md
 
 ---
 
 ## 📊 Quick Success Factors
 
-| Faktor | Wichtigkeit | Action |
-|--------|-------------|--------|
-| Strings meistern | ⭐⭐⭐ | Alle Methods auswendig lernen |
-| range() verstehen | ⭐⭐⭐ | Stop ist EXKLUSIV! Viel üben |
-| Listen beherrschen | ⭐⭐⭐ | Comprehensions und Methods |
-| Operatoren Priorität | ⭐⭐ | Prioität Chart auswendig lernen |
-| Exception Handling | ⭐⭐ | Try-Except-Else-Finally |
-| Functions | ⭐⭐ | Parameter Typen verstehen |
-| Truthiness | ⭐⭐ | Falsy Values: 0, "", [], {}, None |
+| Factor | Importance | Action |
+|--------|------------|--------|
+| Master strings | ⭐⭐⭐ | Memorize all methods |
+| Understand range() | ⭐⭐⭐ | Stop is EXCLUSIVE! Practice a lot |
+| Master lists | ⭐⭐⭐ | Comprehensions and methods |
+| Operator precedence | ⭐⭐ | Memorize precedence chart |
+| Exception handling | ⭐⭐ | Try-except-else-finally |
+| Functions | ⭐⭐ | Understand parameter types |
+| Truthiness | ⭐⭐ | Falsy values: 0, "", [], {}, None |
 | Dictionaries | ⭐⭐ | .items(), .keys(), .values() |
 
 ---
 
-## 🎯 Prüfungs-Erfolg Checkliste (Vor der Prüfung!)
+## 🎯 Exam Success Checklist (Before the exam!)
 
-- [ ] 3+ Stunden Schlaf in letzten 24h
-- [ ] Schnelle Referenz gelesen (5 Minuten)
-- [ ] String-Methods: `.upper()`, `.lower()`, `.strip()`, `.split()`, `.replace()` parat
-- [ ] `range()` korrekt: stop ist exklusiv!
-- [ ] Operator Priorität im Kopf
-- [ ] Truthiness: 0, "", [], {}, None sind falsy
-- [ ] `input()` gibt String
-- [ ] Division `/` gibt Float
-- [ ] `is` vs `==` unterscheiden
-- [ ] List Methods können
-- [ ] Dict `.items()` und `.keys()` können
-- [ ] Try-Except Syntax
-- [ ] Ruhig bleiben und Fragen sorgfältig lesen
+- [ ] 3+ hours sleep in last 24 hours
+- [ ] Read quick reference (5 minutes)
+- [ ] String methods: `.upper()`, `.lower()`, `.strip()`, `.split()`, `.replace()` ready
+- [ ] `range()` correct: stop is exclusive!
+- [ ] Operator precedence in mind
+- [ ] Truthiness: 0, "", [], {}, None are falsy
+- [ ] `input()` returns string
+- [ ] Division `/` returns float
+- [ ] Distinguish `is` vs `==`
+- [ ] Know list methods
+- [ ] Know dict `.items()` and `.keys()`
+- [ ] Try-except syntax
+- [ ] Stay calm and read questions carefully
 
 ---
 
-*Viel Erfolg bei der PCEP-Prüfung! Mit konsistenter Vorbereitung sind 70% erreichbar. Fokussiere dich auf die kritischen Themen (Strings, Lists, range, Operators) und du wirst bestehen! 🍀*
+*Good luck on the PCEP exam! With consistent preparation, 70% is achievable. Focus on critical topics (strings, lists, range, operators) and you will pass!*

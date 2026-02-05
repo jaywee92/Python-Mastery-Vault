@@ -18,42 +18,42 @@ difficulty: beginner-intermediate
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║     ⚠️ AUSNAHMEN - FEHLER ABFANGEN & BEHANDELN                ║
+║     ⚠️ EXCEPTIONS - CATCH & HANDLE ERRORS                    ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   OHNE FEHLERBEHANDLUNG (Programm stürzt ab):                 ║
+║   WITHOUT ERROR HANDLING (Program crashes):                   ║
 ║   ┌────────────────────────────────────┐                      ║
-║   │ print(10 / 0)                      │  ← Fehler!          ║
-║   │ ZeroDivisionError: ...             │  ← Programm CRASH!  ║
-║   │ Restlicher Code läuft nie          │                     ║
+║   │ print(10 / 0)                      │  ← Error!           ║
+║   │ ZeroDivisionError: ...             │  ← Program CRASH!   ║
+║   │ Remaining code never runs          │                     ║
 ║   └────────────────────────────────────┘                      ║
 ║                                                               ║
-║   MIT FEHLERBEHANDLUNG (try/except):                           ║
+║   WITH ERROR HANDLING (try/except):                            ║
 ║   ┌─────────────────────────────────────────┐                 ║
 ║   │ try:                                    │                 ║
-║   │     result = 10 / 0  ← Fehler!          │  JETZT          ║
-║   │ except ZeroDivisionError:               │  ABGEFANGEN!    ║
-║   │     print("Kann nicht durch 0 teilen!") │                 ║
+║   │     result = 10 / 0  ← Error!           │  NOW            ║
+║   │ except ZeroDivisionError:               │  CAUGHT!        ║
+║   │     print("Cannot divide by zero!")     │                 ║
 ║   │     result = 0                          │                 ║
-║   │ print(result)  ← Programm läuft weiter! │                 ║
+║   │ print(result)  ← Program continues!     │                 ║
 ║   └─────────────────────────────────────────┘                 ║
 ║                                                               ║
-║   Fehler-Struktur:                                             ║
-║   try:              ← Versuch Code                             ║
-║       risiko_code()                                            ║
-║   except TypeError: ← Spezifischer Fehler                     ║
+║   Error structure:                                             ║
+║   try:              ← Try code                                ║
+║       risky_code()                                            ║
+║   except TypeError: ← Specific error                         ║
 ║       handle_type_error()                                      ║
-║   except ValueError:                                           ║
+║   except ValueError:                                          ║
 ║       handle_value_error()                                     ║
-║   except Exception:  ← Alle anderen Fehler                    ║
+║   except Exception:  ← All other errors                       ║
 ║       handle_any_error()                                       ║
-║   else:             ← Wenn KEIN Fehler                        ║
+║   else:             ← If NO error                             ║
 ║       success()                                                ║
-║   finally:          ← IMMER ausführen                         ║
+║   finally:          ← ALWAYS run                              ║
 ║       cleanup()                                                ║
 ║                                                               ║
-║   💡 Fehler abfangen = Robuste Programme schreiben            ║
-║   💡 Finally = Sichere Ressourcen freigeben                   ║
+║   💡 Catch errors = Write robust programs                     ║
+║   💡 Finally = Safely free resources                          ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

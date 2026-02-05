@@ -18,37 +18,37 @@ difficulty: beginner-intermediate
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║       📂 DATEI-EIN-AUSGABE - DATEIEN LESEN/SCHREIBEN          ║
+║       📂 FILE IO - READING/WRITING FILES                      ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   Richtige Methode: WITH-Anweisung (Empfohlen)               ║
+║   Correct method: WITH statement (Recommended)                ║
 ║   ┌──────────────────────────────────────────┐               ║
 ║   │ with open('file.txt', 'r') as f:         │               ║
 ║   │     content = f.read()                   │               ║
-║   │ # Datei wird automatisch geschlossen!    │               ║
+║   │ # File automatically closed!             │               ║
 ║   └──────────────────────────────────────────┘               ║
 ║                                                               ║
-║   Modi:  'r' (Lesen) | 'w' (Schreiben) | 'a' (Anhängen)      ║
+║   Modes: 'r' (Read) | 'w' (Write) | 'a' (Append)            ║
 ║                                                               ║
-║   Visualisierung von Dateizugriff:                            ║
+║   File access visualization:                                  ║
 ║                                                               ║
-║   DATEI ────────┐                                             ║
+║   FILE ─────────┐                                             ║
 ║   "text.txt"    │  open()                                     ║
-║                 └──→ [Dateiobjekt] ←─ Python                 ║
+║                 └──→ [File object] ←─ Python                 ║
 ║                      ↓                                        ║
 ║                   read()   write()   append()                 ║
 ║                      ↓         ↓         ↓                    ║
-║                   Inhalt   Ändern    Hinzufügen              ║
+║                   Content  Modify    Add                     ║
 ║                                                               ║
-║   close() ODER with automatisch ← SICHERHEIT!                ║
+║   close() OR with automatic ← SAFETY!                        ║
 ║                                                               ║
-║   Datei-Modi im Detail:                                       ║
-║   'r'  ← Nur lesen (Fehler wenn nicht vorhanden)             ║
-║   'w'  ← Schreiben (ALLES LÖSCHEN!)                          ║
-║   'a'  ← Anhängen (am Ende hinzufügen)                       ║
-║   'x'  ← Nur schaffen (wenn nicht vorhanden)                 ║
+║   File modes in detail:                                       ║
+║   'r'  ← Read only (Error if not exists)                     ║
+║   'w'  ← Write (DELETES ALL!)                                ║
+║   'a'  ← Append (add at end)                                 ║
+║   'x'  ← Create only (if not exists)                         ║
 ║                                                               ║
-║   💡 Immer with verwenden! Sicherer & Automatisches close    ║
+║   💡 Always use with! Safer & automatic close               ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
@@ -262,7 +262,7 @@ with open('data.tsv', 'r') as f:
 ```python
 import csv
 
-# Als Liste von Listen
+# As list of lists
 data = [
     ['Name', 'Age', 'City'],
     ['Alice', '30', 'Berlin'],
@@ -271,9 +271,9 @@ data = [
 
 with open('output.csv', 'w', newline='') as f:
     writer = csv.writer(f)
-    writer.writerows(data)  # Alle auf einmal
+    writer.writerows(data)  # All at once
 
-# Als Dictionaries
+# As dictionaries
 data = [
     {'name': 'Alice', 'age': 30, 'city': 'Berlin'},
     {'name': 'Bob', 'age': 25, 'city': 'Munich'}
@@ -282,11 +282,11 @@ data = [
 with open('output.csv', 'w', newline='') as f:
     fieldnames = ['name', 'age', 'city']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
-    writer.writeheader()  # Schreibt Header
+    writer.writeheader()  # Writes header
     writer.writerows(data)
 ```
 
-**Wichtig:** `newline=''` verhindert doppelte Leerzeilen auf Windows!
+**Important:** `newline=''` prevents double blank lines on Windows!
 
 ---
 

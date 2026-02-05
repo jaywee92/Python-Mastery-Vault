@@ -30,21 +30,21 @@ complexity: O(n²)
 ║                                                               ║
 ║  Array: [64, 25, 12, 22, 11]                                ║
 ║          ↓                                                   ║
-║  Pass 1: Finde Minimum in gesamtem Array                    ║
+║  Pass 1: Find minimum in entire array                        ║
 ║  [64, 25, 12, 22, 11]  →  min = 11                          ║
-║  [11, 25, 12, 22, 64]  →  Swap!  ✓ Sortiert               ║
+║  [11, 25, 12, 22, 64]  →  Swap!  ✓ Sorted                  ║
 ║                                                               ║
-║  Pass 2: Finde Minimum in [25, 12, 22, 64]                 ║
+║  Pass 2: Find minimum in [25, 12, 22, 64]                  ║
 ║  [11, 25, 12, 22, 64]  →  min = 12                          ║
-║  [11, 12, 25, 22, 64]  →  Swap!  ✓✓ Sortiert              ║
+║  [11, 12, 25, 22, 64]  →  Swap!  ✓✓ Sorted                 ║
 ║                                                               ║
-║  Pass 3: Finde Minimum in [25, 22, 64]                     ║
+║  Pass 3: Find minimum in [25, 22, 64]                      ║
 ║  [11, 12, 25, 22, 64]  →  min = 22                          ║
-║  [11, 12, 22, 25, 64]  →  Swap!  ✓✓✓ Sortiert            ║
+║  [11, 12, 22, 25, 64]  →  Swap!  ✓✓✓ Sorted               ║
 ║                                                               ║
-║  💡 Finde das Kleinste von "unsortiert"                      ║
-║  💡 Tausche mit erstem unsortierten Element                 ║
-║  💡 Wiederhole bis fertig!                                  ║
+║  💡 Find the smallest from "unsorted"                        ║
+║  💡 Swap with first unsorted element                        ║
+║  💡 Repeat until done!                                       ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

@@ -18,7 +18,7 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║         📖 WÖRTERBUCH - SCHLÜSSEL:WERT PAARE                 ║
+║         📖 DICTIONARY - KEY:VALUE PAIRS                      ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
 ║   student = {"name": "Alice", "age": 25, "grade": "A"}       ║
@@ -31,17 +31,17 @@ type: topic
 ║   │  "Alice"   │  25      │   "A"        │        │        │ ║
 ║   └────────────┴──────────┴──────────────┴────────┴────────┘ ║
 ║                                                               ║
-║   Zugriff auf Werte (O(1) Geschwindigkeit):                  ║
+║   Access values (O(1) speed):                                ║
 ║   student["name"]  → "Alice"                                  ║
 ║   student["age"]   → 25                                       ║
-║   student.get("grade")  → "A" (mit Fallback möglich)         ║
+║   student.get("grade")  → "A" (with fallback possible)       ║
 ║                                                               ║
-║   Änderungen:                                                 ║
-║   • student["gpa"] = 3.9  (Neuer Schlüssel)                 ║
-║   • student["age"] = 26   (Wert aktualisiert)               ║
-║   • del student["grade"]  (Schlüssel löschen)               ║
+║   Modifications:                                              ║
+║   • student["gpa"] = 3.9  (New key)                          ║
+║   • student["age"] = 26   (Update value)                     ║
+║   • del student["grade"]  (Delete key)                       ║
 ║                                                               ║
-║   💡 Wörterbuch = Schneller Zugriff auf Werte via Schlüssel ║
+║   💡 Dictionary = Fast access to values via keys             ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

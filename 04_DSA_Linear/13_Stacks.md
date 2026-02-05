@@ -50,7 +50,7 @@ A **stack** is a linear data structure that follows **LIFO** (Last-In-First-Out)
 ║  💡 push() = Teller auf Stapel                               ║
 ║  💡 pop() = oberste Teller nehmen                            ║
 ║  💡 Alle Ops sind O(1) - sehr schnell!                       ║
-║  💡 Real-world: Browser Back, Undo, Funktion-Calls          ║
+║  💡 Real-world: Browser Back, Undo, Function Calls          ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

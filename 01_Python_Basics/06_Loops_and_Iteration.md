@@ -18,31 +18,31 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║       🔄 SCHLEIFEN - WIEDERHOLUNG VON CODE BLÖCKEN            ║
+║       🔄 LOOPS - REPEATING CODE BLOCKS                        ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   FOR LOOP (Bekannte Anzahl von Wiederholungen):             ║
+║   FOR LOOP (Known number of iterations):                     ║
 ║   ┌─────────────────────────────┐                            ║
 ║   │  for i in [0,1,2,3,4]:      │                            ║
-║   │      print(i)   ← Läuft 5x  │   i: 0 → 1 → 2 → 3 → 4   ║
+║   │      print(i)   ← Runs 5x   │   i: 0 → 1 → 2 → 3 → 4   ║
 ║   └─────────────────────────────┘                            ║
 ║                                                               ║
-║   WHILE LOOP (Unbekannte Anzahl):                            ║
+║   WHILE LOOP (Unknown number):                               ║
 ║   ┌────────────────────────────┐                             ║
-║   │  while x < 5:              │   x=0: Läuft?        JA ◎   ║
-║   │      print(x)  ← Läuft bis │   x=1: Läuft?        JA ◎   ║
-║   │      x += 1    Bedingung    │   x=2: Läuft?        JA ◎   ║
-║   │                 falsch      │   x=5: Läuft?        NEIN ◌ ║
+║   │  while x < 5:              │   x=0: Runs?         YES ◎  ║
+║   │      print(x)  ← Runs until│   x=1: Runs?         YES ◎  ║
+║   │      x += 1    condition    │   x=2: Runs?         YES ◎  ║
+║   │                 is false    │   x=5: Runs?         NO ◌   ║
 ║   └────────────────────────────┘                             ║
 ║                                                               ║
-║   BREAK (Sofort beenden):          CONTINUE (überspringen):  ║
+║   BREAK (Exit immediately):        CONTINUE (skip):         ║
 ║   for i in range(5):                for i in range(5):       ║
 ║       if i == 3:                        if i == 2:           ║
-║           break  ← Schleifen-Ende       continue ← Nächst.   ║
+║           break  ← Loop ends           continue ← Next iter  ║
 ║       print(i)                         print(i)              ║
 ║   # Output: 0, 1, 2               # Output: 0, 1, 3, 4      ║
 ║                                                               ║
-║   💡 for = zählbare Elemente, while = Bedingung              ║
+║   💡 for = countable elements, while = condition              ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

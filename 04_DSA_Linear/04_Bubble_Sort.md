@@ -29,23 +29,23 @@ complexity: O(n²)
 ║               🫧 BUBBLE SORT - BUBBLES RISE UP!               ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   Start: [5, 2, 8, 1, 9]  →  Große Werte blubbern nach oben  ║
+║   Start: [5, 2, 8, 1, 9]  →  Large values bubble upward  ║
 ║                                                               ║
 ║        5  2  8  1  9                                          ║
 ║        ↓↓                                                     ║
-║        2  5  8  1  9    (5 > 2, tausch!)                     ║
+║        2  5  8  1  9    (5 > 2, swap!)                      ║
 ║           ↓↓                                                  ║
-║        2  5  1  8  9    (8 > 1, tausch!)                     ║
-║                    ○    9 ist jetzt oben! 🫧                  ║
+║        2  5  1  8  9    (8 > 1, swap!)                       ║
+║                    ○    9 is now at top! 🫧                  ║
 ║        2  5  1  8 │9│                                        ║
 ║                                                               ║
-║   Pass 2: Wiederhole (ignoriere sortierten Teil)             ║
+║   Pass 2: Repeat (ignore sorted part)                       ║
 ║        2  5  1  │8  9│                                       ║
 ║        ↓↓                                                     ║
-║        2  1  5  │8  9│   (5 > 1, tausch!)                    ║
+║        2  1  5  │8  9│   (5 > 1, swap!)                      ║
 ║                                                               ║
-║   💡 Vergleiche Nachbarn, tausche wenn falsch                ║
-║   💡 Größte Werte "blubbern" nach hinten                     ║
+║   💡 Compare neighbors, swap if wrong                        ║
+║   💡 Largest values "bubble" to the end                      ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

@@ -19,7 +19,7 @@ difficulty: intermediate
 **Magic Methods** (also **Dunder Methods** = "Double Underscore") are special methods with `__name__` syntax that Python calls automatically.
 
 ```python
-# Wenn du schreibst...        # ...ruft Python auf:
+# When you write...           # Python calls:
 obj = MyClass()              # MyClass.__new__() + __init__()
 print(obj)                   # obj.__str__()
 len(obj)                     # obj.__len__()

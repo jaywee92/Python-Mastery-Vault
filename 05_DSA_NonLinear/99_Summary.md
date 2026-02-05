@@ -4,17 +4,17 @@ tags: [dsa, summary, trees, graphs, hash, non-linear]
 created: 2026-02-05
 ---
 
-# DSA NonLinear - Zusammenfassung
+# DSA NonLinear - Summary
 
-## 📋 Überblick
+## 📋 Overview
 
-Nicht-lineare Datenstrukturen ermöglichen es, komplexe Beziehungen zwischen Daten effizient zu modellieren. Dieses Modul behandelt drei Hauptkategorien: Hash-basierte Strukturen (für schnelle Lookups), Bäume (für hierarchische Daten) und Graphen (für Netzwerk-Strukturen). Jede Kategorie bietet unterschiedliche Operationen und Komplexitäten.
+Non-linear data structures enable efficient modeling of complex relationships between data. This module covers three main categories: hash-based structures (for fast lookups), trees (for hierarchical data), and graphs (for network structures). Each category offers different operations and complexities.
 
 ---
 
-## 📊 Komplexitäts-Übersicht
+## 📊 Complexity Overview
 
-### Hash-basierte Strukturen
+### Hash-Based Structures
 
 ```
 ┌────────────────────┬──────────────┬──────────────┬─────────────┐
@@ -29,10 +29,10 @@ Nicht-lineare Datenstrukturen ermöglichen es, komplexe Beziehungen zwischen Dat
 │ Worst Case         │ O(n)         │ O(n)         │ O(n)        │
 │ Load Factor        │ α < 0.75     │ α < 0.75     │ α < 0.75    │
 └────────────────────┴──────────────┴──────────────┴─────────────┘
-* Average case (bei guter Hash-Funktion)
+* Average case (with good hash function)
 ```
 
-### Bäume
+### Trees
 
 ```
 ┌──────────────────────┬──────────────────┬──────────────────┬──────────┐
@@ -44,149 +44,149 @@ Nicht-lineare Datenstrukturen ermöglichen es, komplexe Beziehungen zwischen Dat
 │ Space                │ O(n)             │ O(n)             │ O(n)     │
 │ Find Min/Max         │ O(log n)         │ O(n)             │ O(log n) │
 ├──────────────────────┼──────────────────┼──────────────────┼──────────┤
-│ Balance Factor       │ Keine Garantie   │ Keine Garantie   │ |h_l-h_r| ≤ 1 │
-│ Rebalancing          │ Nein             │ Nein             │ Ja (Rotationen) │
+│ Balance Factor       │ No guarantee     │ No guarantee     │ |h_l-h_r| ≤ 1 │
+│ Rebalancing          │ No               │ No               │ Yes (rotations) │
 └──────────────────────┴──────────────────┴──────────────────┴──────────┘
 ```
 
-### Graphen
+### Graphs
 
 ```
 ┌──────────────────────────┬──────────────┬──────────────┐
-│ Algorithmus              │ Zeit         │ Space        │
+│ Algorithm                │ Time         │ Space        │
 ├──────────────────────────┼──────────────┼──────────────┤
 │ BFS/DFS                  │ O(V + E)     │ O(V)         │
-│ Dijkstra (mit Heap)      │ O((V+E)logV) │ O(V)         │
+│ Dijkstra (with heap)     │ O((V+E)logV) │ O(V)         │
 │ Bellman-Ford             │ O(VE)        │ O(V)         │
 │ Floyd-Warshall (all-pairs)│ O(V³)       │ O(V²)        │
-│ Cycle Detection (DFS)    │ O(V + E)     │ O(V)         │
+│ Cycle detection (DFS)    │ O(V + E)     │ O(V)         │
 ├──────────────────────────┼──────────────┼──────────────┤
-│ Adjacency List Space     │ -            │ O(V + E)     │
-│ Adjacency Matrix Space   │ -            │ O(V²)        │
+│ Adjacency list space     │ -            │ O(V + E)     │
+│ Adjacency matrix space   │ -            │ O(V²)        │
 └──────────────────────────┴──────────────┴──────────────┘
 ```
 
 ---
 
-## 📝 Topic-Zusammenfassungen
+## 📝 Topic Summaries
 
 ### 1. Hash Tables
-Hash Tables bilden Keys auf Values ab, indem eine Hash-Funktion den Key in einen Array-Index konvertiert. Sie ermöglichen durchschnittlich O(1) Operationen, erfordern aber Kollisionsbehandlung (Chaining oder Linear Probing). Der Load Factor bestimmt, wann eine Vergrößerung notwendig ist.
+Hash tables map keys to values by converting the key to an array index using a hash function. They enable average O(1) operations but require collision handling (chaining or linear probing). The load factor determines when resizing is necessary.
 
-**Wichtige Konzepte:** Hash-Funktion, Collision Resolution, Load Factor, Chaining vs. Open Addressing
+**Key Concepts:** Hash function, collision resolution, load factor, chaining vs. open addressing
 
 ### 2. Hash Sets
-Hash Sets speichern eindeutige Elemente und verwenden einen Hash-Table intern (nur Schlüssel, keine Werte). Sie bieten O(1) durchschnittliche Operationen für Add, Remove und Contains, mit automatischer Duplikat-Elimination. Perfekt für schnelle Membership-Tests und Duplicate-Detection.
+Hash sets store unique elements and use a hash table internally (keys only, no values). They offer O(1) average operations for add, remove, and contains, with automatic duplicate elimination. Perfect for fast membership tests and duplicate detection.
 
-**Wichtige Konzepte:** Eindeutigkeit, Set Operations (Union, Intersection, Difference), frozenset
+**Key Concepts:** Uniqueness, set operations (union, intersection, difference), frozenset
 
 ### 3. Hash Maps
-Hash Maps (Dictionaries) speichern Key-Value-Paare mit O(1) durchschnittlichen Lookups. Keys müssen unique und hashable sein, Values können beliebig sein. Sie unterstützen Operationen wie `.get()` mit Defaults, `defaultdict` für automatische Default-Werte und sind in Python 3.7+ ordered.
+Hash maps (dictionaries) store key-value pairs with O(1) average lookups. Keys must be unique and hashable, values can be anything. They support operations like `.get()` with defaults, `defaultdict` for automatic defaults, and are ordered in Python 3.7+.
 
-**Wichtige Konzepte:** Key-Value-Mapping, Safe Access, defaultdict, Counter
+**Key Concepts:** Key-value mapping, safe access, defaultdict, counter
 
-### 4. Trees (Allgemein)
-Bäume sind hierarchische Strukturen mit einem Root-Node und Parent-Child-Beziehungen ohne Zyklen. Sie bestehen aus Knoten und Kanten, wobei jeder non-root Node genau einen Parent hat. Wichtige Messgrößen sind Höhe (max. Abstand zu Blatt) und Tiefe (Abstand von Root).
+### 4. Trees (General)
+Trees are hierarchical structures with a root node and parent-child relationships without cycles. They consist of nodes and edges, where each non-root node has exactly one parent. Important measures are height (max. distance to leaf) and depth (distance from root).
 
-**Wichtige Konzepte:** Root, Leaves, Height vs. Depth, Traversals (Preorder, Postorder, Level-Order)
+**Key Concepts:** Root, leaves, height vs. depth, traversals (preorder, postorder, level-order)
 
 ### 5. Binary Trees
-Binary Trees begrenzen jeden Node auf maximal 2 Kinder (Left/Right). Sie können in Typen kategorisiert werden: Full, Complete, Perfect, Balanced. Das `TreeNode`-Muster speichert value, left und right Zeiger. Sie bilden die Grundlage für spezialisierte Strukturen wie BSTs.
+Binary trees limit each node to at most 2 children (left/right). They can be categorized: full, complete, perfect, balanced. The `TreeNode` pattern stores value, left, and right pointers. They form the basis for specialized structures like BSTs.
 
-**Wichtige Konzepte:** Left/Right Pointers, Tree Types, Traversals, Complete vs. Perfect
+**Key Concepts:** Left/right pointers, tree types, traversals, complete vs. perfect
 
 ### 6. Tree Traversals (Preorder, Inorder, Postorder)
-Traversierungen besuchen alle Nodes in unterschiedlichen Reihenfolgen. Preorder verarbeitet Node vor Kindern (N-L-R), Inorder verarbeitet zwischen Kindern (L-N-R, erzeugt sortierte Reihenfolge in BSTs), Postorder verarbeitet nach Kindern (L-R-N). Level-Order (BFS) besucht alle Nodes einer Ebene.
+Traversals visit all nodes in different orders. Preorder processes node before children (N-L-R), inorder processes between children (L-N-R, produces sorted order in BSTs), postorder processes after children (L-R-N). Level-order (BFS) visits all nodes at each level.
 
-**Wichtige Konzepte:** DFS vs. BFS, Traversal Order, Recursive vs. Iterative Implementation
+**Key Concepts:** DFS vs. BFS, traversal order, recursive vs. iterative implementation
 
 ### 7. Binary Search Trees (BST)
-BSTs ordnen Nodes so an, dass Left < Node < Right rekursiv erfüllt ist. Sie ermöglichen O(log n) Suche durch Elimination halber des Baums pro Vergleich. Das Problem: Unbalancierte BSTs degenerieren zu O(n). Inorder-Traversal erzeugt sortierte Reihenfolge.
+BSTs arrange nodes so that left < node < right recursively. They enable O(log n) search by eliminating half the tree per comparison. Problem: unbalanced BSTs degenerate to O(n). Inorder traversal produces sorted order.
 
-**Wichtige Konzepte:** BST Property, Search/Insert/Delete, Unbalance Problem, Successor/Predecessor
+**Key Concepts:** BST property, search/insert/delete, unbalance problem, successor/predecessor
 
 ### 8. AVL Trees
-AVL Trees sind selbst-balancierende BSTs mit Balance Factor |h_left - h_right| ≤ 1. Sie garantieren O(log n) für alle Operationen durch automatische Rotationen (Left, Right, Left-Right, Right-Left). Sie sind strikter balanciert als Red-Black Trees, aber teurer in Wartung.
+AVL trees are self-balancing BSTs with balance factor |h_left - h_right| ≤ 1. They guarantee O(log n) for all operations through automatic rotations (left, right, left-right, right-left). They're more strictly balanced than red-black trees but costlier to maintain.
 
-**Wichtige Konzepte:** Balance Factor, Rotations, Self-Balancing, Guaranteed O(log n)
+**Key Concepts:** Balance factor, rotations, self-balancing, guaranteed O(log n)
 
 ### 9. Graphs - Basics
-Graphen bestehen aus Vertices (Knoten) und Edges (Kanten), representiert als G = (V, E). Sie können directed (A→B), undirected (A-B), weighted (Kosten) oder unweighted sein. Zwei Hauptrepräsentationen: Adjacency List (sparsam) und Adjacency Matrix (dicht).
+Graphs consist of vertices (nodes) and edges (links), represented as G = (V, E). They can be directed (A→B), undirected (A-B), weighted (cost) or unweighted. Two main representations: adjacency list (sparse) and adjacency matrix (dense).
 
-**Wichtige Konzepte:** Vertices, Edges, Directed/Undirected, Weighted/Unweighted, Representations
+**Key Concepts:** Vertices, edges, directed/undirected, weighted/unweighted, representations
 
 ### 10. Graph Traversals (BFS & DFS)
-BFS (Breadth-First) erkundet Level-by-Level mit einer Queue, gut für kürzeste Pfade in ungewichteten Graphen. DFS (Depth-First) erkundet tiefstmöglich mit Stack/Rekursion, gut für Cycle Detection und Topological Sorting. Beide haben Komplexität O(V + E).
+BFS (breadth-first) explores level-by-level with a queue, good for shortest paths in unweighted graphs. DFS (depth-first) explores as deeply as possible with stack/recursion, good for cycle detection and topological sorting. Both have complexity O(V + E).
 
-**Wichtige Konzepte:** Queue vs. Stack, Visited Tracking, BFS Order vs. DFS Order, Anwendungen
+**Key Concepts:** Queue vs. stack, visited tracking, BFS order vs. DFS order, applications
 
 ### 11. Cycle Detection
-Cycle Detection bestimmt, ob ein Graph Zyklen enthält. Undirected: Wenn während DFS ein Neighbor (außer Parent) besucht wird. Directed: 3-Color-Schema (White/Gray/Black) - wenn zu Gray-Node geleitet wird, ist es ein Cycle. O(V + E) Zeit.
+Cycle detection determines if a graph contains cycles. Undirected: if during DFS a neighbor (except parent) is visited. Directed: 3-color schema (white/gray/black) - if redirected to gray node, it's a cycle. O(V + E) time.
 
-**Wichtige Konzepte:** Cycle Definition, White-Gray-Black Marking, Undirected vs. Directed Detection
+**Key Concepts:** Cycle definition, white-gray-black marking, undirected vs. directed detection
 
 ### 12. Shortest Path Algorithms
-Shortest Path findet den Weg mit minimalem Gewicht zwischen zwei Knoten. Dijkstra (O((V+E)logV)) arbeitet mit nicht-negativen Gewichten mittels Greedy-Ansatz. Bellman-Ford (O(VE)) funktioniert auch mit negativen Gewichten. Floyd-Warshall (O(V³)) findet All-Pairs-Shortest-Paths.
+Shortest path finds the path with minimum weight between two nodes. Dijkstra (O((V+E)logV)) works with non-negative weights using greedy approach. Bellman-Ford (O(VE)) also works with negative weights. Floyd-Warshall (O(V³)) finds all-pairs shortest paths.
 
-**Wichtige Konzepte:** Weight/Cost, Dijkstra vs. Bellman-Ford, Negative Weights, All-Pairs
+**Key Concepts:** Weight/cost, Dijkstra vs. Bellman-Ford, negative weights, all-pairs
 
 ### 13. Dijkstra's Algorithm
-Dijkstra's ist ein Greedy-Algorithmus, der immer den nächsten unbesuchten Knoten wählt. Er verwaltet dist[] array und besucht Knoten in aufsteigender Entfernung. Mit Min-Heap als Priority Queue: O((V+E)logV). Funktioniert nur mit nicht-negativen Kantengewichten.
+Dijkstra's is a greedy algorithm that always chooses the next unvisited node. It maintains dist[] array and visits nodes in ascending distance order. With min-heap as priority queue: O((V+E)logV). Works only with non-negative edge weights.
 
-**Wichtige Konzepte:** Greedy Choice, Distance Array, Priority Queue, Single-Source Shortest Path
+**Key Concepts:** Greedy choice, distance array, priority queue, single-source shortest path
 
 ### 14. Bellman-Ford Algorithm
-Bellman-Ford relaxiert alle Edges V-1 Mal, wodurch kürzeste Pfade zu allen Knoten gefunden werden. O(VE) Zeit. Funktioniert mit negativen Gewichten und kann negative Zyklen erkennen. Langsamerer als Dijkstra, aber universeller einsetzbar.
+Bellman-Ford relaxes all edges V-1 times, finding shortest paths to all nodes. O(VE) time. Works with negative weights and can detect negative cycles. Slower than Dijkstra but more universally applicable.
 
-**Wichtige Konzepte:** Edge Relaxation, Negative Weights, Negative Cycle Detection, All-Sources
+**Key Concepts:** Edge relaxation, negative weights, negative cycle detection, all-sources
 
 ---
 
-## ✅ Selbsttest-Checkliste
+## ✅ Self-Test Checklist
 
 ### Hash Structures
-- [ ] Ich kann Hash-Funktionen und deren Eigenschaften erklären
-- [ ] Ich verstehe Collision Resolution (Chaining vs. Linear Probing)
-- [ ] Ich kenne Load Factor und wann Resizing notwendig ist
-- [ ] Ich kann O(1) durchschnittliche Zeit für Hash Operations begründen
-- [ ] Ich kenne die Unterschiede zwischen Hash Table, Hash Set und Hash Map
-- [ ] Ich kann set() und dict operations in Python korrekt nutzen
-- [ ] Ich verstehe, warum nur hashable Objects als Keys/Set Elements fungieren
+- [ ] I can explain hash functions and their properties
+- [ ] I understand collision resolution (chaining vs. linear probing)
+- [ ] I know load factor and when resizing is necessary
+- [ ] I can justify O(1) average time for hash operations
+- [ ] I know differences between hash table, hash set, and hash map
+- [ ] I can correctly use set() and dict operations in Python
+- [ ] I understand why only hashable objects can be keys/set elements
 
 ### Trees
-- [ ] Ich kann die Definition eines Baums erklären (Root, Leaves, Acyclic)
-- [ ] Ich unterscheide Height vs. Depth korrekt
-- [ ] Ich kann alle Tree Traversals (Preorder, Inorder, Postorder, Level) implementieren
-- [ ] Ich verstehe TreeNode mit value, left und right Pointern
-- [ ] Ich kenne die Properties von Binary Trees (Full, Complete, Perfect, Balanced)
-- [ ] Ich kann BST Property erklären und BST Operations implementieren
-- [ ] Ich verstehe AVL Tree Balance Factor und Rotationen
-- [ ] Ich weiß, warum AVL Trees O(log n) garantieren
+- [ ] I can explain tree definition (root, leaves, acyclic)
+- [ ] I correctly distinguish height vs. depth
+- [ ] I can implement all tree traversals (preorder, inorder, postorder, level)
+- [ ] I understand TreeNode with value, left, and right pointers
+- [ ] I know properties of binary trees (full, complete, perfect, balanced)
+- [ ] I can explain BST property and implement BST operations
+- [ ] I understand AVL tree balance factor and rotations
+- [ ] I know why AVL trees guarantee O(log n)
 
 ### Graphs
-- [ ] Ich unterscheide Vertices vs. Edges und directed vs. undirected Graphs
-- [ ] Ich kann Adjacency List und Adjacency Matrix Representationen nutzen
-- [ ] Ich kann BFS mit Queue und DFS mit Stack/Rekursion implementieren
-- [ ] Ich verstehe Cycle Detection mit DFS und 3-Color-Schema
-- [ ] Ich kann Dijkstra's Algorithm mit Priority Queue implementieren
-- [ ] Ich verstehe Bellman-Ford und warum es negative Weights handhabt
-- [ ] Ich weiß, wann welcher Shortest-Path-Algorithmus zu nutzen ist
-- [ ] Ich kann Graph Traversal Results (Order, Distances) vorhersagen
+- [ ] I distinguish vertices vs. edges and directed vs. undirected graphs
+- [ ] I can use adjacency list and adjacency matrix representations
+- [ ] I can implement BFS with queue and DFS with stack/recursion
+- [ ] I understand cycle detection with DFS and 3-color schema
+- [ ] I can implement Dijkstra's algorithm with priority queue
+- [ ] I understand Bellman-Ford and why it handles negative weights
+- [ ] I know when to use which shortest-path algorithm
+- [ ] I can predict graph traversal results (order, distances)
 
-### Implementierung & Praxis
-- [ ] Ich kann eine einfache Hash Table mit Chaining implementieren
-- [ ] Ich kann einen TreeNode mit Insert/Search/Delete implementieren
-- [ ] Ich kann einen Graph mit Adjacency List darstellen
-- [ ] Ich kann BFS und DFS auf einem gegebenen Graph durchführen
-- [ ] Ich kann Probleme mit Hash Sets/Maps optimal lösen (Two Sum, etc.)
-- [ ] Ich verstehe Time/Space Tradeoffs zwischen Hash vs. Tree vs. Graph Strukturen
-- [ ] Ich kann zwischen Implementierungen basierend auf Anforderungen wählen
+### Implementation & Practice
+- [ ] I can implement a simple hash table with chaining
+- [ ] I can implement TreeNode with insert/search/delete
+- [ ] I can represent a graph with adjacency list
+- [ ] I can perform BFS and DFS on a given graph
+- [ ] I can optimally solve problems with hash sets/maps (two sum, etc.)
+- [ ] I understand time/space tradeoffs between hash vs. tree vs. graph structures
+- [ ] I can choose between implementations based on requirements
 
 ---
 
-## 🛤️ Empfohlener Lernpfad
+## 🛤️ Recommended Learning Path
 
-### Phase 1: Grundlagen verstehen (Tage 1-3)
+### Phase 1: Understanding Basics (Days 1-3)
 ```
 Hash Tables
     ↓
@@ -194,97 +194,97 @@ Hash Sets
     ↓
 Hash Maps
     ↓
-Selbsttest: Dict/Set Operationen in Python üben
+Self-test: Practice dict/set operations in Python
 ```
 
-### Phase 2: Tree Foundations (Tage 4-7)
+### Phase 2: Tree Foundations (Days 4-7)
 ```
-Trees (Allgemein)
+Trees (General)
     ↓
 Binary Trees
     ↓
 Tree Traversals (Pre/In/Post/Level)
     ↓
-Praktikum: Traversal Implementations
+Lab: Traversal implementations
 ```
 
-### Phase 3: Specialized Trees (Tage 8-10)
+### Phase 3: Specialized Trees (Days 8-10)
 ```
 Binary Search Trees
     ↓
 AVL Trees & Rotations
     ↓
-Praktikum: BST Insert/Delete, AVL Rebalancing
+Lab: BST insert/delete, AVL rebalancing
 ```
 
-### Phase 4: Graphs Einleitung (Tage 11-13)
+### Phase 4: Graph Introduction (Days 11-13)
 ```
 Graphs - Basics & Representations
     ↓
 Graph Traversals (BFS & DFS)
     ↓
-Praktikum: Graph Building, BFS/DFS Implementation
+Lab: Graph building, BFS/DFS implementation
 ```
 
-### Phase 5: Graph Algorithmen (Tage 14-18)
+### Phase 5: Graph Algorithms (Days 14-18)
 ```
 Cycle Detection
     ↓
-Shortest Path Überblick
+Shortest Path Overview
     ↓
 Dijkstra's Algorithm
     ↓
 Bellman-Ford Algorithm
     ↓
-Praktikum: Alle Shortest-Path-Algorithmen implementieren
+Lab: Implement all shortest-path algorithms
 ```
 
-### Phase 6: Integration & Interview Prep (Tage 19-20)
+### Phase 6: Integration & Interview Prep (Days 19-20)
 ```
-Review Complexity Tables
+Review complexity tables
     ↓
-Interviewing Problems lösen (LeetCode Medium)
+Solve interview problems (LeetCode medium)
     ↓
-Entscheidungslogik: Welche DS für welches Problem?
+Decision logic: Which DS for which problem?
 ```
 
 ---
 
-## 🎯 Häufige Interview-Fragen
+## 🎯 Common Interview Questions
 
-### Hash-basierte Strukturen
-- "Design a LRU Cache" → HashMap + Doubly Linked List
-- "Two Sum" → HashSet/HashMap für O(n)
-- "Group Anagrams" → HashMap mit Sorted String als Key
-- "Valid Anagram" → Character Frequency mit Counter
-- "Longest Substring Without Repeating" → Sliding Window + HashMap
+### Hash-Based Structures
+- "Design a LRU cache" → HashMap + doubly linked list
+- "Two sum" → HashSet/HashMap for O(n)
+- "Group anagrams" → HashMap with sorted string as key
+- "Valid anagram" → Character frequency with counter
+- "Longest substring without repeating" → Sliding window + HashMap
 
-### Bäume
-- "Inorder Traversal" → Recursive oder Stack-based
-- "Lowest Common Ancestor" → BST Properties nutzen
-- "Validate BST" → Inorder sollte sortiert sein
-- "Balance a BST" → In-place Balancing
-- "Height Balanced Tree?" → Rekursives Checking mit Balance Factor
+### Trees
+- "Inorder traversal" → Recursive or stack-based
+- "Lowest common ancestor" → Use BST properties
+- "Validate BST" → Inorder should be sorted
+- "Balance a BST" → In-place balancing
+- "Height balanced tree?" → Recursive checking with balance factor
 
-### Graphen
-- "Clone a Graph" → DFS/BFS mit Visited Set
-- "Course Schedule" → Cycle Detection (Topological Sort)
-- "Number of Islands" → DFS/BFS auf 2D Grid
-- "Network Delay Time" → Dijkstra oder BFS
-- "Reorder Routes to Make All Paths Lead to Zero" → BFS mit Parent Tracking
+### Graphs
+- "Clone a graph" → DFS/BFS with visited set
+- "Course schedule" → Cycle detection (topological sort)
+- "Number of islands" → DFS/BFS on 2D grid
+- "Network delay time" → Dijkstra or BFS
+- "Reorder routes to make all paths lead to zero" → BFS with parent tracking
 
 ---
 
-## 💡 Performance-Vergleich Cheat Sheet
+## 💡 Performance Comparison Cheat Sheet
 
 ```
 Operation               Hash Table    BST          AVL Tree     Graph (BFS/DFS)
 ─────────────────────────────────────────────────────────────────────────────
-Search Unsorted Data   O(1)*         O(log n)**   O(log n)     O(V+E)***
+Search unsorted data   O(1)*         O(log n)**   O(log n)     O(V+E)***
 Insert                 O(1)*         O(log n)**   O(log n)     O(1) add edge
 Delete                 O(1)*         O(log n)**   O(log n)     O(V+E) removal
 Min/Max                O(n)          O(log n)     O(log n)     O(V+E)
-Sorted Traversal       O(n)          O(n)         O(n)         O(V+E)
+Sorted traversal       O(n)          O(n)         O(n)         O(V+E)
 Space                  O(n)          O(n)         O(n)         O(V+E)
 
 * Average case (good hash function)
@@ -293,58 +293,58 @@ Space                  O(n)          O(n)         O(n)         O(V+E)
 
 WHEN TO USE:
 ────────────────────────────────────────────────────────────────────────────
-Hash Table/Set/Map:    Fast membership testing, Frequency counting, Caching
-Binary Search Tree:    Sorted iteration needed, Range queries
-AVL Tree:              Guaranteed O(log n), Strict balancing needed
-Graph (BFS/DFS):       Connected components, Shortest paths, Dependency analysis
-Dijkstra:              Single-source shortest path, Non-negative weights
-Bellman-Ford:          Negative weights allowed, All-pairs analysis
+Hash table/set/map:    Fast membership testing, frequency counting, caching
+Binary search tree:    Sorted iteration needed, range queries
+AVL tree:              Guaranteed O(log n), strict balancing needed
+Graph (BFS/DFS):       Connected components, shortest paths, dependency analysis
+Dijkstra:              Single-source shortest path, non-negative weights
+Bellman-Ford:          Negative weights allowed, all-pairs analysis
 ```
 
 ---
 
-## 🔑 Kritische Konzepte zusammengefasst
+## 🔑 Critical Concepts Summary
 
-### Hash-basierte Strukturen
-- Hash-Funktion konvertiert Key → Index (sollte uniform verteilen)
-- Load Factor = entries / buckets (typisch: Resize bei α > 0.75)
-- Collision Resolution durch Chaining (linked list) oder Probing
-- Average O(1), Worst O(n) bei schlechter Distribution
-- Python dict ist insertion-ordered seit 3.7+
+### Hash-Based Structures
+- Hash function converts key → index (should distribute uniformly)
+- Load factor = entries / buckets (typical: resize at α > 0.75)
+- Collision resolution through chaining (linked list) or probing
+- Average O(1), worst O(n) with poor distribution
+- Python dict is insertion-ordered since 3.7+
 
-### Bäume
-- Height = längster Pfad zu Blatt (Leaf = Höhe 0)
-- Depth = Abstand von Root (Root = Tiefe 0)
-- Preorder (NLR): Node vor Kindern → Kopieren, Prefix-Expression
-- Inorder (LNR): Node zwischen Kindern → Sortierer Output für BST
-- Postorder (LRN): Node nach Kindern → Löschen, Postfix-Expression
-- BST: Nur gültig wenn ALLE Left < Node < ALLE Right (rekursiv)
-- AVL: Balance Factor jedes Nodes muss in [-1, 0, 1] sein
-- Rotationen (Single/Double) rebalancieren AVL nach Insert/Delete
+### Trees
+- Height = longest path to leaf (leaf = height 0)
+- Depth = distance from root (root = depth 0)
+- Preorder (NLR): node before children → copying, prefix expression
+- Inorder (LNR): node between children → sorted output for BST
+- Postorder (LRN): node after children → deletion, postfix expression
+- BST: Valid only if ALL left < node < ALL right (recursively)
+- AVL: Balance factor of each node must be in [-1, 0, 1]
+- Rotations (single/double) rebalance AVL after insert/delete
 
-### Graphen
-- V Vertices + E Edges; typisch: E = O(V²) dicht, O(V) sparsam
-- Adjacency List: O(V+E) space, O(degree) access time
-- Adjacency Matrix: O(V²) space, O(1) access time
-- BFS: Queue, Level-by-Level, kürzeste ungewichtete Pfade
-- DFS: Stack/Recursion, Depth-First, Cycle Detection, Topological Sort
-- Dijkstra: Greedy, nur positive Weights, Single-Source
-- Bellman-Ford: DP, negative Weights OK, Negative-Cycle Detection
-- Cycle Detection: Directed = 3-Color (W/G/B), Undirected = Back Edges
+### Graphs
+- V vertices + E edges; typical: E = O(V²) dense, O(V) sparse
+- Adjacency list: O(V+E) space, O(degree) access time
+- Adjacency matrix: O(V²) space, O(1) access time
+- BFS: queue, level-by-level, shortest unweighted paths
+- DFS: stack/recursion, depth-first, cycle detection, topological sort
+- Dijkstra: greedy, positive weights only, single-source
+- Bellman-Ford: DP, negative weights OK, negative-cycle detection
+- Cycle detection: directed = 3-color (W/G/B), undirected = back edges
 
 ---
 
-## 📚 Verwandte Konzepte zur Vertiefung
+## 📚 Related Concepts for Deepening
 
-1. **Heap / Priority Queue** - Effiziente Prioritäts-basierte Operationen (O(log n))
-2. **Trie** - Prefix-basierte Suche für Strings
-3. **Union-Find** - Disjunkte Mengen, Minimum Spanning Tree
-4. **Topological Sorting** - DAG-Ordering via DFS
-5. **Minimum Spanning Tree** - Kruskal's, Prim's Algorithms
-6. **Red-Black Trees** - Alternate zu AVL (weniger strict balancing)
-7. **B-Trees** - Multi-way trees für Disk-based searching
+1. **Heap / Priority Queue** - Efficient priority-based operations (O(log n))
+2. **Trie** - Prefix-based search for strings
+3. **Union-Find** - Disjoint sets, minimum spanning tree
+4. **Topological Sorting** - DAG ordering via DFS
+5. **Minimum Spanning Tree** - Kruskal's, Prim's algorithms
+6. **Red-Black Trees** - Alternative to AVL (less strict balancing)
+7. **B-Trees** - Multi-way trees for disk-based searching
 8. **Segment Trees / Fenwick Trees** - Range queries & updates
 
 ---
 
-*Diese Zusammenfassung fasst die Kernkonzepte der nicht-linearen Datenstrukturen zusammen. Für tieferes Verständnis, siehe die individuellen Topic-Dateien.*
+*This summary covers core concepts of non-linear data structures. For deeper understanding, see individual topic files.*

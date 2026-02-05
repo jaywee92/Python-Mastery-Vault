@@ -3,17 +3,17 @@ title: DSA Linear - Summary
 tags: [dsa, summary, sorting, searching, data-structures]
 ---
 
-# DSA Linear - Zusammenfassung
+# DSA Linear - Summary
 
-## 📋 Überblick
+## 📋 Overview
 
-Dieser Kurs behandelt die fundamentalen Konzepte der Datenstrukturen und Algorithmen. Beginnend mit Big O Notation und Arrays, durchlaufen Sie 8 verschiedene Sortieralgorithmen (vom einfachen Bubble Sort bis zum effizienten Merge Sort), lernen 2 Suchalgorithmen (Linear und Binary Search) und verstehen zwei grundlegende Datenstrukturen (Stacks und Queues). Das Ziel ist es, Ihnen die Werkzeuge zu geben, um effiziente Lösungen zu schreiben und technische Interviews zu bestehen.
+This course covers fundamental concepts of data structures and algorithms. Starting with Big O Notation and Arrays, you'll learn 8 different sorting algorithms (from simple Bubble Sort to efficient Merge Sort), explore 2 searching algorithms (Linear and Binary Search), and understand two fundamental data structures (Stacks and Queues). The goal is to give you the tools to write efficient solutions and ace technical interviews.
 
 ---
 
-## 📊 Komplexitäts-Übersicht
+## 📊 Complexity Overview
 
-### Sortieralgorithmen
+### Sorting Algorithms
 
 ```
 ╔════════════════════════════════════════════════════════════════╗
@@ -30,12 +30,12 @@ Dieser Kurs behandelt die fundamentalen Konzepte der Datenstrukturen und Algorit
 ║ Counting Sort     ║  O(n+k)   ║  O(n+k)   ║ O(n+k)  ║  O(k)    ║
 ║ Radix Sort        ║  O(d*n)   ║  O(d*n)   ║ O(d*n)  ║ O(n+k)   ║
 ╠═══════════════════╬═══════════╬═══════════╬═════════╬═══════════╣
-║ Stable            ║  Ja ✓     ║  Ja ✓     ║  Nein ✗ ║  Ja ✓     ║
-║ In-Place          ║  Ja ✓     ║  Ja ✓     ║  Ja ✓   ║  Nein ✗   ║
+║ Stable            ║  Yes ✓    ║  Yes ✓    ║  No ✗   ║  Yes ✓    ║
+║ In-Place          ║  Yes ✓    ║  Yes ✓    ║  Yes ✓  ║  No ✗     ║
 ╚═══════════════════╩═══════════╩═══════════╩═════════╩═══════════╝
 ```
 
-### Such- und Datenstruktur-Algorithmen
+### Searching & Data Structure Algorithms
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
@@ -48,238 +48,238 @@ Dieser Kurs behandelt die fundamentalen Konzepte der Datenstrukturen und Algorit
 ║ Stack (LIFO)        ║  O(1)*  ║  O(n)   ║ Undo/Redo          ║
 ║ Queue (FIFO)        ║  O(1)*  ║  O(n)   ║ Task Scheduling    ║
 ╠═════════════════════╩═════════╩═════════╩════════════════════╣
-║ *push/pop/enqueue/dequeue - alle O(1) Operationen           ║
+║ *push/pop/enqueue/dequeue - all O(1) operations            ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## 📝 Topic-Zusammenfassungen
+## 📝 Topic Summaries
 
 ### 01. Why Learn Data Structures and Algorithms?
 
-DSA bildet die Grundlage für effizienten Code. Während naive Lösungen für 1 Million Elemente bis zu 1 Million Operationen benötigen, können optimierte Algorithmen dasselbe in etwa 20 Operationen erreichen. Das ist nicht nur für Interviews wichtig, sondern essentiell für echte Produktionsanwendungen wie Netflix-Empfehlungen, Google-Suche oder soziale Netzwerke.
+DSA forms the foundation for efficient code. While naive solutions for 1 million elements require up to 1 million operations, optimized algorithms can achieve the same in approximately 20 operations. This is not just important for interviews but essential for real production applications like Netflix recommendations, Google search, or social networks.
 
 ### 02. Big O Notation
 
-Big O Notation beschreibt, wie die Laufzeit mit der Eingabegröße wächst. Die wichtigsten Komplexitätsklassen in aufsteigender Reihenfolge sind: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ). Man ignoriert Konstanten und niedrigere Terme, weshalb O(2n) = O(n) ist. Dies hilft uns, Algorithmen zu vergleichen unabhängig von Hardwaredetails.
+Big O Notation describes how runtime grows with input size. The most important complexity classes in ascending order are: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ). Constants and lower-order terms are ignored, so O(2n) = O(n). This helps us compare algorithms independently of hardware details.
 
 ### 03. Arrays
 
-Arrays sind die Grundlage: Elemente in zusammenhängendem Speicher, direkter Zugriff durch Index in O(1). Allerdings kosten Insertionen und Deletionen in der Mitte O(n) wegen notwendiger Verschiebungen. Python-Lists sind dynamische Arrays, die bei Bedarf wachsen. Wichtige Operationen: append O(1), insert O(n), remove O(n).
+Arrays are the foundation: elements in contiguous memory, direct access via index in O(1). However, insertions and deletions in the middle cost O(n) due to necessary shifts. Python lists are dynamic arrays that grow as needed. Important operations: append O(1), insert O(n), remove O(n).
 
 ### 04. Bubble Sort
 
-Der einfachste Sortieralgorithmus: Vergleiche benachbarte Elemente und tausche sie, wenn sie in der falschen Reihenfolge sind. Größere Werte "blubbern" nach hinten. Komplexität: O(n²) durchschnittlich und im worst-case, O(n) im best-case wenn bereits sortiert. Stabil und in-place, aber selten praktisch verwendet.
+The simplest sorting algorithm: Compare adjacent elements and swap them if they are in the wrong order. Larger values "bubble" to the end. Complexity: O(n²) average and worst-case, O(n) best-case when already sorted. Stable and in-place, but rarely used in practice.
 
 ### 05. Selection Sort
 
-Finde das Minimum in der unsortierten Portion und platziere es am Anfang. Wiederhole für die verbleibenden Elemente. Komplexität: O(n²) in allen Fällen - keine Best-Case-Optimierung. Macht genau n-1 Swaps, was es vorteilhaft macht wenn Memory-Zugriffe teuer sind. Nicht stabil, aber einfach und O(1) Space.
+Find the minimum in the unsorted portion and place it at the beginning. Repeat for remaining elements. Complexity: O(n²) in all cases - no best-case optimization. Makes exactly n-1 swaps, which is advantageous when memory writes are expensive. Not stable, but simple and O(1) space.
 
 ### 06. Insertion Sort
 
-Baue schrittweise einen sortierten Array auf, ähnlich wie Kartenspielen. Nimm jedes Element und füge es an der korrekten Position ein. Komplexität: O(n) best-case (bereits sortiert), O(n²) worst-case. Adaptive Algorithmus - schnell bei fast-sortierten Daten. Stabil und online-fähig. In der Praxis kombiniert mit Quick/Merge Sort für kleine Subarrays.
+Build a sorted array step by step, similar to sorting playing cards. Take each element and insert it at the correct position. Complexity: O(n) best-case (already sorted), O(n²) worst-case. Adaptive algorithm - fast for nearly sorted data. Stable and online-capable. In practice combined with Quick/Merge Sort for small subarrays.
 
 ### 07. Quick Sort
 
-Divide & Conquer mit Partitionierung: Wähle einen Pivot, teile Array in kleinere und größere Elemente. Sortiere rekursiv beide Seiten. Durchschnittskomplexität: O(n log n), worst-case: O(n²) bei ungünstigen Pivots. In-place mit O(log n) Stack Space. Nicht stabil, aber praktisch am schnellsten wegen guter Cache-Lokalität.
+Divide & conquer with partitioning: Choose a pivot, divide array into smaller and larger elements. Recursively sort both sides. Average complexity: O(n log n), worst-case: O(n²) with unfavorable pivots. In-place with O(log n) stack space. Not stable, but fastest in practice due to good cache locality.
 
 ### 08. Counting Sort
 
-Nicht-vergleichender Algoritmus für Integers mit bekanntem Bereich: Zähle Vorkommen jeden Werts, rekonstruiere dann sortiertes Array. Komplexität: O(n+k) wobei k der Wertebereich ist. Wenn k ≤ n, effektiv O(n) - linear! Space: O(k). Stabil bei korrekter Implementierung. Nicht geeignet für große oder unbekannte Wertebereiche.
+Non-comparison algorithm for integers with known range: Count occurrences of each value, then reconstruct sorted array. Complexity: O(n+k) where k is the value range. If k ≤ n, effectively O(n) - linear! Space: O(k). Stable with correct implementation. Not suitable for large or unknown value ranges.
 
 ### 09. Radix Sort
 
-Sortiere nach Ziffern von rechts nach links mit Counting Sort für jede Position. Komplexität: O(d×(n+k)) wobei d die Anzahl der Ziffern ist. Bei Dezimalzahlen effektiv O(d×n) - linear und oft schneller als O(n log n). Stabil und effizient für große Integer-Arrays mit wenig Ziffern. Funktioniert auch für Strings.
+Sort by digits from right to left using Counting Sort for each position. Complexity: O(d×(n+k)) where d is the number of digits. For decimal numbers effectively O(d×n) - linear and often faster than O(n log n). Stable and efficient for large integer arrays with few digits. Also works for strings.
 
 ### 10. Merge Sort
 
-Klassischer Divide & Conquer: Teile Array in halbe, sortiere rekursiv, merge. Garantiert O(n log n) in allen Fällen. Space: O(n) für temporäre Arrays. Stabil und vorhersehbar, wichtig für Linked Lists und externe Sortierung. Nachteil: extra Memory und weniger cache-friendly als Quick Sort.
+Classic Divide & Conquer: Divide array in half, recursively sort, merge. Guaranteed O(n log n) in all cases. Space: O(n) for temporary arrays. Stable and predictable, important for linked lists and external sorting. Disadvantage: extra memory and less cache-friendly than Quick Sort.
 
 ### 11. Linear Search
 
-Der einfachste Suchalgorithmus: Checke sequenziell bis Element gefunden. Komplexität: O(1) best-case, O(n) average/worst-case. Funktioniert auf unsortierter und sortierter Array gleich gut. Keine Preprocessing nötig. O(1) Space. Akzeptabel für kleine Arrays oder wenn nur einmal gesucht wird.
+The simplest search algorithm: Check sequentially until element is found. Complexity: O(1) best-case, O(n) average/worst-case. Works equally well on unsorted and sorted arrays. No preprocessing needed. O(1) space. Acceptable for small arrays or when searching only once.
 
 ### 12. Binary Search
 
-Das optimale Suchalgorithmus für sortierte Arrays: Halbiere Suchraum durch Überprüfung der Mitte. Komplexität: O(log n) - selbst 1 Milliarde Elemente brauchen nur ~30 Vergleiche! Requirement: Array muss sortiert sein. Iterative Version bevorzugt wegen O(1) Space (vs. O(log n) rekursiv). Viele Varianten: first/last occurrence, insert position.
+The optimal search algorithm for sorted arrays: Halve search space by checking the middle. Complexity: O(log n) - even 1 billion elements need only ~30 comparisons! Requirement: array must be sorted. Iterative version preferred for O(1) space (vs. O(log n) recursive). Many variants: first/last occurrence, insert position.
 
 ### 13. Stacks (LIFO)
 
-Datenstruktur nach Last-In-First-Out Prinzip: push() und pop() beide O(1). Beispiele: Browser-Back, Undo/Redo, Funktionsaufrufe, Parentheses-Balancing. Python-Lists arbeiten wie Stacks. Nicht für random Access geeignet, aber essentiell für DFS und Backtracking. Einfach aber vielseitig.
+Data structure following Last-In-First-Out principle: push() and pop() both O(1). Examples: browser back, undo/redo, function calls, parentheses balancing. Python lists work like stacks. Not suitable for random access, but essential for DFS and backtracking. Simple but versatile.
 
 ### 14. Queues (FIFO)
 
-Datenstruktur nach First-In-First-Out Prinzip: enqueue() hinten, dequeue() vorne, beide O(1). Verwende `collections.deque` für O(1) Operationen (nicht list.pop(0) das ist O(n)!). Anwendungen: Task-Scheduling, BFS, Druckerwarteschlangen. Varianten: Circular Queue (fixed-size), Priority Queue (Heap-basiert).
+Data structure following First-In-First-Out principle: enqueue() back, dequeue() front, both O(1). Use `collections.deque` for O(1) operations (not list.pop(0) which is O(n)!). Applications: task scheduling, BFS, print queues. Variants: circular queue (fixed-size), priority queue (heap-based).
 
 ---
 
-## ✅ Selbsttest-Checkliste
+## ✅ Self-Test Checklist
 
-### Big O & Komplexität
-- [ ] Ich kann Big O Notation erklären (Best, Average, Worst Case)
-- [ ] Ich verstehe den Unterschied zwischen O(1), O(n), O(n²), O(n log n), O(log n)
-- [ ] Ich kann die Komplexität eines gegebenen Codes analysieren
-- [ ] Ich weiß, wann Konstanten und niedrigere Terme zu ignorieren sind
+### Big O & Complexity
+- [ ] I can explain Big O Notation (best, average, worst case)
+- [ ] I understand the difference between O(1), O(n), O(n²), O(n log n), O(log n)
+- [ ] I can analyze the complexity of given code
+- [ ] I know when to ignore constants and lower-order terms
 
-### Arrays & Operationen
-- [ ] Ich kann erklären, warum Array-Zugriff O(1) und Insertion in der Mitte O(n) ist
-- [ ] Ich kann Array-Methoden (append, insert, remove, pop) und deren Komplexität nennen
-- [ ] Ich kann einfache Array-Probleme wie Two-Sum lösen
-- [ ] Ich verstehe Slice-Operationen und deren Komplexität
+### Arrays & Operations
+- [ ] I can explain why array access is O(1) and insertion in the middle is O(n)
+- [ ] I can name array methods (append, insert, remove, pop) and their complexity
+- [ ] I can solve simple array problems like Two-Sum
+- [ ] I understand slice operations and their complexity
 
-### Sortieralgorithmen
-- [ ] Ich kann jeden Sortieralgorithmus implementieren und erklären
-- [ ] Ich weiß, welche Algorithmen stabil und welche in-place sind
-- [ ] Ich kann für ein gegebenes Szenario den passenden Algorithmus wählen
-- [ ] Ich kann erklären, wann Bubble/Selection/Insertion vs. Quick/Merge zu verwenden sind
-- [ ] Ich verstehe, dass Counting Sort und Radix Sort nicht vergleichend sind
-- [ ] Ich weiß, dass Python's sorted() Timsort verwendet (Merge + Insertion)
+### Sorting Algorithms
+- [ ] I can implement and explain each sorting algorithm
+- [ ] I know which algorithms are stable and which are in-place
+- [ ] I can choose the appropriate algorithm for a given scenario
+- [ ] I can explain when to use Bubble/Selection/Insertion vs. Quick/Merge
+- [ ] I understand that Counting Sort and Radix Sort are non-comparing
+- [ ] I know that Python's sorted() uses Timsort (Merge + Insertion)
 
-### Suchalgorithmen
-- [ ] Ich kann Linear Search implementieren und weiß, dass O(n) ist
-- [ ] Ich kann Binary Search implementieren und Boundary-Fehler vermeiden
-- [ ] Ich weiß, dass Binary Search O(log n) ist und ein Sortier-Voraussetzung braucht
-- [ ] Ich kann Varianten implementieren (first/last occurrence, insert position)
-- [ ] Ich weiß, wann Linear vs. Binary Search zu verwenden ist
+### Search Algorithms
+- [ ] I can implement Linear Search and know it's O(n)
+- [ ] I can implement Binary Search and avoid boundary errors
+- [ ] I know Binary Search is O(log n) and requires sorted array
+- [ ] I can implement variants (first/last occurrence, insert position)
+- [ ] I know when to use Linear vs. Binary Search
 
-### Datenstrukturen
-- [ ] Ich kann Stack mit push/pop/peek implementieren und verstehe LIFO
-- [ ] Ich kann Queue mit enqueue/dequeue implementieren und verstehe FIFO
-- [ ] Ich weiß, dass `collections.deque` für O(1) Queue-Operationen nötig ist
-- [ ] Ich kann Stack-Anwendungen nennen (Undo, Parentheses, DFS)
-- [ ] Ich kann Queue-Anwendungen nennen (BFS, Task-Scheduling, Printer)
-- [ ] Ich kenne Stack und Queue Best-Practices
-
----
-
-## 🛤️ Empfohlener Lernpfad
-
-### Phase 1: Grundlagen verstehen (Woche 1)
-1. **Why Learn DSA** - Motivation und Kontext
-2. **Big O Notation** - Essentiell vor allem anderen
-3. **Arrays** - Verständnis von Speicher und Operationen
-4. → Nach dieser Phase: Können Sie die Performance verschiedener Operationen analysieren
-
-### Phase 2: Einfache Sortieralgorithmen (Woche 2)
-5. **Bubble Sort** - Am einfachsten zu verstehen
-6. **Selection Sort** - Ähnliches Konzept, weniger Swaps
-7. **Insertion Sort** - Adaptive, besser als die ersten zwei
-8. → Nach dieser Phase: Verstehen Sie die O(n²) Sortierung und ihre Trade-offs
-
-### Phase 3: Fortgeschrittene Sortierung (Woche 3)
-9. **Quick Sort** - Divide & Conquer, praktisch am schnellsten
-10. **Merge Sort** - Garantiert O(n log n), stabil
-11. → Nach dieser Phase: Können Sie komplex sortierte Probleme lösen
-
-### Phase 4: Spezielle Sortierung (Woche 3-4)
-12. **Counting Sort** - Nicht-vergleichend für bekannte Bereiche
-13. **Radix Sort** - Linear für Ziffern
-14. → Nach dieser Phase: Wissen Sie, wann spezialisierte Algorithmen besser sind
-
-### Phase 5: Suche & erste Datenstrukturen (Woche 4)
-15. **Linear Search** - Einfach, unentbehrlich für Unsortiertes
-16. **Binary Search** - Schnell, erfordert Sortierung
-17. **Stacks** - Erste echte Datenstruktur (LIFO)
-18. **Queues** - Zweite Datenstruktur (FIFO)
-19. → Nach dieser Phase: Master of DSA Linear! Bereit für Trees/Graphs
-
-### Empfohlene Praxis-Reihenfolge
-- **Nach Phase 2**: LeetCode Easy: Bubble/Selection Sort Probleme
-- **Nach Phase 3**: LeetCode Medium: Quick/Merge Sort Varianten
-- **Nach Phase 4**: LeetCode Medium: Sorting + Edge Cases
-- **Nach Phase 5**: LeetCode Easy: Binary Search, Stack, Queue
-- **Parallel**: Implementiere jeden Algorithmus mindestens 5 mal selbst
+### Data Structures
+- [ ] I can implement Stack with push/pop/peek and understand LIFO
+- [ ] I can implement Queue with enqueue/dequeue and understand FIFO
+- [ ] I know that `collections.deque` is needed for O(1) queue operations
+- [ ] I can name stack applications (undo, parentheses, DFS)
+- [ ] I can name queue applications (BFS, task scheduling, printer)
+- [ ] I know stack and queue best practices
 
 ---
 
-## 💡 Wichtige Lernprinzipien
+## 🛤️ Recommended Learning Path
 
-### 1. Visualisieren ist König
-- Zeichne die Algorithmen auf Papier
-- Nutze die ASCII-Diagramme in den Kursen
-- Verwende Online-Visualizer für Verständnis
+### Phase 1: Understand Fundamentals (Week 1)
+1. **Why Learn DSA** - Motivation and context
+2. **Big O Notation** - Essential before everything else
+3. **Arrays** - Understanding memory and operations
+4. → After this phase: You can analyze the performance of different operations
 
-### 2. Implementiere selbst
-- Code von Hand, nicht nur lesen
-- Versuche ohne Spickzettel zu schreiben
-- Teste mit verschiedenen Eingaben (sorted, reverse, duplicates)
+### Phase 2: Simple Sorting Algorithms (Week 2)
+5. **Bubble Sort** - Easiest to understand
+6. **Selection Sort** - Similar concept, fewer swaps
+7. **Insertion Sort** - Adaptive, better than the first two
+8. → After this phase: You understand O(n²) sorting and its trade-offs
 
-### 3. Verstehe Trade-offs
-- Space vs. Time Komplexität
-- Stabilität (wichtig für spätere Probleme)
-- In-Place vs. extra Memory
+### Phase 3: Advanced Sorting (Week 3)
+9. **Quick Sort** - Divide & Conquer, practically fastest
+10. **Merge Sort** - Guaranteed O(n log n), stable
+11. → After this phase: You can solve complex sorting problems
 
-### 4. Teste Boundary Cases
-- Leere Arrays
-- Single Element
+### Phase 4: Special Sorting (Week 3-4)
+12. **Counting Sort** - Non-comparing for known ranges
+13. **Radix Sort** - Linear for digits
+14. → After this phase: You know when specialized algorithms are better
+
+### Phase 5: Search & First Data Structures (Week 4)
+15. **Linear Search** - Simple, essential for unsorted data
+16. **Binary Search** - Fast, requires sorting
+17. **Stacks** - First real data structure (LIFO)
+18. **Queues** - Second data structure (FIFO)
+19. → After this phase: Master of DSA Linear! Ready for Trees/Graphs
+
+### Recommended Practice Order
+- **After Phase 2**: LeetCode Easy: Bubble/Selection Sort problems
+- **After Phase 3**: LeetCode Medium: Quick/Merge Sort variants
+- **After Phase 4**: LeetCode Medium: Sorting + edge cases
+- **After Phase 5**: LeetCode Easy: Binary search, stack, queue
+- **In parallel**: Implement each algorithm at least 5 times yourself
+
+---
+
+## 💡 Important Learning Principles
+
+### 1. Visualization is King
+- Draw the algorithms on paper
+- Use the ASCII diagrams in the courses
+- Use online visualizers for understanding
+
+### 2. Implement Yourself
+- Code by hand, not just reading
+- Try to write without cheat sheets
+- Test with different inputs (sorted, reverse, duplicates)
+
+### 3. Understand Trade-offs
+- Space vs. time complexity
+- Stability (important for later problems)
+- In-place vs. extra memory
+
+### 4. Test Boundary Cases
+- Empty arrays
+- Single element
 - Duplicates
-- Bereits sortierte/reverse sortierte Arrays
-- Arrays mit 2-3 Elementen
+- Already sorted/reverse sorted arrays
+- Arrays with 2-3 elements
 
-### 5. Wiederhole, wiederhole, wiederhole
-- Mindestens 3-5x pro Algorithmus
-- Nach 1 Woche nochmal wiederholen
-- Nach 1 Monat nochmal intensiv üben
+### 5. Repeat, repeat, repeat
+- At least 3-5 times per algorithm
+- Review again after 1 week
+- Practice intensively again after 1 month
 
 ---
 
-## 🚀 Nächste Schritte nach diesem Kurs
+## 🚀 Next Steps After This Course
 
 1. **Intermediate: Non-Linear DSA**
-   - Trees (Binary, BST, AVL)
+   - Trees (binary, BST, AVL)
    - Graphs (DFS, BFS, Dijkstra)
-   - Hash Tables & Heaps
+   - Hash tables & heaps
 
 2. **Advanced Topics**
-   - Dynamic Programming
-   - Greedy Algorithms
+   - Dynamic programming
+   - Greedy algorithms
    - Backtracking
-   - System Design
+   - System design
 
 3. **Interview Preparation**
-   - LeetCode (150+ Medium problems)
+   - LeetCode (150+ medium problems)
    - HackerRank
    - GeeksforGeeks
    - "Cracking the Coding Interview"
 
 4. **Real Projects**
-   - Implementiere einen Mini-Sorter in Python
-   - Baue einen Task Scheduler mit Queue
-   - Schreib einen einfachen Text Editor mit Undo (Stack)
-   - Implementiere einen Cache mit LRU Policy
+   - Implement a mini-sorter in Python
+   - Build a task scheduler with queue
+   - Write a simple text editor with undo (stack)
+   - Implement a cache with LRU policy
 
 ---
 
-## 📚 Zusammengefasste Komplexitätstafel
+## 📚 Summarized Complexity Reference
 
 ```
 ╔════════════════════════════════════════════════════════════╗
 ║              QUICK REFERENCE CHEAT SHEET                   ║
 ╠════════════════════════════════════════════════════════════╣
 ║                                                            ║
-║  Bekommst du ein Feld von n Elementen:                     ║
-║  ├─ Sortiert?                                              ║
-║  │  └─ JA → Binary Search O(log n)                         ║
-║  │  └─ NEIN → Linear Search O(n)                           ║
+║  You get an array of n elements:                           ║
+║  ├─ Is it sorted?                                          ║
+║  │  └─ YES → Binary Search O(log n)                        ║
+║  │  └─ NO → Linear Search O(n)                             ║
 ║  │                                                         ║
-║  ├─ Muss Sortierung durchführen?                           ║
-║  │  ├─ Kleine Array (< 50) → Insertion Sort O(n²)          ║
-║  │  ├─ Große Array, beliebige Daten → Quick Sort           ║
-║  │  ├─ Brauche garantiert O(n log n) → Merge Sort          ║
-║  │  ├─ Integers mit bekanntem Bereich → Counting Sort      ║
-║  │  └─ Viele Ziffern/Stellen → Radix Sort                  ║
+║  ├─ Do you need to sort it?                                ║
+║  │  ├─ Small array (< 50) → Insertion Sort O(n²)           ║
+║  │  ├─ Large array, arbitrary data → Quick Sort            ║
+║  │  ├─ Need guaranteed O(n log n) → Merge Sort             ║
+║  │  ├─ Integers with known range → Counting Sort           ║
+║  │  └─ Many digits/places → Radix Sort                     ║
 ║  │                                                         ║
-║  ├─ Datenstruktur gefragt?                                 ║
-║  │  ├─ LIFO (Last rein, first raus) → Stack                ║
-║  │  ├─ FIFO (First rein, first raus) → Queue               ║
-║  │  ├─ Brauche Minimum schnell → Min Stack/Heap            ║
-║  │  └─ Brauchte Priorität → Priority Queue                 ║
+║  ├─ Data structure needed?                                 ║
+║  │  ├─ LIFO (last in, first out) → Stack                   ║
+║  │  ├─ FIFO (first in, first out) → Queue                  ║
+║  │  ├─ Need minimum fast → Min stack/heap                  ║
+║  │  └─ Need priority → Priority queue                      ║
 ║  │                                                         ║
-║  └─ Komplexität analysieren?                               ║
-║     → Zähle Loops: n Loops = O(n), n² = O(n²)              ║
-║     → Halbe Größe: O(log n)                                ║
-║     → Mult mit kombinieren: O(n × log n) etc.              ║
+║  └─ Analyze complexity?                                    ║
+║     → Count loops: n loops = O(n), n² = O(n²)              ║
+║     → Half size: O(log n)                                  ║
+║     → Multiply/combine: O(n × log n) etc.                  ║
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 ```
@@ -288,15 +288,15 @@ Datenstruktur nach First-In-First-Out Prinzip: enqueue() hinten, dequeue() vorne
 
 ## 🎓 Final Wisdom
 
-> Verstehe nicht nur Algorithmen, sondern warum sie funktionieren.
-> Implementiere nicht nur Code, sondern verstehe Trade-offs.
-> Lerne nicht nur für Interviews, sondern um besserer Programmierer zu sein.
+> Understand not just algorithms, but why they work.
+> Implement not just code, but understand trade-offs.
+> Learn not just for interviews, but to be a better programmer.
 
-**Die beste Zeit zum Lernen von DSA ist jetzt. Die zweitbeste Zeit ist morgen. Also beginne heute!** 💪
+**The best time to learn DSA is now. The second best time is tomorrow. So start today!** 💪
 
 ---
 
-*Alle 14 Topics gelöst. Bereit für Trees, Graphs und Dynamic Programming? Los geht's!*
+*All 14 topics solved. Ready for Trees, Graphs, and Dynamic Programming? Let's go!*
 
-[[00_Index|← Zurück zum Index]]
+[[00_Index|← Back to Index]]
 

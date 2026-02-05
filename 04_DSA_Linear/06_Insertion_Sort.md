@@ -35,25 +35,25 @@ Imagine sorting playing cards in your hand:
 ║        🃏 INSERTION SORT - BUILD SORTED HAND                 ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║  Wie beim Kartenspielen:                                      ║
+║  Like sorting playing cards:                                  ║
 ║                                                               ║
 ║  Start: [5, 2, 4, 6, 1, 3]                                  ║
 ║                                                               ║
-║  Step 1: Erste Karte = sortiert                             ║
+║  Step 1: First card = sorted                                ║
 ║  [5] | [2, 4, 6, 1, 3]                                      ║
 ║                                                               ║
-║  Step 2: Nimm 2, finde Position, verschiebe                 ║
+║  Step 2: Take 2, find position, shift                       ║
 ║  [2, 5] | [4, 6, 1, 3]  ← 2 < 5, insert before             ║
 ║      ↑                                                       ║
-║  Step 3: Nimm 4, finde Position                             ║
+║  Step 3: Take 4, find position                              ║
 ║  [2, 4, 5] | [6, 1, 3]  ← between 2 and 5                  ║
 ║        ↑                                                     ║
-║  Step 4: Nimm 1, verschiebe alles rechts                    ║
+║  Step 4: Take 1, shift everything right                     ║
 ║  [1, 2, 4, 5, 6] | [3]  ← before all!                      ║
 ║  ↑                                                           ║
-║  💡 Nimm aus unsortiert, insert in sortiert                 ║
-║  💡 Verschiebe größere Elemente rechts                      ║
-║  💡 O(n) wenn schon sortiert, O(n²) worst case             ║
+║  💡 Take from unsorted, insert into sorted                  ║
+║  💡 Shift larger elements right                             ║
+║  💡 O(n) if already sorted, O(n²) worst case               ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

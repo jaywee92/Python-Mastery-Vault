@@ -18,27 +18,27 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║    📦 TUPLES vs. SETS - Unveränderbar vs. Eindeutig          ║
+║    📦 TUPLES vs. SETS - Immutable vs. Unique                 ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   TUPLES (Geordnet, Unveränderbar):                          ║
+║   TUPLES (Ordered, Immutable):                               ║
 ║   ┌──────┬──────┬──────┬──────┬──────┐                       ║
-║   │ "a"  │ "b"  │ "c"  │ "a"  │ "d"  │  ← Duplikate erlaubt ║
+║   │ "a"  │ "b"  │ "c"  │ "a"  │ "d"  │  ← Duplicates allowed║
 ║   └──────┴──────┴──────┴──────┴──────┘                       ║
 ║   coords = (10, 20)                                           ║
-║   ❌ Keine Änderungen möglich (immutable)                     ║
-║   ✅ Kann als Dict-Schlüssel verwendet werden               ║
+║   ❌ No modifications possible (immutable)                    ║
+║   ✅ Can be used as dict key                                ║
 ║                                                               ║
-║   SETS (Ungeordnet, Eindeutig):                              ║
+║   SETS (Unordered, Unique):                                  ║
 ║      ╭─────────────────────────╮                             ║
-║      │ "a"       "c"       "d" │  ← Nur eindeutige Werte    ║
+║      │ "a"       "c"       "d" │  ← Only unique values       ║
 ║      │       "b"            │                                ║
 ║      ╰─────────────────────────╯                             ║
 ║   colors = {"red", "blue", "red"}  →  {"red", "blue"}       ║
-║   ✅ Duplikate automatisch entfernt                          ║
-║   ✅ Perfekt für Memberships-Tests                          ║
+║   ✅ Duplicates automatically removed                        ║
+║   ✅ Perfect for membership tests                            ║
 ║                                                               ║
-║   💡 Tuples = Sichere Listen, Sets = Eindeutige Elemente     ║
+║   💡 Tuples = Immutable lists, Sets = Unique elements        ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

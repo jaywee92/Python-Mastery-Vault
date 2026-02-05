@@ -18,31 +18,31 @@ type: topic
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║       📦 FUNKTIONEN - WIEDERVERWENDBARE CODE-BLÖCKE           ║
+║       📦 FUNCTIONS - REUSABLE CODE BLOCKS                     ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║   def greet(name):              ← Eingabe-Parameter          ║
+║   def greet(name):              ← Input parameter            ║
 ║       message = f"Hello, {name}"                             ║
-║       return message            ← Ausgabe (Rückgabe)         ║
+║       return message            ← Output (return value)      ║
 ║                                                               ║
-║   Visualisierung wie eine Maschine:                           ║
+║   Visualize it like a machine:                                ║
 ║                                                               ║
 ║   INPUT  ┌─────────────────────┐  OUTPUT                     ║
 ║   "Bob"  │  greet(name)        │  "Hello, Bob"              ║
-║   ───→   │  • message setzen   │  ───→                      ║
+║   ───→   │  • set message      │  ───→                      ║
 ║          │  • return           │                             ║
 ║          └─────────────────────┘                             ║
 ║                                                               ║
-║   Funktion ohne return:                                       ║
+║   Function without return:                                    ║
 ║   ┌────────────────────────────┐                             ║
 ║   │ def say_hello():           │                             ║
-║   │     print("Hallo!")        │  → Keine Rückgabe          ║
+║   │     print("Hello!")        │  → No return value         ║
 ║   │ say_hello()                │                             ║
-║   │ # Hallo!                   │                             ║
+║   │ # Hello!                   │                             ║
 ║   └────────────────────────────┘                             ║
 ║                                                               ║
-║   💡 Funktionen = Kleine, wiederverwendbare Programme        ║
-║   💡 Parameter = Eingaben,  return = Ausgabe                 ║
+║   💡 Functions = Small, reusable programs                    ║
+║   💡 Parameters = Inputs,  return = Output                   ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 

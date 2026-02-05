@@ -30,26 +30,26 @@ complexity: O(n log n)
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
 ║  [8, 3, 1, 7, 0, 10, 2]                                      ║
-║         Wähle Pivot (z.B. last = 2)                          ║
+║         Choose pivot (e.g. last = 2)                         ║
 ║                                                               ║
 ║   Partition Phase:                                           ║
-║   Kleine auf links → Pivot → Große auf rechts                ║
+║   Small on left → Pivot → Large on right                     ║
 ║                                                               ║
 ║   [1, 0]  < 2  [2]  > 2  [8, 3, 10, 7]                       ║
 ║    unsorted  ✓ (correct place)  unsorted                      ║
 ║                                                               ║
-║   Rekursiv links sortieren:                                 ║
+║   Recursively sort left:                                     ║
 ║   [1, 0] → Pivot=0 → [0] [1]                                ║
 ║                                                               ║
-║   Rekursiv rechts sortieren:                                ║
+║   Recursively sort right:                                    ║
 ║   [8,3,10,7] → Pivot=7 → [3] [7] [8,10]                    ║
 ║                                                               ║
-║   Zusammensetzen:                                           ║
-║   [0, 1, 2, 3, 7, 8, 10] ✓ SORTIERT!                        ║
+║   Combine:                                                   ║
+║   [0, 1, 2, 3, 7, 8, 10] ✓ SORTED!                          ║
 ║                                                               ║
-║  💡 Teile mit Pivot, rekursiv beide Seiten                   ║
-║  💡 O(n log n) im Durchschnitt ⚡ sehr schnell               ║
-║  💡 In der Praxis oft der schnellste Sortierer             ║
+║  💡 Divide with pivot, recursively both sides               ║
+║  💡 O(n log n) on average ⚡ very fast                       ║
+║  💡 In practice often the fastest sorter                    ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
